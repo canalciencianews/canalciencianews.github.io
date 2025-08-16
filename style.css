@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ===================== META TAGS ESSENCIAIS ===================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciência News</title>
+    <meta name="description" content="Ciência News: Uma pílula com notícias sobre ciências, curiosidades, vídeos e conteúdos exclusivos.">
+    <link rel="canonical" href="https://canalciencianews.github.io/">
+
+    <!-- ===================== SCHEMA.ORG PARA SEO ===================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ciência News",
+      "url": "https://canalciencianews.github.io/",
+      "logo": "https://canalciencianews.github.io/logo.png",
+      "sameAs": [
+        "https://www.youtube.com/ciencianews1",
+        "https://www.facebook.com/ciencianews1",
+        "https://www.instagram.com/ciencianews1",
+        "https://www.kwai.com/ciencianews",
+        "https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1"
+      ]
+    }
+    </script>
+
+    <!-- ===================== ICONE DO BOOTSTRAP (APENAS ICONES) ===================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- ===================== CSS PRINCIPAL ===================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===================== JS PRINCIPAL ===================== -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header>
+        <div class="container-header">
+            <!-- Logo -->
+            <div class="logo">
+                Ciência News
+            </div>
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://canalciencianews.github.io/index.html">Home</a></li>
+                    <li><a href="https://canalciencianews.github.io/pesquisa.html">Pesquisa</a></li>
+                    <li><a href="https://canalciencianews.github.io/tecnologia.html">Tecnologia</a></li>
+                    <li><a href="https://canalciencianews.github.io/espaco.html">Espaço</a></li>
+                    <li><a href="https://canalciencianews.github.io/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+        <div class="container-hero">
+            <h1>Ciência News</h1>
+            <p class="bordao">Uma pílula com notícias sobre ciências</p>
+        </div>
+    </section>
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+    <!-- Início do Main -->
+
+        <!-- Seção de Destaques / Conteúdos exclusivos -->
+        <section class="destaques">
+            <div class="container-destaques">
+                <h2>Destaques</h2>
+                <div class="grid-cards">
+
+                    <!-- Card exemplo de conteúdo exclusivo -->
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x200/?science" alt="Destaque 1">
+                        <div class="card-content">
+                            <h3>Descoberta em Física Quântica</h3>
+                            <p>Pesquisadores revelam resultados que podem mudar a ciência moderna.</p>
+                            <a href="conteudo1.html">Leia mais →</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x200/?space" alt="Destaque 2">
+                        <div class="card-content">
+                            <h3>Exploração Espacial</h3>
+                            <p>Missões recentes trazem descobertas inéditas sobre planetas e asteroides.</p>
+                            <a href="conteudo2.html">Leia mais →</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x200/?ai" alt="Destaque 3">
+                        <div class="card-content">
+                            <h3>Inteligência Artificial na Medicina</h3>
+                            <p>Novos algoritmos ajudam diagnósticos complexos de forma mais rápida.</p>
+                            <a href="conteudo3.html">Leia mais →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!-- Fim do Main -->
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer>
+        <div class="container-footer">
+            <!-- Copyright -->
+            <div class="copyright">
+                &copy; 2025 Ciência News | Proprietário: Juliano Cangussu
+            </div>
+
+            <!-- Links institucionais ou legais -->
+            <div class="links-footer">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Contato</a>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="social-footer">
+                <a href="https://www.youtube.com/ciencianews1" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/ciencianews1" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ciencianews1" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.kwai.com/ciencianews" target="_blank"><i class="bi bi-people"></i></a>
+                <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1/* ===================== RESET BÁSICO ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte conservadora e legível */
+    background-color: #ffffff; /* Corpo da página branco */
+    color: #0b1e3d; /* Azul marinho escuro como cor principal de textos */
+    line-height: 1.6;
+}
+
+/* ===================== CABEÇALHO ===================== */
+header {
+    background-color: #0b1e3d; /* Azul marinho escuro */
+    color: #ffffff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Menu desktop */
+nav ul.menu {
+    display: flex;
+    list-style: none;
+}
+
+nav ul.menu li {
+    margin-left: 2rem;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    color: #f0c040; /* Cor hover para destaque */
+}
+
+/* ===================== MENU HAMBURGUE (MOBILE) ===================== */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        background-color: #0b1e3d;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    nav ul.menu li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #ffffff;
+    }
+
+    nav.active ul.menu {
+        display: flex;
+    }
+}
+
+/* ===================== HERO ===================== */
+.hero {
+    background-color: #0b1e3d; /* Azul marinho */
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero .bordao {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* ===================== DESTAQUES / GRID ===================== */
+.destaques {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destaques h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Grid de cards */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+    color: #0b1e3d;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #f0c040;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card-content a:hover {
+    color: #d48f00;
+}
+
+/* ===================== RODAPÉ ===================== */
+footer {
+    background-color: #2e2e2e; /* Cinza escuro */
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .links-footer {
+    margin: 1rem 0;
+}
+
+footer .links-footer a {
+    color: #ffffff;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .links-footer a:hover {
+    color: #f0c040;
+}
+
+.social-footer a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-footer a:hover {
+    color: #f0c040;
+}
+
+/* ===================== RESPONSIVIDADE GERAL ===================== */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .bordao {
+        font-size: 1rem;
+    }
+}" target="_blank"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
