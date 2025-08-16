@@ -143,25 +143,7 @@
         </div>
     </footer>
 
-    <!-- ===================== JS MENU MOBILE E FEED ===================== -->
-    <script>
-        const toggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-
-        const feedItems = document.querySelectorAll('.feed-item');
-        let feedIndex = 0;
-        function showFeed() {
-            feedItems.forEach((item, i) => {
-                item.style.display = i === feedIndex ? 'flex' : 'none';
-            });
-            feedIndex = (feedIndex + 1) % feedItems.length;
-        }
-        setInterval(showFeed, 5000);
-        showFeed();
-    </script>
-
+      <!-- ===================== JS MENU MOBILE ===================== -->
+  <script src="script.js"></script>
 </body>
 </html>
