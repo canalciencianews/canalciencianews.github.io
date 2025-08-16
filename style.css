@@ -1,0 +1,454 @@
+/* =========================
+   ESTILOS GERAIS
+========================= */
+:root {
+  --azul-marinho: #0a1a2f;
+  --azul-hero: #d8e9ff;
+  --dourado: #d4af37;
+  --cinza-rodape: #1c1c1c;
+  --cinza-claro: #f2f2f2;
+  --texto-principal: #222;
+  --texto-secundario: #555;
+  --branco: #fff;
+  --fonte-base: "Roboto", "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-base);
+  background: var(--branco);
+  color: var(--texto-principal);
+  line-height: 1.7;
+}
+
+/* =========================
+   CABEÇALHO E MENU
+========================= */
+header {
+  background: var(--azul-marinho);
+  color: var(--branco);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--branco);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--dourado);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--branco);
+}
+
+/* MENU MOBILE */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: var(--dourado);
+  border-radius: 5px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  background: var(--azul-hero);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--azul-marinho);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--texto-secundario);
+}
+
+/* =========================
+   CARDS HOME
+========================= */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.card {
+  background: var(--branco);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--azul-marinho);
+}
+
+.card-body p {
+  color: var(--texto-secundario);
+  font-size: 0.95rem;
+}
+
+.card-body a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--branco);
+  background: var(--dourado);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.card-body a:hover {
+  background: var(--azul-marinho);
+}
+
+/* =========================
+   BANNER
+========================= */
+.banner-container {
+  margin: 3rem 2rem;
+}
+
+.banner {
+  background: var(--azul-marinho);
+  color: var(--branco);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.banner img {
+  max-height: 100px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* =========================
+   FEED DINÂMICO
+========================= */
+.feed-container {
+  margin: 3rem 2rem;
+}
+
+.feed-container h2 {
+  color: var(--azul-marinho);
+  margin-bottom: 1rem;
+}
+
+.feed-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  min-height: 120px;
+}
+
+.feed-item {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  background: var(--cinza-claro);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.feed-item img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feed-item p {
+  font-size: 0.95rem;
+  color: var(--texto-principal);
+}
+
+/* =========================
+   SOBRE
+========================= */
+.sobre-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--cinza-claro);
+  border-radius: 10px;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+  background: var(--cinza-rodape);
+  color: var(--branco);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer .social-icons {
+  margin-bottom: 1rem;
+}
+
+footer .social-icons a {
+  color: var(--branco);
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: var(--dourado);
+}
+
+footer .links-footer {
+  margin-bottom: 1rem;
+}
+
+footer .links-footer a {
+  color: var(--branco);
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+footer .links-footer a:hover {
+  color: var(--dourado);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 900px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--azul-marinho);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .feed-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feed-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =========================
+   ARTIGOS (AJUSTE FINAL)
+========================= */
+.article-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: var(--branco);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.article-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--azul-marinho);
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  color: var(--texto-secundario);
+  margin-bottom: 1.5rem;
+}
+
+.article-intro {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: var(--texto-principal);
+}
+
+.article-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.article-container h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: var(--azul-marinho);
+}
+
+.article-container p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.article-container a {
+  color: var(--dourado);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.article-container a:hover {
+  color: var(--azul-marinho);
+}
+
+/* Texto destacado dentro do artigo */
+.article-container .destaque {
+  background: var(--dourado);
+  color: var(--branco);
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Box de referências dentro do artigo */
+.article-container .referencias {
+  background: var(--cinza-claro);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  font-style: italic;
+  color: var(--texto-principal);
+}
+
+/* =========================
+   RESPONSIVIDADE PARA ARTIGOS
+========================= */
+@media (max-width: 600px) {
+  .article-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .article-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .article-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .article-container p,
+  .article-container .article-intro,
+  .article-container .referencias {
+    font-size: 1rem;
+  }
+}
+
+/* Footer social icons padronizados */
+footer .social-icons,
+footer .social-footer {
+  margin-bottom: 1rem;
+}
+
+footer .social-icons a,
+footer .social-footer a {
+  color: var(--branco);
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover,
+footer .social-footer a:hover {
+  color: var(--dourado);
+}
