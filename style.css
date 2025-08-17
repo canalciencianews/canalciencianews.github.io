@@ -1,18 +1,4 @@
-/* =========================
-   ESTILOS GERAIS
-========================= */
-:root {
-  --azul-marinho: #0a1a2f;
-  --azul-hero: #d8e9ff;
-  --dourado: #d4af37;
-  --cinza-rodape: #1c1c1c;
-  --cinza-claro: #f2f2f2;
-  --texto-principal: #222;
-  --texto-secundario: #555;
-  --branco: #fff;
-  --fonte-base: "Roboto", "Segoe UI", Arial, sans-serif;
-}
-
+/* ===================== RESET ===================== */
 * {
   margin: 0;
   padding: 0;
@@ -20,57 +6,52 @@
 }
 
 body {
-  font-family: var(--fonte-base);
-  background: var(--branco);
-  color: var(--texto-principal);
-  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* =========================
-   CABEÇALHO E MENU
-========================= */
+/* ===================== HEADER ===================== */
 header {
-  background: var(--azul-marinho);
-  color: var(--branco);
-  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: var(--branco);
+/* Logo */
+.logo img {
+  max-height: 50px;
 }
 
-nav {
+/* Menu Desktop */
+nav .menu {
   display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-nav ul {
+  gap: 20px;
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
 }
 
-nav ul li a {
+nav .menu li a {
   text-decoration: none;
-  color: var(--dourado);
-  font-weight: 500;
-  transition: color 0.3s;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: var(--branco);
+nav .menu li a:hover {
+  color: var(--dourado, #c9a63b);
 }
 
-/* MENU MOBILE */
+/* ===================== MENU MOBILE ===================== */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -81,37 +62,202 @@ nav ul li a:hover {
 .menu-toggle span {
   height: 3px;
   width: 25px;
-  background: var(--dourado);
+  background: var(--dourado, #c9a63b);
   border-radius: 5px;
 }
 
-/* =========================
-   HERO
-========================= */
+/* Regras mobile */
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  nav .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* ===================== HERO ===================== */
 .hero {
-  background: var(--azul-hero);
-  padding: 4rem 2rem;
   text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #c9a63b, #f1e1a6);
+  color: #fff;
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  color: var(--azul-marinho);
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
-.hero p {
+.hero .bordao {
   font-size: 1.2rem;
-  color: var(--texto-secundario);
+  font-style: italic;
 }
 
-/* =========================
-   CARDS HOME
-========================= */
+/* ===================== CARDS ===================== */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card-body p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.card-body a {
+  color: var(--dourado, #c9a63b);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===================== BANNER ===================== */
+.banner-container {
+  margin: 40px 0;
+}
+
+.banner {
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.banner .destaque {
+  font-weight: bold;
+  color: var(--dourado, #c9a63b);
+}
+
+/* ===================== FEED ===================== */
+.feed-container {
+  padding: 20px;
+}
+
+.feed-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feed-items {
+  display: grid;
+  gap: 20px;
+}
+
+.feed-item {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.feed-item img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.feed-text {
+  padding: 10px;
+}
+
+.feed-text h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* ===================== SOBRE ===================== */
+.sobre-container {
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.sobre-box {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-icons {
+  margin-bottom: 15px;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: var(--dourado, #c9a63b);
+}
+
+footer .links-footer {
+  margin-bottom: 15px;
+}
+
+footer .links-footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .links-footer a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  font-size: 0.85rem;
+  opacity: 0.8;
+     }  gap: 2rem;
   padding: 3rem 2rem;
 }
 
