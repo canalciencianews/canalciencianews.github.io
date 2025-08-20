@@ -76,38 +76,94 @@
     <!-- ===================== MAIN ===================== -->
   <main class="p-6 bg-gray-50">
   <!-- Destaques -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-bold text-blue-700 mb-4">Descobertas Recentes</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <article class="bg-white p-4 rounded-2xl shadow">
-        <h3 class="font-semibold text-lg">Vacina inovadora</h3>
-        <p class="text-sm text-gray-600">Pesquisadores testam vacina promissora contra novos vírus respiratórios.</p>
-      </article>
-      <article class="bg-white p-4 rounded-2xl shadow">
-        <h3 class="font-semibold text-lg">Energia limpa</h3>
-        <p class="text-sm text-gray-600">Avanços em fusão nuclear trazem esperança de energia ilimitada.</p>
-      </article>
-      <article class="bg-white p-4 rounded-2xl shadow">
-        <h3 class="font-semibold text-lg">Genética</h3>
-        <p class="text-sm text-gray-600">Edição de genes CRISPR abre novas portas na medicina personalizada.</p>
-      </article>
-    </div>
-  </section>
+<section class="mb-10">
+  <h2 class="text-2xl font-bold text-blue-700 mb-4">Descobertas Recentes</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Card 1: Quasares -->
+    <article class="bg-white p-5 rounded-2xl shadow flex flex-col transition transform hover:scale-105 hover:shadow-xl">
+      <img src="https://i.postimg.cc/T3j5xmZb/astronomers-discover-d.jpg" 
+           alt="Imagem de um quasar brilhante" 
+           class="w-full h-40 object-cover rounded-xl shadow-md mb-4">
+      <h3 class="font-semibold text-lg text-gray-800 mb-2">Astrônomos Descobrem 62 Quasares</h3>
+      <p class="text-sm text-gray-600 flex-grow">
+        Uma equipe internacional identificou 62 novos quasares, fontes intensas de radiação alimentadas por buracos negros supermassivos em galáxias distantes.
+      </p>
+      <a href="https://phys.org/news/2025-08-astronomers-dozens-luminous-quasars.html" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="mt-4 inline-block bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg shadow hover:bg-blue-800 transition">
+        Saiba mais →
+      </a>
+    </article>
+
+    <!-- Card 2: Lua de Urano -->
+    <article class="bg-white p-5 rounded-2xl shadow flex flex-col transition transform hover:scale-105 hover:shadow-xl">
+      <img src="https://i.postimg.cc/HsvdyLXN/webb-telescope-discove.jpg" 
+           alt="Imagem da nova lua de Urano" 
+           class="w-full h-40 object-cover rounded-xl shadow-md mb-4">
+      <h3 class="font-semibold text-lg text-gray-800 mb-2">Webb Descobre Lua de Urano</h3>
+      <p class="text-sm text-gray-600 flex-grow">
+        O Telescópio James Webb identificou uma lua desconhecida orbitando Urano, aumentando o número de luas conhecidas do planeta para 29.
+      </p>
+      <a href="https://phys.org/news/2025-08-webb-moon-orbiting-uranus.html" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="mt-4 inline-block bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg shadow hover:bg-blue-800 transition">
+        Saiba mais →
+      </a>
+    </article>
+
+    <!-- Card 3: Hidrogênio verde -->
+    <article class="bg-white p-5 rounded-2xl shadow flex flex-col transition transform hover:scale-105 hover:shadow-xl">
+      <img src="https://i.postimg.cc/c4y55GZJ/clean-hydrogens-iridiu.jpg" 
+           alt="Imagem do novo catalisador de hidrogênio" 
+           class="w-full h-40 object-cover rounded-xl shadow-md mb-4">
+      <h3 class="font-semibold text-lg text-gray-800 mb-2">Catalisador Sustentável de Hidrogênio</h3>
+      <p class="text-sm text-gray-600 flex-grow">
+        Pesquisadores desenvolveram um novo catalisador baseado em irídio, alcançando alta atividade e estabilidade para a produção de hidrogênio verde.
+      </p>
+      <a href="https://phys.org/news/2025-08-hydrogen-iridium-problem-afternoon-megalibrary.html" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="mt-4 inline-block bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg shadow hover:bg-blue-800 transition">
+        Saiba mais →
+      </a>
+    </article>
+
+  </div>
+       </section>
 
   <!-- Linha do tempo -->
-  <section>
-    <h2 class="text-2xl font-bold text-blue-700 mb-4">Linha do Tempo da Ciência</h2>
-    <ul class="space-y-3">
-      <li class="bg-white p-4 rounded-xl shadow">
-        <strong>1665</strong> – Robert Hooke publica "Micrographia".
-      </li>
-      <li class="bg-white p-4 rounded-xl shadow">
-        <strong>1928</strong> – Alexander Fleming descobre a penicilina.
-      </li>
-      <li class="bg-white p-4 rounded-xl shadow">
-        <strong>2012</strong> – Descoberta do bóson de Higgs.
-      </li>
-    </ul>
+  <section class="mb-12 px-4 md:px-0">
+  <h2 class="text-2xl font-bold text-blue-700 mb-6 text-center md:text-left">Linha do Tempo da Ciência</h2>
+  <ul class="relative border-l-2 border-blue-200 ml-4 md:ml-8 space-y-6">
+    
+    <!-- Item 1665 -->
+    <li class="bg-white p-4 rounded-xl shadow flex items-start transition hover:shadow-lg">
+      <span class="flex-shrink-0 w-4 h-4 bg-blue-700 rounded-full mt-1 -ml-6 md:-ml-8"></span>
+      <div>
+        <strong class="text-blue-700">1665</strong> – Robert Hooke publica "Micrographia".
+      </div>
+    </li>
+
+    <!-- Item 1928 -->
+    <li class="bg-white p-4 rounded-xl shadow flex items-start transition hover:shadow-lg">
+      <span class="flex-shrink-0 w-4 h-4 bg-blue-700 rounded-full mt-1 -ml-6 md:-ml-8"></span>
+      <div>
+        <strong class="text-blue-700">1928</strong> – Alexander Fleming descobre a penicilina.
+      </div>
+    </li>
+
+    <!-- Item 2012 -->
+    <li class="bg-white p-4 rounded-xl shadow flex items-start transition hover:shadow-lg">
+      <span class="flex-shrink-0 w-4 h-4 bg-blue-700 rounded-full mt-1 -ml-6 md:-ml-8"></span>
+      <div>
+        <strong class="text-blue-700">2012</strong> – Descoberta do bóson de Higgs.
+      </div>
+    </li>
+
+  </ul>
   </section>
  </main>
   
@@ -131,6 +187,7 @@
   
  </body>
 </html>
+
 
 
 
