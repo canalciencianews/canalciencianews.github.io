@@ -73,18 +73,29 @@
     </section>
 
     <!-- ===================== MAIN ===================== -->
-<main class="bg-gray-100 min-h-screen">
-    <div class="w-full h-screen">
-        <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfmg_D5uI_8u-OlCZ0wdAlCSeP_bH68IfeNuz9NieE-KT4oCw/viewform?embedded=true" 
-            class="w-full h-full"
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0">
-            Carregando…
-        </iframe>
-    </div>
-                         </main>
+ <!-- CONTEÚDO PRINCIPAL -->
+  <main class="max-w-4xl mx-auto p-6">
+    
+    <!-- SEÇÃO DE CONTATO -->
+    <section class="bg-white shadow-lg rounded-2xl p-8 mt-10 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4">Entre em Contato</h2>
+      <p class="text-gray-700 mb-6">
+        Tem dúvidas, sugestões ou quer colaborar com o <span class="font-semibold">Ciência News</span>?  
+        Fale com a gente pelo e-mail abaixo:
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:canalciencianews@gmail.com"
+           class="bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-blue-800 transition">
+          📧 canalciencianews@gmail.com
+        </a>
+        <button onclick="navigator.clipboard.writeText('canalciencianews@gmail.com')"
+           class="bg-gray-200 text-blue-900 font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-300 transition">
+          Copiar E-mail
+        </button>
+      </div>
+    </section>
+
+  </main>
   
   <!-- ===================== RODAPÉ ===================== -->
     <footer>
@@ -104,6 +115,7 @@
     </footer>
  </body>
 </html>
+
 
 
 
