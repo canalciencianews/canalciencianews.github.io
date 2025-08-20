@@ -75,10 +75,44 @@
     <!-- ===================== MAIN ===================== -->
   <main class="p-6 bg-gray-50">
   <!-- Imagem destaque -->
-  <section class="mb-10">
-  <img src="https://i.postimg.cc/wBBMdJ6w/iss072e978997orig.jpg" alt="Fotografia da Lua e da atmosfera terrestre vista da Estação Espacial Internacional" class="rounded-2xl shadow-lg w-full">
-  <p class="text-gray-700 text-sm mt-2">A Lua iluminando o horizonte terrestre, com as camadas da atmosfera em destaque, registradas pela Estação Espacial Internacional.</p>
-  </section>
+  <section class="mb-10 max-w-3xl mx-auto p-4 border rounded-2xl shadow-lg bg-white">
+  <h2 class="text-2xl font-bold text-center mb-4 text-gray-800">Imagem em destaque</h2>
+  
+  <!-- Imagem com trigger do modal -->
+  <div class="flex justify-center">
+    <img src="https://i.postimg.cc/wBBMdJ6w/iss072e978997orig.jpg" 
+         alt="Fotografia da Lua e da atmosfera terrestre vista da Estação Espacial Internacional" 
+         class="rounded-xl shadow-md w-full max-w-2xl cursor-pointer"
+         onclick="openModal()">
+  </div>
+  
+  <!-- Legenda -->
+  <p class="text-gray-700 text-sm mt-3 text-center">
+    A Lua iluminando o horizonte terrestre, com as camadas da atmosfera em destaque, registradas pela Estação Espacial Internacional.
+  </p>
+  <p class="text-gray-500 text-xs mt-1 text-center">Créditos: NASA.gov</p>
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
+  <div class="relative max-w-4xl w-full px-4">
+    <!-- Botão fechar -->
+    <button class="absolute top-4 right-4 text-white text-3xl font-bold" onclick="closeModal()">&times;</button>
+    
+    <img src="https://i.postimg.cc/wBBMdJ6w/iss072e978997orig.jpg" 
+         alt="Imagem ampliada da Lua e atmosfera" 
+         class="rounded-xl shadow-lg w-full">
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById("imageModal").classList.remove("hidden");
+  }
+  function closeModal() {
+    document.getElementById("imageModal").classList.add("hidden");
+  }
+</script>
 
   <!-- Notícias espaciais -->
   <section class="mb-10">
@@ -129,6 +163,7 @@
     </footer>
  </body>
 </html>
+
 
 
 
