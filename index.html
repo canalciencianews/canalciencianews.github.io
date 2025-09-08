@@ -55,7 +55,7 @@
       <!-- Navegação principal (desktop) -->
       <nav class="main-nav" role="navigation" aria-label="Menu principal">
         <ul class="nav-list">
-          <li><a href="#" class="nav-link">Início</a></li>
+          <li><a href="https://canalciencianews.github.io/" class="nav-link">Início</a></li>
           <li><a href="#" class="nav-link">Notícias</a></li>
           <li><a href="#" class="nav-link">Artigos</a></li>
           <li><a href="#" class="nav-link">Sobre</a></li>
@@ -66,19 +66,19 @@
       <!-- Ícones sociais no cabeçalho -->
       <div class="social-icons header-social" aria-hidden="false">
         <!-- Facebook -->
-        <a href="#" class="social-link" aria-label="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="social-link" aria-label="Facebook">
           <i class="fab fa-facebook-f" aria-hidden="true"></i>
         </a>
         <!-- Instagram -->
-        <a href="#" class="social-link" aria-label="Instagram">
+        <a href="https://www.instagram.com/ciencianews1/" class="social-link" aria-label="Instagram">
           <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
         <!-- YouTube -->
-        <a href="#" class="social-link" aria-label="YouTube">
+        <a href="https://www.youtube.com/@CienciaNewsOficial" class="social-link" aria-label="YouTube">
           <i class="fab fa-youtube" aria-hidden="true"></i>
         </a>
         <!-- TikTok -->
-        <a href="#" class="social-link" aria-label="TikTok">
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="social-link" aria-label="TikTok">
           <i class="fab fa-tiktok" aria-hidden="true"></i>
         </a>
         <!-- Kwai: Font Awesome pode não ter um ícone de marca; usamos ícone genérico de vídeo como fallback -->
@@ -100,13 +100,13 @@
 
     <!-- Menu Mobile (escondido por padrão) -->
     <nav id="mobileNav" class="mobile-nav" aria-label="Menu móvel" hidden>
-      <ul class="mobile-nav-list">
-        <li><a href="#" class="mobile-nav-link">Início</a></li>
-        <li><a href="#" class="mobile-nav-link">Notícias</a></li>
-        <li><a href="#" class="mobile-nav-link">Artigos</a></li>
-        <li><a href="#" class="mobile-nav-link">Sobre</a></li>
-        <li><a href="#" class="mobile-nav-link">Contato</a></li>
-      </ul>
+      <ul class="nav-list">
+          <li><a href="https://canalciencianews.github.io/" class="nav-link">Início</a></li>
+          <li><a href="#" class="nav-link">Notícias</a></li>
+          <li><a href="#" class="nav-link">Artigos</a></li>
+          <li><a href="#" class="nav-link">Sobre</a></li>
+          <li><a href="#" class="nav-link">Contato</a></li>
+        </ul>
     </nav>
   </header>
 
@@ -154,35 +154,93 @@
 </script>
 
 
-  <!-- ===========================
-       MAIN (conteúdo principal)
-       - background branco padrão
-       - organizado com classes compatíveis com style.css
-       =========================== -->
-  <main id="mainContent" class="site-main bg-white" role="main">
-    <div class="container main-inner py-8">
-      <!-- Exemplo de estrutura que você pode editar depois -->
-      <section class="latest-news">
-        <h2 class="section-title">Últimas notícias</h2>
-        <p class="lead">Seção pronta para ser preenchida com artigos e cards.</p>
+ <!-- ===========================
+     MAIN (conteúdo principal)
+     - background branco padrão
+     - organizado com classes compatíveis com style.css
+     =========================== -->
+<main id="mainContent" class="site-main bg-white" role="main">
+  <div class="container main-inner py-8">
 
-        <!-- Cards de exemplo (você removerá/editará) -->
-        <div class="cards-grid">
-          <article class="card">
-            <h3 class="card-title">Título da notícia 1</h3>
-            <p class="card-excerpt">Resumo curto da notícia 1...</p>
-            <a class="read-more" href="#">Ler mais</a>
-          </article>
+    <!-- ===========================
+         SEÇÃO DE VÍDEOS E MATÉRIA EM DESTAQUE
+         - Grid responsivo com 3 vídeos
+         - Cada vídeo: título, descrição resumida, botão com ícone YouTube
+         - Matéria em destaque: retângulo bege, imagem à esquerda, texto à direita
+         =========================== -->
 
-          <article class="card">
-            <h3 class="card-title">Título da notícia 2</h3>
-            <p class="card-excerpt">Resumo curto da notícia 2...</p>
-            <a class="read-more" href="#">Ler mais</a>
-          </article>
+    <!-- CDN Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVfG+Y8Vv3wYkXDZ+0EzHn+uHyl25k67zE1eLvBrhrc0XwtKX8p3iK7h7v+Y+DZf0NsQKx/kS4djG7xEX1lKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <section id="videos-e-destaque" class="py-16 bg-gray-50">
+      <!-- GRID DE VÍDEOS -->
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Vídeos Recentes</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <!-- VÍDEO 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/K-ZSYymGixo" title="Cristal do Tempo" frameborder="0" allowfullscreen></iframe>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">CIENTISTAS CRIAM UM CRISTAL DO TEMPO QUE VOCÊ PODE VER A OLHO NU!</h3>
+              <p class="text-gray-600 mb-4">Físicos criam um novo tipo de cristal do tempo visível a olho nu, abrindo possibilidades de armazenamento e experimentos quânticos.</p>
+              <a href="https://youtu.be/K-ZSYymGixo?si=zwEs8bc7_ValJjmf" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+                <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+              </a>
+            </div>
+          </div>
+
+          <!-- VÍDEO 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/uRQcaaXzrbA" title="Buracos Negros Primordiais" frameborder="0" allowfullscreen></iframe>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">ENCONTRAMOS OS BURACOS NEGROS PRIMORDIAIS DE HAWKING OU ESTAMOS ERRADOS SOBRE OS SUPERMASSIVOS?</h3>
+              <p class="text-gray-600 mb-4">Descoberta de buracos negros primordiais desafia nossa compreensão da formação das galáxias e da evolução do universo primitivo.</p>
+              <a href="https://youtu.be/uRQcaaXzrbA?si=kTrLETdmtJz0Y6iK" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+                <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+              </a>
+            </div>
+          </div>
+
+          <!-- VÍDEO 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/mv0EBakXJDo" title="Efeito Schwinger" frameborder="0" allowfullscreen></iframe>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">ALGO SURGE DO NADA! FÍSICOS SIMULAM EFEITO SCHWINGER EM SUPERFLUIDO</h3>
+              <p class="text-gray-600 mb-4">Pesquisadores simulam o efeito Schwinger em superfluido, oferecendo insights sobre fenômenos quânticos e a criação de partículas do nada.</p>
+              <a href="https://youtu.be/mv0EBakXJDo?si=IOQxzI68EYM8tin2" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+                <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+              </a>
+            </div>
+          </div>
+
         </div>
-      </section>
-    </div>
-  </main>
+      </div>
+
+      <!-- MATÉRIA EM DESTAQUE -->
+      <div class="container mx-auto px-4 mt-16">
+        <div class="bg-yellow-100 rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row items-center hover:shadow-xl transition-shadow duration-300">
+
+          <!-- IMAGEM -->
+          <div class="md:w-1/3 w-full h-48 md:h-auto flex-shrink-0">
+            <img src="https://i.postimg.cc/rm0VS7fX/sharks-now-roam-the-op.jpg" alt="Sharks Roam" class="w-full h-full object-cover">
+          </div>
+
+          <!-- TEXTO -->
+          <div class="md:w-2/3 w-full p-6 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-gray-800 mb-3">Os tubarões agora vagam pelo oceano aberto. Mas por 200 milhões de anos, eles viveram apenas perto do fundo do mar.</h3>
+            <p class="text-gray-700 mb-4">Pesquisadores mostram que tubarões continuam a dominar os oceanos há milhões de anos. Descubra como essa espécie adaptou-se às mudanças globais e continua a prosperar.</p>
+            <a href="https://phys.org/news/2025-09-sharks-roam-ocean-million-years.html" target="_blank" class="inline-block px-4 py-1.5 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition w-max">
+              Ler mais
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+</main>
 
   <!-- ===========================
        RODAPÉ (FOOTER)
@@ -194,12 +252,13 @@
       <div class="footer-top">
         <!-- Menus/links rápidos -->
         <nav class="footer-nav" aria-label="Links do rodapé">
-          <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
+          <ul class="nav-list">
+          <li><a href="https://canalciencianews.github.io/" class="nav-link">Início</a></li>
+          <li><a href="#" class="nav-link">Notícias</a></li>
+          <li><a href="#" class="nav-link">Artigos</a></li>
+          <li><a href="#" class="nav-link">Sobre</a></li>
+          <li><a href="#" class="nav-link">Contato</a></li>
+        </ul>
         </nav>
 
         <!-- Contato / email -->
@@ -208,14 +267,31 @@
         </div>
 
         <!-- Ícones sociais no rodapé (mesmos ícones do cabeçalho) -->
-        <div class="social-icons footer-social" aria-hidden="false">
-          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-          <a href="#" class="social-link" aria-label="Kwai (ícone genérico)"><i class="fa-solid fa-video"></i></a>
-          <a href="https://wa.me/5599999999999" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
+        <div class="social-icons header-social" aria-hidden="false">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ciencianews1/" class="social-link" aria-label="Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@CienciaNewsOficial" class="social-link" aria-label="YouTube">
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="social-link" aria-label="TikTok">
+          <i class="fab fa-tiktok" aria-hidden="true"></i>
+        </a>
+        <!-- Kwai: Font Awesome pode não ter um ícone de marca; usamos ícone genérico de vídeo como fallback -->
+        <a href="#" class="social-link" aria-label="Kwai (ícone genérico)">
+          <i class="fa-solid fa-video" aria-hidden="true"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5599999999999" class="social-link" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
       </div>
 
       <div class="footer-bottom">
