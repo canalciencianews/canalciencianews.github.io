@@ -240,53 +240,51 @@
   <div id="feed" class="grid gap-6 md:grid-cols-3 sm:grid-cols-1"></div>
     </section>
     
-  <!-- ===========================
+ <!-- ===========================
      SEÇÃO DE VÍDEOS E MATÉRIA EM DESTAQUE
      - Grid responsivo com 3 vídeos
      - Cada vídeo: título, descrição resumida, botão com ícone YouTube
-     - Matéria em destaque: retângulo bege, imagem à esquerda, texto à direita
      =========================== -->
 
 <!-- CDN Font Awesome para ícones -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVfG+Y8Vv3wYkXDZ+0EzHn+uHyl25k67zE1eLvBrhrc0XwtKX8p3iK7h7v+Y+DZf0NsQKx/kS4djG7xEX1lKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <section id="videos-e-destaque" class="py-16 bg-gray-50">
-  <!-- GRID DE VÍDEOS -->
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Vídeos Recentes</h2>
     <div class="grid md:grid-cols-3 gap-8">
 
-      <!-- VÍDEO 1 (Cristal do Tempo) -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/K-ZSYymGixo" title="Cristal do Tempo" frameborder="0" allowfullscreen></iframe>
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">CIENTISTAS CRIAM UM CRISTAL DO TEMPO QUE VOCÊ PODE VER A OLHO NU!</h3>
-          <p class="text-gray-600 mb-4">Físicos criam um novo tipo de cristal do tempo visível a olho nu, abrindo possibilidades de armazenamento e experimentos quânticos.</p>
-          <a href="https://youtu.be/K-ZSYymGixo?si=zwEs8bc7_ValJjmf" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="fab fa-youtube mr-2"></i> Assista no YouTube
-          </a>
-        </div>
-      </div>
-
-      <!-- VÍDEO 2 (NASA Viking 1976) -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/dlGDojJp2uQ" title="Viking 1 e Viking 2 em Marte" frameborder="0" allowfullscreen></iframe>
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">AS PRIMEIRAS SONDAS DA NASA POUSAM EM MARTE: VIKING 1 E VIKING 2 (1976)</h3>
-          <p class="text-gray-600 mb-4">Em 1976, a NASA fez história ao pousar em Marte suas primeiras sondas: a Viking 1 e a Viking 2, abrindo caminho para a exploração do planeta vermelho.</p>
-          <a href="https://youtu.be/dlGDojJp2uQ?si=eADHsyeHKjf_7tGE" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="fab fa-youtube mr-2"></i> Assista no YouTube
-          </a>
-        </div>
-      </div>
-
-      <!-- VÍDEO 3 (Sensores Quânticos) -->
+      <!-- CARD 1 -->
       <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
         <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/kaTh4qwc6YQ" title="Sensores Quânticos" frameborder="0" allowfullscreen></iframe>
         <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">SENSORES QUÂNTICOS MAIS PRECISOS DO MUNDO FORAM CRIADOS!</h3>
-          <p class="text-gray-600 mb-4">A física quântica sob condições extremas revela uma revolução: sensores capazes de resistir a pressões intensas e desvendar segredos da matéria, geologia e astronomia.</p>
-          <a href="https://youtu.be/kaTh4qwc6YQ?si=0iF7Ik6lg4m7dw8z" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">SENSORES QUÂNTICOS CAPAZES DE MEDIR A PRESSÃO NO NÚCLEO DA TERRA FORAM CRIADOS</h3>
+          <p class="text-gray-600 mb-4">Observar efeitos quânticos em materiais já é difícil. Agora, imagine fazer isso quando o material está sendo esmagado sob pressões trinta mil vezes maiores que a pressão atmosférica da Terra. O problema é que sensores comuns simplesmente não aguentam esse nível de estresse. Mas isso mudou com uma inovação liderada por Chong Zu, físico da Universidade de Washington em St. Louis, nos Estados Unidos.</p>
+          <a href="https://youtu.be/kaTh4qwc6YQ?si=IK99_qEAhqz8jQiz" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+            <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+          </a>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/dlGDojJp2uQ" title="Vida em Marte" frameborder="0" allowfullscreen></iframe>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">NASA PODE TER DESTRUÍDO ACIDENTALMENTE O PRIMEIRO SINAL DE VIDA EM MARTE - HÁ 50 ANOS!</h3>
+          <p class="text-gray-600 mb-4">As sondas Viking realizaram quatro experimentos principais. O mais importante deles foi o Cromatógrafo a Gás com Espectrômetro de Massas, que tinha como missão procurar moléculas orgânicas, os blocos básicos da vida. Para surpresa de todos, o resultado foi negativo. Nenhum sinal de orgânicos detectado. Na época, a conclusão foi: Marte é hostil demais para a vida.</p>
+          <a href="https://youtu.be/dlGDojJp2uQ?si=i8Nekc-kilY4iUka" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+            <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+          </a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <iframe class="w-full h-48 md:h-56" src="https://www.youtube.com/embed/ken15l6Wmsc" title="Partículas como ondas" frameborder="0" allowfullscreen></iframe>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">PARTÍCULAS DO TAMANHO DE VÍRUS SE COMPORTAM COMO ONDAS - PELA PRIMEIRA VEZ!</h3>
+          <p class="text-gray-600 mb-4">A mecânica quântica diz que não só os átomos, mas também partículas maiores, como nanopartículas do tamanho de um vírus, podem agir como ondas. Isso é descrito pela chamada função de onda, que é como um mapa mostrando onde a partícula provavelmente estará.</p>
+          <a href="https://youtu.be/ken15l6Wmsc?si=vcYhGxfpCnjnx-iO" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
             <i class="fab fa-youtube mr-2"></i> Assista no YouTube
           </a>
         </div>
