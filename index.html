@@ -271,29 +271,27 @@
   </section>
 
   <!-- Vídeo incorporado -->
-  <div class="mt-6">
-    <div class="aspect-w-16 aspect-h-9">
-      <iframe 
-        class="w-full h-96 rounded-xl shadow-md"
-        src="https://www.youtube.com/embed/hF_4n3e5xuM?si=JBq4bBpxZY0gauJs" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
+<div class="mt-6 relative w-full" style="padding-top:56.25%;"> <!-- 16:9 -->
+  <iframe 
+    class="absolute top-0 left-0 w-full h-full rounded-xl shadow-md"
+    src="https://www.youtube.com/embed/hF_4n3e5xuM?si=JBq4bBpxZY0gauJs" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
 
-  <!-- Botão para assistir no YouTube -->
-  <div class="mt-6 flex justify-center">
-    <a href="https://youtu.be/hF_4n3e5xuM?si=JBq4bBpxZY0gauJs" target="_blank" 
-       class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-        <path d="M19.615 3.184c-1.604-.184-8.031-.184-8.031-.184s-6.428 0-8.031.184C2.356 3.37 1.37 4.356 1.184 5.984 1 7.588 1 12 1 12s0 4.412.184 6.016c.186 1.628 1.172 2.615 2.369 2.8 1.603.184 8.031.184 8.031.184s6.427 0 8.031-.184c1.197-.185 2.183-1.172 2.369-2.8.184-1.604.184-6.016.184-6.016s0-4.412-.184-6.016c-.186-1.628-1.172-2.615-2.369-2.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/>
-      </svg>
-      Assistir no YouTube
-    </a>
-  </div>
+<!-- Botão para assistir no YouTube -->
+<div class="mt-6 flex justify-center">
+  <a href="https://youtu.be/hF_4n3e5xuM?si=JBq4bBpxZY0gauJs" target="_blank" 
+     class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+      <path d="M19.615 3.184c-1.604-.184-8.031-.184-8.031-.184s-6.428 0-8.031.184C2.356 3.37 1.37 4.356 1.184 5.984 1 7.588 1 12 1 12s0 4.412.184 6.016c.186 1.628 1.172 2.615 2.369 2.8 1.603.184 8.031.184 8.031.184s6.427 0 8.031-.184c1.197-.185 2.183-1.172 2.369-2.8.184-1.604.184-6.016.184-6.016s0-4.412-.184-6.016c-.186-1.628-1.172-2.615-2.369-2.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/>
+    </svg>
+    Assistir no YouTube
+  </a>
+</div>
 </article>
 
     <!-- ===== FEED PHYS.ORG ===== -->
