@@ -39,15 +39,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- Font Awesome (ícones de redes sociais) -->
-  <!-- Usamos a CDN de Font Awesome para os ícones de rodapé e cabeçalho -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pb... (CDN integrity omitted)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Tailwind CSS (CDN) - utilitários primeiro -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind CSS (CDN) - gerar utilitários; colocamos antes do style.css para que style.css possa sobrepor quando necessário -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome (ícones) - depois do Tailwind -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Arquivo de estilo custom (style.css) - vai depois do Tailwind para evitar conflitos indesejados -->
-  <link rel="stylesheet" href="style.css" />
+<!-- Arquivo custom (style.css) - por último -->
+<link rel="stylesheet" href="style.css" />
 
   <!-- Comentário: scripts (script.js) colocados no final do body -->
 </head>
