@@ -451,56 +451,71 @@
        - cor: preto
        - contém: menu simples, e-mail, ícones sociais, copyright
        =========================== -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-top">
-        <!-- Menus/links rápidos -->
-        <nav class="footer-nav" aria-label="Links do rodapé">
-          <ul class="nav-list">
-          <li><a href="https://canalciencianews.github.io/" class="nav-link">Início</a></li>
-          <li><a href="#" class="nav-link">Notícias</a></li>
-          <li><a href="#" class="nav-link">Contato</a></li>
+  <footer class="site-footer bg-gray-900 text-white py-6" role="contentinfo">
+  <div class="container footer-inner mx-auto px-4">
+    
+    <div class="footer-top flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+      <!-- Menus/links rápidos -->
+      <nav class="footer-nav mb-4 md:mb-0" aria-label="Links do rodapé">
+        <ul class="nav-list flex flex-wrap gap-4">
+          <li><a href="https://canalciencianews.github.io/" class="nav-link hover:text-orange-400">Início</a></li>
+          <li><a href="#" class="nav-link hover:text-orange-400">Notícias</a></li>
+          <li><a href="#" class="nav-link hover:text-orange-400">Contato</a></li>
         </ul>
-        </nav>
+      </nav>
 
-        <!-- Contato / email -->
-        <div class="footer-contact">
-          <p>Contato: <a href="mailto:canalciencianews@gmail.com">canalciencianews@gmail.com</a></p>
-        </div>
-
-        <!-- Ícones sociais no rodapé (mesmos ícones do cabeçalho) -->
-        <div class="social-icons header-social" aria-hidden="false">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="social-link" aria-label="Facebook">
-          <i class="fab fa-facebook-f" aria-hidden="true"></i>
-        </a>
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/ciencianews1/" class="social-link" aria-label="Instagram">
-          <i class="fab fa-instagram" aria-hidden="true"></i>
-        </a>
-        <!-- YouTube -->
-        <a href="https://www.youtube.com/@CienciaNewsOficial" class="social-link" aria-label="YouTube">
-          <i class="fab fa-youtube" aria-hidden="true"></i>
-        </a>
-        <!-- TikTok -->
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="social-link" aria-label="TikTok">
-          <i class="fab fa-tiktok" aria-hidden="true"></i>
-        </a>
-        <!-- Kwai: Font Awesome pode não ter um ícone de marca; usamos ícone genérico de vídeo como fallback -->
-        <a href="https://www.kwai.com/@CanalCienciaNews" class="social-link" aria-label="Kwai (ícone genérico)">
-          <i class="fa-solid fa-video" aria-hidden="true"></i>
-        </a>
-        <!-- WhatsApp -->
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="social-link" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i>
-        </a>
+      <!-- Contato / email -->
+      <div class="footer-contact mb-4 md:mb-0">
+        <p>Contato: 
+          <a href="mailto:canalciencianews@gmail.com" class="hover:text-orange-400">
+            canalciencianews@gmail.com
+          </a>
+        </p>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> Ciência News — Uma pílula com notícias sobre ciências. Todos os direitos reservados.</p>
+      <!-- Ícones sociais -->
+      <div class="social-icons header-social flex gap-4 text-xl">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="social-link hover:text-orange-400" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/ciencianews1/" class="social-link hover:text-orange-400" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" class="social-link hover:text-orange-400" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="social-link hover:text-orange-400" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.kwai.com/@CanalCienciaNews" class="social-link hover:text-orange-400" aria-label="Kwai">
+          <i class="fa-solid fa-video"></i>
+        </a>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="social-link hover:text-orange-400" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
     </div>
-  </footer>
+
+    <!-- Rodapé inferior com contador -->
+    <div class="footer-bottom flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-4">
+      <p class="text-sm mb-2 md:mb-0">&copy; <span id="year"></span> Ciência News — Uma pílula com notícias sobre ciências. Todos os direitos reservados.</p>
+      
+      <!-- Card do contador -->
+      <div class="bg-blue-800 px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
+        <span class="text-sm font-semibold">Visualizações:</span>
+        <a title="Contador de Visitas do MegaContador" href="https://megacontador.com.br/">
+          <img src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif" 
+               alt="Contador de visitas" 
+               class="h-6 rounded">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+          </script>
 
   <!-- ===========================
        SCRIPTS
