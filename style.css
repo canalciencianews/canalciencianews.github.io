@@ -238,12 +238,20 @@ body {
 
 .footer-top {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /* mobile empilha */
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;   /* desktop em linha */
+    align-items: center;
+  }
+}
+
+/* Nav e links */
 .footer-nav ul {
   list-style: none;
   padding: 0;
@@ -264,11 +272,16 @@ body {
   text-decoration: underline;
 }
 
+/* Footer bottom */
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.04);
   padding-top: 0.75rem;
   text-align: center;
   font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Footer social (garante visibilidade dos ícones) */
@@ -279,13 +292,13 @@ body {
 }
 
 .footer-social .social-link {
-  display: inline-flex;       /* garante visibilidade */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  color: #e5e7eb;             /* cor clara sobre fundo preto */
+  color: #e5e7eb;
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -295,6 +308,22 @@ body {
   background: rgba(255,255,255,0.06);
 }
 
+/* Ajustes para o card de visualizações */
+.footer-card-views {
+  background: #1e40af; /* bg-blue-800 */
+  color: #fff;          /* texto branco */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-card-views img {
+  height: 1.5rem;
+  border-radius: 0.25rem;
+}
 /* --------------------------
    RESPONSIVIDADE
    -------------------------- */
@@ -331,4 +360,5 @@ a:focus-visible {
   outline-offset: 2px;
   border-radius: 6px;
 }
+
 
