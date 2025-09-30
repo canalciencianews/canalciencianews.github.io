@@ -11,166 +11,165 @@
   <title>Ciência News — Uma pílula com notícias sobre ciências</title>
   <meta name="description" content="Ciência News — Uma pílula com notícias sobre ciências. Atualizações rápidas, confiáveis e curtas sobre ciência." />
 
-<!-- Canonical -->
-<link rel="canonical" href="https://portalciencianews.com.br/" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://portalciencianews.com.br/" />
 
-<!-- Open Graph / Social Sharing -->
-<meta property="og:site_name" content="Ciência News" />
-<meta property="og:title" content="Ciência News — Uma pílula com notícias sobre ciências" />
-<meta property="og:description" content="Atualizações rápidas, confiáveis e curtas sobre ciência." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://portalciencianews.com.br/" />
-<meta property="og:image" content="thumbnail.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Ciência News — Uma pílula com notícias sobre ciências" />
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:site_name" content="Ciência News" />
+  <meta property="og:title" content="Ciência News — Uma pílula com notícias sobre ciências" />
+  <meta property="og:description" content="Atualizações rápidas, confiáveis e curtas sobre ciência." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portalciencianews.com.br/" />
+  <meta property="og:image" content="thumbnail.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ciência News — Uma pílula com notícias sobre ciências" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@CienciaNewsOficial" />
-<meta name="twitter:title" content="Ciência News — Uma pílula com notícias sobre ciências" />
-<meta name="twitter:description" content="Atualizações rápidas, confiáveis e curtas sobre ciência." />
-<meta name="twitter:image" content="thumbnail.png" />
-<meta name="twitter:image:alt" content="Ciência News — Uma pílula com notícias sobre ciências" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@CienciaNewsOficial" />
+  <meta name="twitter:title" content="Ciência News — Uma pílula com notícias sobre ciências" />
+  <meta name="twitter:description" content="Atualizações rápidas, confiáveis e curtas sobre ciência." />
+  <meta name="twitter:image" content="thumbnail.png" />
+  <meta name="twitter:image:alt" content="Ciência News — Uma pílula com notícias sobre ciências" />
 
-
-
+  <!-- Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Ciência News",
+    "url": "https://portalciencianews.com.br/",
+    "logo": "https://canalciencianews.github.io/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100079774894307",
+      "https://www.instagram.com/ciencianews1/",
+      "https://www.youtube.com/@CienciaNewsOficial",
+      "https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1",
+      "https://www.kwai.com/@CanalCienciaNews",
+      "https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "canalciencianews@gmail.com",
+      "contactType": "customer support"
+    }
+  }
+  </script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- Tailwind CSS (CDN) - utilitários primeiro -->
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Font Awesome (ícones) - depois do Tailwind -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-<!-- Arquivo custom (style.css) - por último -->
-<link rel="stylesheet" href="style.css" />
-
-  <!-- Comentário: scripts (script.js) colocados no final do body -->
+  <!-- Swiper CSS (Hero Carrossel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body class="antialiased text-gray-900">
+<body class="antialiased text-gray-900 bg-white">
 
-  <!-- ===========================
-       CABEÇALHO (HEADER)
-       - classe: site-header (estilizada em style.css)
-       - contém: logotipo, menu (desktop), botão mobile, ícones sociais
-       =========================== -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
+  <!-- =========================== HEADER =========================== -->
+  <header class="w-full bg-[#0b2545] text-white shadow" role="banner">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
       <!-- Logo -->
-      <a href="index.html" class="logo-link" aria-label="Ciência News — Início">
-        <!-- arquivo de logo: logo.png -->
-        <img src="logo.png" alt="Logotipo Ciência News" class="logo" />
+      <a href="index.html" class="flex items-center gap-2" aria-label="Ciência News — Início">
+        <img src="logo.png" alt="Logotipo Ciência News" class="h-10 w-auto" />
+        <span class="font-bold text-lg tracking-tight">Ciência News</span>
       </a>
 
-      <!-- Navegação principal (desktop) -->
-      <nav class="main-nav" role="navigation" aria-label="Menu principal">
-        <ul class="nav-list">
-          <li><a href="https://canalciencianews.github.io/" class="nav-link">Início</a></li>
-          <li><a href="#" class="nav-link">Contato</a></li>
-        </ul>
+      <!-- Navegação Principal (desktop) -->
+      <nav class="hidden md:flex gap-6" aria-label="Menu principal">
+        <a href="https://canalciencianews.github.io/" class="hover:text-orange-400 transition font-semibold">Início</a>
+        <a href="#" class="hover:text-orange-400 transition font-semibold">Contato</a>
       </nav>
 
-      <!-- Ícones sociais no cabeçalho -->
-      <div class="social-icons header-social" aria-hidden="false">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="social-link" aria-label="Facebook">
-          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+      <!-- Ícones Sociais -->
+      <div class="hidden md:flex gap-4 text-xl items-center">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-orange-400" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
         </a>
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/ciencianews1/" class="social-link" aria-label="Instagram">
-          <i class="fab fa-instagram" aria-hidden="true"></i>
+        <a href="https://www.instagram.com/ciencianews1/" class="hover:text-orange-400" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
         </a>
-        <!-- YouTube -->
-        <a href="https://www.youtube.com/@CienciaNewsOficial" class="social-link" aria-label="YouTube">
-          <i class="fab fa-youtube" aria-hidden="true"></i>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-orange-400" aria-label="YouTube">
+          <i class="bi bi-youtube"></i>
         </a>
-        <!-- TikTok -->
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="social-link" aria-label="TikTok">
-          <i class="fab fa-tiktok" aria-hidden="true"></i>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-orange-400" aria-label="TikTok">
+          <i class="bi bi-tiktok"></i>
         </a>
-        <!-- Kwai: Font Awesome pode não ter um ícone de marca; usamos ícone genérico de vídeo como fallback -->
-        <a href="https://www.kwai.com/@CanalCienciaNews" class="social-link" aria-label="Kwai (ícone genérico)">
-          <i class="fa-solid fa-video" aria-hidden="true"></i>
+        <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-orange-400" aria-label="Kwai (ícone genérico)">
+          <i class="bi bi-camera-video"></i>
         </a>
-        <!-- WhatsApp -->
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="social-link" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-orange-400" aria-label="WhatsApp">
+          <i class="bi bi-whatsapp"></i>
         </a>
       </div>
 
-      <!-- Botão toggle do menu mobile -->
-<button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
-  <span class="sr-only">Abrir menu</span>
-  ☰  <!-- ícone visível para o hamburguer -->
-</button>
+      <!-- Botão Mobile -->
+      <button class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-white" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="sr-only">Abrir menu</span>
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
 
-    <!-- Menu Mobile (escondido por padrão) -->
-    <nav id="mobileNav" class="mobile-nav" aria-label="Menu móvel" hidden>
-      <ul class="nav-list">
-          <li><a href="https://canalciencianews.github.io/" class="nav-link">Início</a></li>
-          <li><a href="#" class="nav-link">Notícias</a></li>
-          <li><a href="#" class="nav-link">Contato</a></li>
-        </ul>
+    <!-- Menu Mobile -->
+    <nav id="mobileNav" class="md:hidden bg-[#0b2545] px-4 py-2 space-y-2 hidden" aria-label="Menu móvel">
+      <a href="https://canalciencianews.github.io/" class="block text-white hover:text-orange-400 font-semibold">Início</a>
+      <a href="#" class="block text-white hover:text-orange-400 font-semibold">Notícias</a>
+      <a href="#" class="block text-white hover:text-orange-400 font-semibold">Contato</a>
+      <div class="flex gap-4 text-xl pt-2">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-orange-400" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/ciencianews1/" class="hover:text-orange-400" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-orange-400" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-orange-400" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-orange-400" aria-label="Kwai"><i class="bi bi-camera-video"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-orange-400" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
     </nav>
   </header>
 
-<!-- ===========================
-     HERO (Carrossel responsivo com Swiper.js)
-     - colada ao cabeçalho (sem margem/espaço)
-     - mantém proporção 1920x350 (~5.48:1)
-     - otimizado para mobile
-     =========================== -->
-
-<!-- CDN Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-<section id="hero" class="hero relative inset-x-0 z-20">
-  <div class="swiper w-full" style="aspect-ratio: 1920 / 350;">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="hero/1.png" alt="Banner 1" class="w-full h-full object-cover" />
-      </div>
-      <div class="swiper-slide">
-        <img src="hero/2.png" alt="Banner 2" class="w-full h-full object-cover" />
-      </div>
-      <div class="swiper-slide">
-        <img src="hero/3.png" alt="Banner 3" class="w-full h-full object-cover" />
-      </div>
-      <div class="swiper-slide">
-        <img src="hero/4.png" alt="Banner 4" class="w-full h-full object-cover" />
+  <!-- =========================== HERO CARROSSEL (Swiper) =========================== -->
+  <section class="relative w-full z-10">
+    <div class="swiper w-full" style="aspect-ratio: 1920/350;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="hero/1.png" alt="Banner 1" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="hero/2.png" alt="Banner 2" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="hero/3.png" alt="Banner 3" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="hero/4.png" alt="Banner 4" class="w-full h-full object-cover" />
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new Swiper('.swiper', {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+        });
+      });
+    </script>
+  </section>
 
-<!-- CDN Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  // Inicialização do Swiper com autoplay 5s
-  const heroSwiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-      delay: 5000, // 5 segundos
-      disableOnInteraction: false,
-    },
-  });
-</script>
-
-
- <!-- ===========================
-     MAIN (conteúdo principal)
-     - background branco padrão
-     - organizado com classes compatíveis com style.css
-     =========================== -->
-<main id="mainContent" class="site-main bg-white" role="main">
-  <div class="container main-inner py-8">
-
+  <!-- =========================== MAIN AREA =========================== -->
+  <main id="mainContent" class="site-main min-h-[400px] bg-white">
+    
 
 <!-- ======================= -->
 <!-- Cards Horizontais dos Artigos -->
@@ -356,138 +355,53 @@
 <!-- CDN Font Awesome para ícones -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVfG+Y8Vv3wYkXDZ+0EzHn+uHyl25k67zE1eLvBrhrc0XwtKX8p3iK7h7v+Y+DZf0NsQKx/kS4djG7xEX1lKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  </main>
 
-  </div>
-</main>
-
-
-  <!-- ===========================
-       RODAPÉ (FOOTER)
-       - cor: preto
-       - contém: menu simples, e-mail, ícones sociais, copyright
-       =========================== -->
-  <footer class="site-footer bg-gray-900 text-white py-6" role="contentinfo">
-  <div class="container footer-inner mx-auto px-4">
-    
-    <div class="footer-top flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-      <!-- Menus/links rápidos -->
-      <nav class="footer-nav mb-4 md:mb-0" aria-label="Links do rodapé">
-        <ul class="nav-list flex flex-wrap gap-4">
-          <li><a href="https://canalciencianews.github.io/" class="nav-link hover:text-orange-400">Início</a></li>
-          <li><a href="#" class="nav-link hover:text-orange-400">Notícias</a></li>
-          <li><a href="#" class="nav-link hover:text-orange-400">Contato</a></li>
-        </ul>
-      </nav>
-
-      <!-- Contato / email -->
-      <div class="footer-contact mb-4 md:mb-0">
-        <p>Contato: 
-          <a href="mailto:canalciencianews@gmail.com" class="hover:text-orange-400">
-            canalciencianews@gmail.com
+  <!-- =========================== FOOTER =========================== -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-6">
+        <!-- Menu Footer -->
+        <nav class="mb-4 md:mb-0" aria-label="Links do rodapé">
+          <ul class="flex flex-wrap gap-6">
+            <li><a href="https://canalciencianews.github.io/" class="hover:text-orange-400 font-semibold">Início</a></li>
+            <li><a href="#" class="hover:text-orange-400 font-semibold">Notícias</a></li>
+            <li><a href="#" class="hover:text-orange-400 font-semibold">Contato</a></li>
+          </ul>
+        </nav>
+        <!-- Contato -->
+        <div class="mb-4 md:mb-0">
+          <p>Contato: <a href="mailto:canalciencianews@gmail.com" class="hover:text-orange-400">canalciencianews@gmail.com</a></p>
+        </div>
+        <!-- Social Icons -->
+        <div class="flex gap-4 text-xl">
+          <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-orange-400" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/ciencianews1/" class="hover:text-orange-400" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-orange-400" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-orange-400" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-orange-400" aria-label="Kwai"><i class="bi bi-camera-video"></i></a>
+          <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-orange-400" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-4 gap-4">
+        <p class="text-sm">&copy; <span id="year"></span> Ciência News — Uma pílula com notícias sobre ciências. Todos os direitos reservados.</p>
+        <div class="bg-blue-800 px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
+          <span class="text-sm font-semibold">Visualizações:</span>
+          <a title="Contador de Visitas do MegaContador" href="https://megacontador.com.br/">
+            <img src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif" 
+                 alt="Contador de visitas" 
+                 class="h-6 rounded">
           </a>
-        </p>
-      </div>
-
-      <!-- Ícones sociais -->
-      <div class="social-icons header-social flex gap-4 text-xl">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="social-link hover:text-orange-400" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/ciencianews1/" class="social-link hover:text-orange-400" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" class="social-link hover:text-orange-400" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="social-link hover:text-orange-400" aria-label="TikTok">
-          <i class="fab fa-tiktok"></i>
-        </a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" class="social-link hover:text-orange-400" aria-label="Kwai">
-          <i class="fa-solid fa-video"></i>
-        </a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="social-link hover:text-orange-400" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Rodapé inferior com contador -->
-    <div class="footer-bottom flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-4">
-      <p class="text-sm mb-2 md:mb-0">&copy; <span id="year"></span> Ciência News — Uma pílula com notícias sobre ciências. Todos os direitos reservados.</p>
-      
-      <!-- Card do contador -->
-      <div class="bg-blue-800 px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
-        <span class="text-sm font-semibold">Visualizações:</span>
-        <a title="Contador de Visitas do MegaContador" href="https://megacontador.com.br/">
-          <img src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif" 
-               alt="Contador de visitas" 
-               class="h-6 rounded">
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-          </script>
-
-  <!-- ===========================
-       SCRIPTS
-       - script.js: controla o menu mobile e pequenos comportamentos
-       =========================== -->
+  <!-- =========================== SCRIPTS =========================== -->
   <script src="script.js"></script>
-  <!-- Pequena inicialização inline (coloca o ano automaticamente) -->
   <script>
     // seta o ano atual no rodapé
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
-  <!-- ===== JS FEED PHYS.ORG ===== -->
-   <script>
-  const feedUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://phys.org/rss-feed/science-news/archaeology-fossils/";
-
-  async function traduzir(texto) {
-    try {
-      const res = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=pt&dt=t&q=" + encodeURIComponent(texto));
-      const data = await res.json();
-      return data[0][0][0];
-    } catch (e) {
-      return texto; // fallback para inglês
-    }
-  }
-
-  async function carregarFeed() {
-    const res = await fetch(feedUrl);
-    const data = await res.json();
-    const posts = data.items.slice(0, 3);
-
-    const container = document.getElementById("feed");
-    container.innerHTML = "";
-
-    for (const post of posts) {
-      const tituloTrad = await traduzir(post.title);
-      const descTrad = await traduzir(post.description.replace(/<[^>]+>/g, "").substring(0, 150) + "...");
-
-      const card = `
-        <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
-          <img src="${post.thumbnail || 'https://via.placeholder.com/400x200'}" alt="${tituloTrad}" class="w-full h-48 object-cover">
-          <div class="p-4 flex flex-col flex-grow">
-            <h2 class="text-lg font-semibold mb-2">${tituloTrad}</h2>
-            <p class="text-gray-600 flex-grow">${descTrad}</p>
-            <a href="${post.link}" target="_blank" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-              Ler mais
-            </a>
-          </div>
-        </div>
-      `;
-      container.innerHTML += card;
-    }
-  }
-
-  carregarFeed();
-                                                                                         </script>
-
-  
 </body>
 </html>
