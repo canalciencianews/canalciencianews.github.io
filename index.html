@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -174,9 +173,47 @@
 
 
 <!-- ======================= -->
-<!-- Card Horizontal do Artigo -->
+<!-- Cards Horizontais dos Artigos -->
 <!-- ======================= -->
-<section class="max-w-[90rem] mx-auto px-6 my-10">
+<section class="max-w-[90rem] mx-auto px-6 my-10 space-y-10">
+
+  <!-- Card mais recente: Lua -->
+  <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+
+    <!-- Imagem 16:9 à esquerda -->
+    <div class="md:w-1/2 flex-shrink-0">
+      <div class="w-full aspect-w-16 aspect-h-9">
+        <img
+          src="https://scx1.b-cdn.net/csz/news/800a/2025/far-side-of-the-moon-m.jpg"
+          alt="Comparação: lado visível e lado oculto da Lua (imagem Clementine / NASA)"
+          class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- Conteúdo à direita -->
+    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-bold text-[#071834] mb-4">
+          Lua de duas faces: novas amostras sugerem que o lado oculto foi mais frio
+        </h2>
+        <p class="text-gray-700 mb-6">
+          Fragmentos da missão Chang’e-6 indicam que o interior do lado oculto da Lua esfriou mais rápido, 
+          revelando assimetrias térmicas profundas na formação do satélite.
+        </p>
+      </div>
+      <div>
+        <a href="https://portalciencianews.com.br/lua-duas-faces-mais-frio.html" 
+           class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
+          Leia mais
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Card anterior: fóton -->
   <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
 
     <!-- Imagem 16:9 à esquerda -->
@@ -210,8 +247,8 @@
     </div>
 
   </div>
-</section>
 
+</section>
 
     <section id="videos-e-destaque" class="py-16 bg-gray-50">
   <div class="container mx-auto px-4">
