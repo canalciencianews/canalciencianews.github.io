@@ -80,8 +80,8 @@
 
     <!-- Navegação principal (desktop) -->
     <nav class="hidden md:flex space-x-6 font-medium" role="navigation" aria-label="Menu principal">
-      <a href="https://canalciencianews.github.io/" class="hover:text-orange-400 transition">Início</a>
-      <a href="#" class="hover:text-orange-400 transition">Contato</a>
+      <a href="https://portalciencianews.com.br" class="hover:text-orange-400 transition">Início</a>
+      <a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-orange-400 transition">Arquivos</a>
     </nav>
 
     <!-- Ícones sociais -->
@@ -115,8 +115,8 @@
 
   <!-- Menu Mobile -->
   <nav id="mobileNav" class="hidden md:hidden bg-[#0b2545] px-6 py-4 space-y-2" aria-label="Menu móvel">
-    <a href="https://canalciencianews.github.io/" class="block hover:text-orange-400">Início</a>
-    <a href="#" class="block hover:text-orange-400">Notícias</a>
+    <a href="https://portalciencianews.com.br" class="block hover:text-orange-400">Início</a>
+    <a href="https://portalciencianews.com.br/post/arquivos.html" class="block hover:text-orange-400">Arquivos</a>
     <a href="#" class="block hover:text-orange-400">Contato</a>
 
     <div class="flex space-x-4 text-xl pt-2">
@@ -129,6 +129,41 @@
     </div>
   </nav>
     </header>
+  <!-- HERO CARROSSEL -->
+  <section class="relative w-full z-10">
+    <div class="swiper w-full" style="aspect-ratio: 1920/350;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="hero/1.png" alt="Banner 1" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="hero/2.png" alt="Banner 2" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="hero/3.png" alt="Banner 3" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="hero/4.png" alt="Banner 4" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new Swiper('.swiper', {
+          loop: true,
+          autoplay: { delay: 5000, disableOnInteraction: false },
+        });
+        // Mobile nav script
+        const navToggle = document.getElementById('navToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        navToggle.addEventListener('click', function () {
+          mobileNav.classList.toggle('hidden');
+          navToggle.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
+        });
+      });
+    </script>
+  </section>
 <main>
 <!-- ======= Parte: Imagem de destaque ======= -->
 <figure class="mb-8 w-full overflow-hidden rounded-xl shadow-sm max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8">
@@ -263,8 +298,8 @@
       <!-- Menus/links rápidos -->
       <nav class="footer-nav mb-4 md:mb-0" aria-label="Links do rodapé">
         <ul class="nav-list flex flex-wrap gap-4">
-          <li><a href="https://canalciencianews.github.io/" class="nav-link hover:text-orange-400">Início</a></li>
-          <li><a href="#" class="nav-link hover:text-orange-400">Notícias</a></li>
+          <li><a href="https://portalciencianews.com.br" class="nav-link hover:text-orange-400">Início</a></li>
+          <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="nav-link hover:text-orange-400">Arquivos</a></li>
           <li><a href="#" class="nav-link hover:text-orange-400">Contato</a></li>
         </ul>
       </nav>
