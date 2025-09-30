@@ -317,6 +317,99 @@ ORCA DEVORA TUBARÃO BRANCO: É O PRIMEIRO REGISTRO AÉREO DA CAÇADA!!!</h3>
     </div>
   </section>
 
+    <!-- AREA DE FORMULARIO DE CONTATOS -->
+    <!-- ======================= -->
+<!-- Section Formulário Contato -->
+<!-- ======================= -->
+<section id="contato" class="max-w-[90rem] mx-auto px-6 py-12">
+  <h2 class="text-2xl font-bold mb-6">Entre em Contato</h2>
+  
+  <form id="contactForm" class="space-y-4">
+    <div>
+      <label for="nome" class="block font-medium">Nome</label>
+      <input type="text" id="nome" required class="w-full border rounded p-2">
+    </div>
+
+    <div>
+      <label for="email" class="block font-medium">Email</label>
+      <input type="email" id="email" required class="w-full border rounded p-2">
+    </div>
+
+    <div>
+      <label for="assunto" class="block font-medium">Assunto</label>
+      <input type="text" id="assunto" required class="w-full border rounded p-2">
+    </div>
+
+    <div>
+      <label for="mensagem" class="block font-medium">Mensagem</label>
+      <textarea id="mensagem" required class="w-full border rounded p-2"></textarea>
+    </div>
+
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+      Enviar
+    </button>
+  </form>
+
+  <p id="status" class="mt-4 text-sm"></p>
+
+  <!-- Script Firebase -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+    // Configuração do seu Firebase (direto do console)
+    const firebaseConfig = {
+      apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8",
+      authDomain: "formulario-de-contato-6c213.firebaseapp.com",
+      projectId: "formulario-de-contato-6c213",
+      storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
+      messagingSenderId: "916368258641",
+      appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70",
+      measurementId: "G-24DRC401DW"
+    };
+
+    // Inicializa Firebase e Firestore
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Referência ao formulário
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('status');
+
+    // Evento de envio
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const assunto = document.getElementById('assunto').value;
+      const mensagem = document.getElementById('mensagem').value;
+
+      try {
+        // Alinha com suas regras do Firestore:
+        await addDoc(collection(db, "contact_submissions"), {
+          name: nome,
+          email: email,
+          subject: assunto,
+          message: mensagem,
+          timestamp: new Date()
+        });
+
+        status.textContent = "✅ Mensagem enviada com sucesso!";
+        status.classList.remove("text-red-500");
+        status.classList.add("text-green-600");
+        form.reset();
+      } catch (error) {
+        console.error("Erro ao enviar mensagem: ", error);
+        status.textContent = "❌ Erro ao enviar. Tente novamente.";
+        status.classList.remove("text-green-600");
+        status.classList.add("text-red-500");
+      }
+    });
+  </script>
+</section>
+
+
 </main>
 
 
