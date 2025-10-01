@@ -60,48 +60,96 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body class="antialiased text-gray-900 bg-white">
+<!-- ===========================
+       CABEÇALHO (HEADER)
+       =========================== -->
+  <header class="bg-[#001F3F] text-white">
+    <div class="max-w-[1440px] mx-auto flex items-center justify-between p-4 md:p-6">
 
-  <!-- HEADER -->
-  <header class="w-full bg-[#0b2545] text-white shadow" role="banner">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-      <a href="index.html" class="flex items-center gap-2" aria-label="Ciência News — Início">
-        <img src="logo.png" alt="Logotipo Ciência News" class="h-10 w-auto" />
-        <span class="font-bold text-lg tracking-tight">Ciência News</span>
+      <!-- Logo -->
+      <a href="index.html" aria-label="Ciência News — Início" class="flex-shrink-0">
+        <img src="https://portalciencianews.com.br/logo.png" alt="Logotipo Ciência News" class="h-10 md:h-12" />
       </a>
-      <nav class="hidden md:flex gap-6" aria-label="Menu principal">
-        <a href="https://portalciencianews.com.br/" class="hover:text-orange-400 transition font-semibold">Início</a>
-        <a href="https://portalciencianews.com.br/post/arquivos.html" class="block text-white hover:text-orange-400 font-semibold">Arquivos</a>
-        <a href="#" class="hover:text-orange-400 transition font-semibold">Contato</a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-6" aria-label="Menu principal">
+        <a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition">Início</a>
+        <a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition">Arquivos</a>
+<a href="#" class="hover:text-yellow-400 transition">Contato</a>
       </nav>
-      <div class="hidden md:flex gap-4 text-xl items-center">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-orange-400" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/ciencianews1/" class="hover:text-orange-400" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-orange-400" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-orange-400" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-orange-400" aria-label="Kwai"><i class="bi bi-camera-video"></i></a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-orange-400" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+      <!-- Ícones sociais Desktop -->
+      <div class="hidden md:flex space-x-4">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition">
+          <i class="fa-solid fa-video"></i>
+        </a>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
-      <button class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-white" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
-        <span class="sr-only">Abrir menu</span>
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
+
+      <!-- Botão menu mobile -->
+      <button id="navToggle" class="md:hidden text-2xl" aria-label="Abrir menu">
+        ☰
       </button>
+
     </div>
-    <nav id="mobileNav" class="md:hidden bg-[#0b2545] px-4 py-2 space-y-2 hidden transition-all duration-300" aria-label="Menu móvel">
-      <a href="https://portalciencianews.com.br/" class="block text-white hover:text-orange-400 font-semibold">Início</a>
-      <a href="https://portalciencianews.com.br/post/arquivos.html" class="block text-white hover:text-orange-400 font-semibold">Arquivos</a>
-      <a href="#" class="block text-white hover:text-orange-400 font-semibold">Contato</a>
-      <div class="flex gap-4 text-xl pt-2">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-orange-400" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/ciencianews1/" class="hover:text-orange-400" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-orange-400" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-orange-400" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-orange-400" aria-label="Kwai"><i class="bi bi-camera-video"></i></a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-orange-400" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+    <!-- Menu Mobile -->
+    <nav id="mobileNav" class="md:hidden bg-[#001F3F] text-white hidden" aria-label="Menu móvel">
+      <ul class="flex flex-col space-y-2 p-4">
+  <li><a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition">Início</a></li>
+  <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition">Arquivos</a></li>
+  <li><a href="#" class="hover:text-yellow-400 transition">Notícias</a></li>
+  <li><a href="#" class="hover:text-yellow-400 transition">Contato</a></li>
+</ul>
+      <!-- Ícones sociais Mobile -->
+      <div class="flex justify-start space-x-4 mt-2">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition">
+          <i class="fa-solid fa-video"></i>
+        </a>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
     </nav>
   </header>
+
+  <!-- Script toggle menu mobile -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    navToggle.addEventListener('click', () => {
+  mobileNav.classList.toggle('hidden');
+  navToggle.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
+});
+  </script>
+          </body>
 
   <!-- HERO CARROSSEL -->
   <section class="relative w-full z-10">
