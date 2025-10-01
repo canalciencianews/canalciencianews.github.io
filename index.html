@@ -60,12 +60,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body class="antialiased text-gray-900 bg-white">
-<!-- ===========================
+
+  <!-- ===========================
        CABEÇALHO (HEADER)
        =========================== -->
-  <header class="bg-[#001F3F] text-white">
+  <header class="bg-[#001F3F] text-white relative">
     <div class="max-w-[1440px] mx-auto flex items-center justify-between p-4 md:p-6">
-
       <!-- Logo -->
       <a href="index.html" aria-label="Ciência News — Início" class="flex-shrink-0">
         <img src="https://portalciencianews.com.br/logo.png" alt="Logotipo Ciência News" class="h-10 md:h-12" />
@@ -73,95 +73,85 @@
 
       <!-- Menu Desktop -->
       <nav class="hidden md:flex space-x-6" aria-label="Menu principal">
-        <a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition">Início</a>
-        <a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition">Arquivos</a>
-<a href="#" class="hover:text-yellow-400 transition">Contato</a>
+        <a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition-colors">Início</a>
+        <a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition-colors">Arquivos</a>
+        <a href="#contato" class="hover:text-yellow-400 transition-colors">Contato</a>
       </nav>
 
       <!-- Ícones sociais Desktop -->
       <div class="hidden md:flex space-x-4">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition">
-          <i class="fab fa-facebook-f"></i>
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition">
-          <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-instagram"></i>
         </a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition">
-          <i class="fab fa-youtube"></i>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-youtube"></i>
         </a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition">
-          <i class="fab fa-tiktok"></i>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-tiktok"></i>
         </a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition">
-          <i class="fa-solid fa-video"></i>
+        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-camera-video"></i>
         </a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition">
-          <i class="fab fa-whatsapp"></i>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-whatsapp"></i>
         </a>
       </div>
 
       <!-- Botão menu mobile -->
-      <button id="navToggle" class="md:hidden text-2xl" aria-label="Abrir menu">
+      <button id="menuMobileBtn" class="md:hidden text-2xl focus:outline-none" aria-label="Abrir menu" aria-expanded="false">
         ☰
       </button>
-
     </div>
 
     <!-- Menu Mobile -->
-    <nav id="mobileNav" class="md:hidden bg-[#001F3F] text-white hidden" aria-label="Menu móvel">
+    <nav id="menuMobileNav" class="md:hidden bg-[#001F3F] text-white absolute w-full left-0 top-full z-50 hidden" aria-label="Menu móvel">
       <ul class="flex flex-col space-y-2 p-4">
-  <li><a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition">Início</a></li>
-  <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition">Arquivos</a></li>
-  <li><a href="#" class="hover:text-yellow-400 transition">Notícias</a></li>
-  <li><a href="#" class="hover:text-yellow-400 transition">Contato</a></li>
-</ul>
-      <!-- Ícones sociais Mobile -->
-      <div class="flex justify-start space-x-4 mt-2">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition">
-          <i class="fab fa-facebook-f"></i>
+        <li><a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition-colors">Início</a></li>
+        <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition-colors">Arquivos</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition-colors">Notícias</a></li>
+        <li><a href="#contato" class="hover:text-yellow-400 transition-colors">Contato</a></li>
+      </ul>
+      <div class="flex justify-start space-x-4 mt-2 px-4">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition">
-          <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-instagram"></i>
         </a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition">
-          <i class="fab fa-youtube"></i>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-youtube"></i>
         </a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition">
-          <i class="fab fa-tiktok"></i>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-tiktok"></i>
         </a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition">
-          <i class="fa-solid fa-video"></i>
+        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-camera-video"></i>
         </a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition">
-          <i class="fab fa-whatsapp"></i>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition-colors">
+          <i class="bi bi-whatsapp"></i>
         </a>
       </div>
     </nav>
   </header>
 
-  <!-- Script toggle menu mobile -->
   <script>
-  const navToggle = document.getElementById('navToggle');
-  const mobileNav = document.getElementById('mobileNav');
-
-  // Inicializa acessibilidade
-  navToggle.setAttribute('aria-expanded', 'false');
-
-  // Alterna menu mobile
-  navToggle.addEventListener('click', () => {
-    const isHidden = mobileNav.classList.toggle('hidden');
-    navToggle.setAttribute('aria-expanded', String(!isHidden));
-  });
-
-  // Garante que ao voltar pro desktop o menu esconda
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768) {
-      mobileNav.classList.add('hidden');
-      navToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
+    // Menu mobile funcional, sem conflito
+    const btn = document.getElementById('menuMobileBtn');
+    const nav = document.getElementById('menuMobileNav');
+    btn.addEventListener('click', () => {
+      const isHidden = nav.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', !isHidden);
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) {
+        nav.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
   </script>
-          </body>
 
   <!-- HERO CARROSSEL -->
   <section class="relative w-full z-10">
@@ -188,289 +178,238 @@
           loop: true,
           autoplay: { delay: 5000, disableOnInteraction: false },
         });
-        // Mobile nav script
-        const navToggle = document.getElementById('navToggle');
-        const mobileNav = document.getElementById('mobileNav');
-        navToggle.addEventListener('click', function () {
-          mobileNav.classList.toggle('hidden');
-          navToggle.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
-        });
       });
     </script>
   </section>
 
   <!-- MAIN AREA -->
   <main id="mainContent" class="site-main min-h-[400px] bg-white">
-
-  <!-- ======================= -->
-  <!-- Cards Horizontais dos Artigos -->
-  <!-- ======================= -->
-  <section class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-10 space-y-10">
-
-    <!-- Card mais recente: Lua -->
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-      <!-- Imagem 16:9 à esquerda -->
-      <div class="md:w-1/2 flex-shrink-0">
-        <div class="w-full aspect-w-16 aspect-h-9">
-          <img
-            src="https://scx1.b-cdn.net/csz/news/800a/2025/far-side-of-the-moon-m.jpg"
-            alt="Comparação: lado visível e lado oculto da Lua (imagem Clementine / NASA)"
-            class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <!-- Conteúdo à direita -->
-      <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
-        <div>
-          <h2 class="text-2xl font-bold text-[#071834] mb-4">
-            Lua de duas faces: novas amostras sugerem que o lado oculto foi mais frio
-          </h2>
-          <p class="text-gray-700 mb-6">
-            Fragmentos da missão Chang’e-6 indicam que o interior do lado oculto da Lua esfriou mais rápido, 
-            revelando assimetrias térmicas profundas na formação do satélite.
-          </p>
-        </div>
-        <div>
-          <a href="https://portalciencianews.com.br/lua-lado-oculto-mais-frio.html" 
-             class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
-            Leia mais
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card anterior: fóton -->
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-      <!-- Imagem 16:9 à esquerda -->
-      <div class="md:w-1/2 flex-shrink-0">
-        <div class="w-full aspect-w-16 aspect-h-9">
-          <img
-            src="https://i.postimg.cc/521Qj1s9/images.jpg"
-            alt="Representação artística de fóton interagindo com nuvem atômica"
-            class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <!-- Conteúdo à direita -->
-      <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
-        <div>
-          <h2 class="text-2xl font-bold text-[#071834] mb-4">
-            Quanto tempo um fóton permanece como excitação atômica? O enigma do tempo quântico
-          </h2>
-          <p class="text-gray-700 mb-6">
-            Descubra o estudo que investiga quanto tempo um fóton permanece como excitação atômica em nuvens de átomos, com resultados surpreendentes da óptica quântica.
-          </p>
-        </div>
-        <div>
-          <a href="https://portalciencianews.com.br/quanto-tempo-foton-excitacao-atomica.html" 
-             class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
-            Leia mais
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- ======================= -->
-  <!-- Seção de Vídeos Recentes -->
-  <!-- ======================= -->
-  <section id="videos-e-destaque" class="py-16 bg-gray-50">
-    <div class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
-      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Vídeos Recentes</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-
-        <!-- CARD 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="w-full h-48 md:h-56 pointer-events-none">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/no6tjPg0PtM" title="Círculos Misteriosos no Universo" frameborder="0" allowfullscreen></iframe>
+    <!-- Cards Horizontais dos Artigos -->
+    <section class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-10 space-y-10">
+      <!-- Card mais recente: Lua -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+        <div class="md:w-1/2 flex-shrink-0">
+          <div class="w-full aspect-w-16 aspect-h-9">
+            <img
+              src="https://scx1.b-cdn.net/csz/news/800a/2025/far-side-of-the-moon-m.jpg"
+              alt="Comparação: lado visível e lado oculto da Lua (imagem Clementine / NASA)"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              loading="lazy"
+            />
           </div>
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">CÍRCULOS MISTERIOSOS NO UNIVERSO PODEM SER EXPLOSÕES DE BURACOS NEGROS!</h3>
-            <a href="https://youtu.be/no6tjPg0PtM" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-              <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+        </div>
+        <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-[#071834] mb-4">
+              Lua de duas faces: novas amostras sugerem que o lado oculto foi mais frio
+            </h2>
+            <p class="text-gray-700 mb-6">
+              Fragmentos da missão Chang’e-6 indicam que o interior do lado oculto da Lua esfriou mais rápido, 
+              revelando assimetrias térmicas profundas na formação do satélite.
+            </p>
+          </div>
+          <div>
+            <a href="https://portalciencianews.com.br/lua-lado-oculto-mais-frio.html" 
+              class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
+              Leia mais
             </a>
           </div>
         </div>
+      </div>
 
-        <!-- CARD 2 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="w-full h-48 md:h-56 pointer-events-none">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dlGDojJp2uQ" title="Vida em Marte" frameborder="0" allowfullscreen></iframe>
+      <!-- Card anterior: fóton -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+        <div class="md:w-1/2 flex-shrink-0">
+          <div class="w-full aspect-w-16 aspect-h-9">
+            <img
+              src="https://i.postimg.cc/521Qj1s9/images.jpg"
+              alt="Representação artística de fóton interagindo com nuvem atômica"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              loading="lazy"
+            />
           </div>
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">NASA PODE TER DESTRUÍDO ACIDENTALMENTE O PRIMEIRO SINAL DE VIDA EM MARTE - HÁ 50 ANOS!</h3>
-            <a href="https://youtu.be/dlGDojJp2uQ?si=i8Nekc-kilY4iUka" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-              <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+        </div>
+        <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-[#071834] mb-4">
+              Quanto tempo um fóton permanece como excitação atômica? O enigma do tempo quântico
+            </h2>
+            <p class="text-gray-700 mb-6">
+              Descubra o estudo que investiga quanto tempo um fóton permanece como excitação atômica em nuvens de átomos, com resultados surpreendentes da óptica quântica.
+            </p>
+          </div>
+          <div>
+            <a href="https://portalciencianews.com.br/quanto-tempo-foton-excitacao-atomica.html" 
+              class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
+              Leia mais
             </a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- CARD 3 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="w-full h-48 md:h-56 pointer-events-none">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ken15l6Wmsc" title="Partículas como ondas" frameborder="0" allowfullscreen></iframe>
+    <!-- Seção de Vídeos Recentes -->
+    <section id="videos-e-destaque" class="py-16 bg-gray-50">
+      <div class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Vídeos Recentes</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- CARD 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="w-full h-48 md:h-56 pointer-events-none">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/no6tjPg0PtM" title="Círculos Misteriosos no Universo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">CÍRCULOS MISTERIOSOS NO UNIVERSO PODEM SER EXPLOSÕES DE BURACOS NEGROS!</h3>
+              <a href="https://youtu.be/no6tjPg0PtM" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+                <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+              </a>
+            </div>
           </div>
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">PARTÍCULAS DO TAMANHO DE VÍRUS SE COMPORTAM COMO ONDAS - PELA PRIMEIRA VEZ!</h3>
-            <a href="https://youtu.be/ken15l6Wmsc?si=vcYhGxfpCnjnx-iO" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-              <i class="fab fa-youtube mr-2"></i> Assista no YouTube
+          <!-- CARD 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="w-full h-48 md:h-56 pointer-events-none">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/dlGDojJp2uQ" title="Vida em Marte" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">NASA PODE TER DESTRUÍDO ACIDENTALMENTE O PRIMEIRO SINAL DE VIDA EM MARTE - HÁ 50 ANOS!</h3>
+              <a href="https://youtu.be/dlGDojJp2uQ?si=i8Nekc-kilY4iUka" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+                <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+              </a>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="w-full h-48 md:h-56 pointer-events-none">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/ken15l6Wmsc" title="Partículas como ondas" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">PARTÍCULAS DO TAMANHO DE VÍRUS SE COMPORTAM COMO ONDAS - PELA PRIMEIRA VEZ!</h3>
+              <a href="https://youtu.be/ken15l6Wmsc?si=vcYhGxfpCnjnx-iO" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+                <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vídeos mais vistos -->
+    <section class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-10">
+      <div class="text-center mb-8 text-2xl font-semibold text-gray-800">
+        Mais vistos do Ciência News no YouTube
+      </div>
+      <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-6">
+        <!-- Card Vídeo 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
+            <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold mb-2">ORCA DEVORA TUBARÃO BRANCO: É O PRIMEIRO REGISTRO AÉREO DA CAÇADA!!!</h3>
+            <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+              <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
             </a>
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Vídeos mais vistos do Ciência News ===== -->
-  <section class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-10">
-
-    <div class="text-center mb-8 text-2xl font-semibold text-gray-800">
-      Mais vistos do Ciência News no YouTube
-    </div>
-
-    <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-6">
-
-      <!-- Card Vídeo 1 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-        <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
-          <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+        <!-- Card Vídeo 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
+            <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold mb-2">O PÁSSARO QUE APRENDEU A IMITAR PERFEITAMENTE O CHORO DE UM BEBÊ HUMANO: OUÇA !!!</h3>
+            <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+              <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
+            </a>
+          </div>
         </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold mb-2">
-ORCA DEVORA TUBARÃO BRANCO: É O PRIMEIRO REGISTRO AÉREO DA CAÇADA!!!</h3>
-          <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="fab fa-youtube mr-2"></i> Assistir no YouTube
-          </a>
+        <!-- Card Vídeo 3 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
+            <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold mb-2">INCRÍVEIS "NOVAS" IMAGENS DA CHEGADA DO HOMEM À LUA !!</h3>
+            <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+              <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
+            </a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Card Vídeo 2 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-        <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
-          <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold mb-2">O PÁSSARO QUE APRENDEU A IMITAR PERFEITAMENTE O CHORO DE UM BEBÊ HUMANO: OUÇA !!!</h3>
-          <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="fab fa-youtube mr-2"></i> Assistir no YouTube
-          </a>
-        </div>
+    <!-- Formulário de Contato -->
+    <section id="contato" class="py-12 bg-gray-100">
+      <div class="max-w-[1000px] mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-6 text-center">Entre em Contato</h2>
+        <form id="contactForm" class="space-y-4">
+          <div>
+            <label for="nome" class="block font-medium mb-1">Nome</label>
+            <input type="text" id="nome" required class="w-full border rounded p-2">
+          </div>
+          <div>
+            <label for="email" class="block font-medium mb-1">Email</label>
+            <input type="email" id="email" required class="w-full border rounded p-2">
+          </div>
+          <div>
+            <label for="assunto" class="block font-medium mb-1">Assunto</label>
+            <input type="text" id="assunto" required class="w-full border rounded p-2">
+          </div>
+          <div>
+            <label for="mensagem" class="block font-medium mb-1">Mensagem</label>
+            <textarea id="mensagem" required class="w-full border rounded p-2"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full">
+            Enviar
+          </button>
+        </form>
+        <p id="status" class="mt-4 text-sm text-center"></p>
       </div>
-
-      <!-- Card Vídeo 3 -->
-      <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-        <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
-          <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold mb-2">INCRÍVEIS "NOVAS" IMAGENS DA CHEGADA DO HOMEM À LUA !!</h3>
-          <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="fab fa-youtube mr-2"></i> Assistir no YouTube
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-    <!-- AREA DE FORMULARIO DE CONTATOS -->
-    <!-- ======================= -->
-<!-- ======================= -->
-<!-- Section Formulário Contato -->
-<!-- ======================= -->
-<section id="contato" class="py-12 bg-gray-100">
-  <div class="max-w-[1000px] mx-auto bg-white p-8 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-6 text-center">Entre em Contato</h2>
-
-    <form id="contactForm" class="space-y-4">
-      <div>
-        <label for="nome" class="block font-medium mb-1">Nome</label>
-        <input type="text" id="nome" required class="w-full border rounded p-2">
-      </div>
-
-      <div>
-        <label for="email" class="block font-medium mb-1">Email</label>
-        <input type="email" id="email" required class="w-full border rounded p-2">
-      </div>
-
-      <div>
-        <label for="assunto" class="block font-medium mb-1">Assunto</label>
-        <input type="text" id="assunto" required class="w-full border rounded p-2">
-      </div>
-
-      <div>
-        <label for="mensagem" class="block font-medium mb-1">Mensagem</label>
-        <textarea id="mensagem" required class="w-full border rounded p-2"></textarea>
-      </div>
-
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full">
-        Enviar
-      </button>
-    </form>
-
-    <p id="status" class="mt-4 text-sm text-center"></p>
-  </div>
-
-  <!-- Script Firebase -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8",
-      authDomain: "formulario-de-contato-6c213.firebaseapp.com",
-      projectId: "formulario-de-contato-6c213",
-      storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
-      messagingSenderId: "916368258641",
-      appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70",
-      measurementId: "G-24DRC401DW"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('status');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const nome = document.getElementById('nome').value;
-      const email = document.getElementById('email').value;
-      const assunto = document.getElementById('assunto').value;
-      const mensagem = document.getElementById('mensagem').value;
-
-      try {
-        await addDoc(collection(db, "contact_submissions"), {
-          name: nome,
-          email: email,
-          subject: assunto,
-          message: mensagem,
-          timestamp: new Date()
+      <!-- Script Firebase -->
+      <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8",
+          authDomain: "formulario-de-contato-6c213.firebaseapp.com",
+          projectId: "formulario-de-contato-6c213",
+          storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
+          messagingSenderId: "916368258641",
+          appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70",
+          measurementId: "G-24DRC401DW"
+        };
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const form = document.getElementById('contactForm');
+        const status = document.getElementById('status');
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const nome = document.getElementById('nome').value;
+          const email = document.getElementById('email').value;
+          const assunto = document.getElementById('assunto').value;
+          const mensagem = document.getElementById('mensagem').value;
+          try {
+            await addDoc(collection(db, "contact_submissions"), {
+              name: nome,
+              email: email,
+              subject: assunto,
+              message: mensagem,
+              timestamp: new Date()
+            });
+            status.textContent = "✅ Mensagem enviada com sucesso!";
+            status.classList.remove("text-red-500");
+            status.classList.add("text-green-600");
+            form.reset();
+          } catch (error) {
+            console.error("Erro ao enviar mensagem: ", error);
+            status.textContent = "❌ Erro ao enviar. Tente novamente.";
+            status.classList.remove("text-green-600");
+            status.classList.add("text-red-500");
+          }
         });
-
-        status.textContent = "✅ Mensagem enviada com sucesso!";
-        status.classList.remove("text-red-500");
-        status.classList.add("text-green-600");
-        form.reset();
-      } catch (error) {
-        console.error("Erro ao enviar mensagem: ", error);
-        status.textContent = "❌ Erro ao enviar. Tente novamente.";
-        status.classList.remove("text-green-600");
-        status.classList.add("text-red-500");
-      }
-    });
-  </script>
-</section>
-
-
-
-</main>
-
+      </script>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="bg-gray-900 text-white py-8">
@@ -480,7 +419,7 @@ ORCA DEVORA TUBARÃO BRANCO: É O PRIMEIRO REGISTRO AÉREO DA CAÇADA!!!</h3>
           <ul class="flex flex-wrap gap-6">
             <li><a href="https://canalciencianews.github.io/" class="hover:text-orange-400 font-semibold">Início</a></li>
             <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-orange-400 font-semibold">Arquivos</a></li> 
-            <li><a href="#" class="hover:text-orange-400 font-semibold">Contato</a></li>
+            <li><a href="#contato" class="hover:text-orange-400 font-semibold">Contato</a></li>
           </ul>
         </nav>
         <div class="mb-4 md:mb-0">
@@ -506,9 +445,8 @@ ORCA DEVORA TUBARÃO BRANCO: É O PRIMEIRO REGISTRO AÉREO DA CAÇADA!!!</h3>
       </div>
     </div>
   </footer>
-  
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-</html>
+        </html>
