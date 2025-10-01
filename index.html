@@ -141,13 +141,25 @@
 
   <!-- Script toggle menu mobile -->
   <script>
-    const navToggle = document.getElementById('navToggle');
-    const mobileNav = document.getElementById('mobileNav');
+  const navToggle = document.getElementById('navToggle');
+  const mobileNav = document.getElementById('mobileNav');
 
-    navToggle.addEventListener('click', () => {
-  mobileNav.classList.toggle('hidden');
-  navToggle.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
-});
+  // Inicializa acessibilidade
+  navToggle.setAttribute('aria-expanded', 'false');
+
+  // Alterna menu mobile
+  navToggle.addEventListener('click', () => {
+    const isHidden = mobileNav.classList.toggle('hidden');
+    navToggle.setAttribute('aria-expanded', String(!isHidden));
+  });
+
+  // Garante que ao voltar pro desktop o menu esconda
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      mobileNav.classList.add('hidden');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
   </script>
           </body>
 
