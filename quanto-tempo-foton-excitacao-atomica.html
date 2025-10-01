@@ -64,7 +64,7 @@
 
 <!-- Font Awesome (ícones) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="script.js" defer></script>
+
 <body class="antialiased text-gray-900">
 
   <!-- ===========================
@@ -115,7 +115,7 @@
     </div>
 
     <!-- Menu Mobile -->
-    <nav id="mobileNav" class="md:hidden bg-[#001F3F] text-white" hidden aria-label="Menu móvel">
+    <nav id="mobileNav" class="md:hidden bg-[#001F3F] text-white hidden" aria-label="Menu móvel">
       <ul class="flex flex-col space-y-2 p-4">
   <li><a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition">Início</a></li>
   <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition">Arquivos</a></li>
@@ -152,9 +152,9 @@
     const mobileNav = document.getElementById('mobileNav');
 
     navToggle.addEventListener('click', () => {
-      mobileNav.hidden = !mobileNav.hidden;
-      navToggle.setAttribute('aria-expanded', !mobileNav.hidden);
-    });
+  mobileNav.classList.toggle('hidden');
+  navToggle.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
+});
   </script>
 </body>
 
