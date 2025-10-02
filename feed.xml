@@ -13,10 +13,8 @@
       <link>https://portalciencianews.com.br/post/outubro/energia-escura-simulacoes.html</link>
       <guid isPermaLink="true">https://portalciencianews.com.br/post/outubro/energia-escura-simulacoes.html</guid>
       <pubDate>Thu, 02 Oct 2025 09:00:00 +0000</pubDate>
-      <description><![CDATA[ Novas simulações sugerem que a energia escura pode não se comportar exatamente como prevê o modelo cosmológico padrão. ]]></description>
-      <enclosure url="https://portalciencianews.com.br/images/energia-escura.jpg" type="image/jpeg" />
+      <description><![CDATA[Novas simulações sugerem que a energia escura pode não se comportar exatamente como prevê o modelo cosmológico padrão.]]></description>
       <media:content url="https://portalciencianews.com.br/images/energia-escura.jpg" medium="image" />
-      <media:thumbnail url="https://portalciencianews.com.br/images/energia-escura-thumb.jpg" />
     </item>
 
     <item>
@@ -24,10 +22,8 @@
       <link>https://portalciencianews.com.br/post/outubro/lua-de-duas-faces.html</link>
       <guid isPermaLink="true">https://portalciencianews.com.br/post/outubro/lua-de-duas-faces.html</guid>
       <pubDate>Thu, 02 Oct 2025 08:00:00 +0000</pubDate>
-      <description><![CDATA[ Pesquisas recentes indicam que a composição do lado oculto da Lua difere do lado visível, revelando pistas sobre sua formação. ]]></description>
-      <enclosure url="https://portalciencianews.com.br/images/lua-duas-faces.jpg" type="image/jpeg" />
+      <description><![CDATA[Pesquisas recentes indicam que a composição do lado oculto da Lua difere do lado visível, revelando pistas sobre sua formação.]]></description>
       <media:content url="https://portalciencianews.com.br/images/lua-duas-faces.jpg" medium="image" />
-      <media:thumbnail url="https://portalciencianews.com.br/images/lua-duas-faces-thumb.jpg" />
     </item>
 
     <item>
@@ -35,13 +31,9 @@
       <link>https://portalciencianews.com.br/post/outubro/tempo-foton-excitacao.html</link>
       <guid isPermaLink="true">https://portalciencianews.com.br/post/outubro/tempo-foton-excitacao.html</guid>
       <pubDate>Wed, 01 Oct 2025 19:00:00 +0000</pubDate>
-      <description><![CDATA[ Um estudo recente tenta resolver o enigma de quanto tempo a informação quântica de um fóton sobrevive em um átomo excitado. ]]></description>
-      <enclosure url="https://portalciencianews.com.br/images/foton.jpg" type="image/jpeg" />
+      <description><![CDATA[Um estudo recente tenta resolver o enigma de quanto tempo a informação quântica de um fóton sobrevive em um átomo excitado.]]></description>
       <media:content url="https://portalciencianews.com.br/images/foton.jpg" medium="image" />
-      <media:thumbnail url="https://portalciencianews.com.br/images/foton-thumb.jpg" />
     </item>
-
-    <!-- demais itens... -->
 
   </channel>
 </rss>
