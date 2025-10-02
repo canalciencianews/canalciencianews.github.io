@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ciência News — Uma pílula com notícias sobre ciências</title>
+    <link>https://portalciencianews.com.br/</link>
+    <description>Últimos artigos e notícias do Ciência News.</description>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 02 Oct 2025 12:00:00 +0000</lastBuildDate>
+    <ttl>60</ttl>
+
+    <item>
+      <title>Energia Escura: Simulações Desafiam Modelo Cosmológico Padrão</title>
+      <link>https://portalciencianews.com.br/post/outubro/energia-escura-simulacoes.html</link>
+      <guid isPermaLink="true">https://portalciencianews.com.br/post/outubro/energia-escura-simulacoes.html</guid>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0000</pubDate>
+      <description><![CDATA[Novas simulações sugerem que a energia escura pode não se comportar exatamente como prevê o modelo cosmológico padrão.]]></description>
+    </item>
+
+    <item>
+      <title>Lua de duas faces: novas amostras sugerem que o lado oculto foi mais frio</title>
+      <link>https://portalciencianews.com.br/post/outubro/lua-de-duas-faces.html</link>
+      <guid isPermaLink="true">https://portalciencianews.com.br/post/outubro/lua-de-duas-faces.html</guid>
+      <pubDate>Thu, 02 Oct 2025 08:00:00 +0000</pubDate>
+      <description><![CDATA[Pesquisas recentes indicam que a composição do lado oculto da Lua difere do lado visível, revelando pistas sobre sua formação.]]></description>
+    </item>
+
+    <item>
+      <title>Quanto tempo um fóton permanece como excitação atômica?</title>
+      <link>https://portalciencianews.com.br/post/outubro/tempo-foton-excitacao.html</link>
+      <guid isPermaLink="true">https://portalciencianews.com.br/post/outubro/tempo-foton-excitacao.html</guid>
+      <pubDate>Wed, 01 Oct 2025 19:00:00 +0000</pubDate>
+      <description><![CDATA[Um estudo recente tenta resolver o enigma de quanto tempo a informação quântica de um fóton sobrevive em um átomo excitado.]]></description>
+    </item>
+
+    <item>
+      <title>Buracos Negros Primordiais: candidatos a matéria escura?</title>
+      <link>https://portalciencianews.com.br/post/setembro/buracos-negros-primordiais.html</link>
+      <guid isPermaLink="true">https://portalciencianews.com.br/post/setembro/buracos-negros-primordiais.html</guid>
+      <pubDate>Mon, 29 Sep 2025 14:00:00 +0000</pubDate>
+      <description><![CDATA[Teorias apontam que buracos negros formados logo após o Big Bang poderiam explicar parte da matéria escura do universo.]]></description>
+    </item>
+
+    <item>
+      <title>Exoplaneta Hycean: poderia abrigar formas de vida?</title>
+      <link>https://portalciencianews.com.br/post/setembro/exoplaneta-hycean.html</link>
+      <guid isPermaLink="true">https://portalciencianews.com.br/post/setembro/exoplaneta-hycean.html</guid>
+      <pubDate>Fri, 26 Sep 2025 10:00:00 +0000</pubDate>
+      <description><![CDATA[Cientistas investigam se planetas cobertos por oceanos e atmosfera rica em hidrogênio poderiam sustentar formas de vida.]]></description>
+    </item>
+
+  </channel>
+</rss>
