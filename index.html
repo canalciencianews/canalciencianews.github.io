@@ -303,135 +303,163 @@
 
 
   <!-- ============================================= -->
-  <!-- 🎬 SEÇÃO: VÍDEOS RECENTES -->
-  <!-- ============================================= -->
-  <section id="videos-recentes" class="py-16 bg-gray-50">
-    <div class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Vídeos Recentes</h2>
+<!-- 🎬 SEÇÃO: VÍDEOS RECENTES (Versão otimizada e leve) -->
+<!-- ============================================= -->
+<section id="videos-recentes" class="py-16 bg-gray-50">
+  <div class="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+      Vídeos Recentes do Canal
+    </h2>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Card de vídeo (modelo reutilizável) -->
-        <article class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
-          <div class="w-full h-48 md:h-56 pointer-events-none">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/0GZvOz7s9UY" title="Descoberta a estrela mais pura do universo conhecido" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-gray-800 mb-3">Descoberta a estrela mais pura do universo conhecido</h3>
-            <a href="https://youtu.be/0GZvOz7s9UY" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-              <i class="bi bi-youtube mr-2"></i> Assista no YouTube
-            </a>
-          </div>
-        </article>
-
-        <article class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
-          <div class="w-full h-48 md:h-56 pointer-events-none">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/EOWMCgjsjtE" title="Matéria escura e energia escura podem ser uma ilusão" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-gray-800 mb-3">Matéria escura e energia escura podem ser uma ilusão</h3>
-            <a href="https://www.youtube.com/watch?v=EOWMCgjsjtE" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-              <i class="bi bi-youtube mr-2"></i> Assista no YouTube
-            </a>
-          </div>
-        </article>
-
-        <article class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
-          <div class="w-full h-48 md:h-56 pointer-events-none">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/hRzQcjVm2pw?si=0ukIDOMRRhksibcL" title="Detectados sinais que podem vir de outro universo" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-gray-800 mb-3">Detectados sinais que podem vir de outro universo</h3>
-            <a href="https://youtu.be/hRzQcjVm2pw?si=0ukIDOMRRhksibcL" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-              <i class="bi bi-youtube mr-2"></i> Assista no YouTube
-            </a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================= -->
-  <!-- 🔥 VÍDEOS MAIS VISTOS -->
-  <!-- ============================================= -->
-  <section id="mais-vistos" class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-16">
-    <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Mais vistos do Ciência News no YouTube</h2>
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid gap-8 md:grid-cols-3">
       
-      <!-- Card modelo -->
-      <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-        <div class="aspect-w-16 aspect-h-9 pointer-events-none">
-          <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4" class="w-full h-full" allowfullscreen loading="lazy"></iframe>
+      <!-- CARD DE VÍDEO -->
+      <article class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <div class="relative w-full h-56 overflow-hidden">
+          <img 
+            src="https://img.youtube.com/vi/0GZvOz7s9UY/hqdefault.jpg" 
+            alt="Descoberta a estrela mais pura do universo conhecido" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+            loading="lazy">
+          <button 
+            onclick="window.open('https://youtu.be/0GZvOz7s9UY','_blank')" 
+            class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition">
+            <i class="bi bi-play-circle-fill text-white text-6xl"></i>
+          </button>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2 leading-snug">
+            Descoberta a estrela mais pura do universo conhecido
+          </h3>
+          <a href="https://youtu.be/0GZvOz7s9UY" target="_blank"
+             class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
+            <i class="bi bi-youtube"></i> Assistir
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD DE VÍDEO -->
+      <article class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <div class="relative w-full h-56 overflow-hidden">
+          <img 
+            src="https://img.youtube.com/vi/EOWMCgjsjtE/hqdefault.jpg" 
+            alt="Matéria escura e energia escura podem ser uma ilusão" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+            loading="lazy">
+          <button 
+            onclick="window.open('https://youtu.be/EOWMCgjsjtE','_blank')" 
+            class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition">
+            <i class="bi bi-play-circle-fill text-white text-6xl"></i>
+          </button>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2 leading-snug">
+            Matéria escura e energia escura podem ser uma ilusão
+          </h3>
+          <a href="https://youtu.be/EOWMCgjsjtE" target="_blank"
+             class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
+            <i class="bi bi-youtube"></i> Assistir
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD DE VÍDEO -->
+      <article class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <div class="relative w-full h-56 overflow-hidden">
+          <img 
+            src="https://img.youtube.com/vi/hRzQcjVm2pw/hqdefault.jpg" 
+            alt="Detectados sinais que podem vir de outro universo" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+            loading="lazy">
+          <button 
+            onclick="window.open('https://youtu.be/hRzQcjVm2pw','_blank')" 
+            class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition">
+            <i class="bi bi-play-circle-fill text-white text-6xl"></i>
+          </button>
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2 leading-snug">
+            Detectados sinais que podem vir de outro universo
+          </h3>
+          <a href="https://youtu.be/hRzQcjVm2pw" target="_blank"
+             class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
+            <i class="bi bi-youtube"></i> Assistir
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ============================= -->
+  <!-- 🔥 MAIS VISTOS -->
+  <!-- ============================= -->
+  <section id="mais-vistos" class="max-w-[1000px] mx-auto px-4 my-16">
+    <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Mais vistos do Ciência News</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <div class="aspect-video">
+          <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4" title="Orca devora tubarão branco" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="p-4 text-center">
           <h3 class="text-lg font-semibold mb-3">Orca devora tubarão branco: primeiro registro aéreo da caçada!</h3>
-          <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
+          <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" target="_blank"
+             class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+             <i class="bi bi-youtube mr-2"></i> Assistir
           </a>
         </div>
       </article>
 
-      <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-        <div class="aspect-w-16 aspect-h-9 pointer-events-none">
-          <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0" class="w-full h-full" allowfullscreen loading="lazy"></iframe>
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <div class="aspect-video">
+          <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0" title="O pássaro que imita o choro de bebê" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="p-4 text-center">
           <h3 class="text-lg font-semibold mb-3">O pássaro que imita perfeitamente o choro de um bebê humano!</h3>
-          <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
+          <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" target="_blank"
+             class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+             <i class="bi bi-youtube mr-2"></i> Assistir
           </a>
         </div>
       </article>
 
-      <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-        <div class="aspect-w-16 aspect-h-9 pointer-events-none">
-          <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc" class="w-full h-full" allowfullscreen loading="lazy"></iframe>
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <div class="aspect-video">
+          <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc" title="Novas imagens da chegada do homem à Lua" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="p-4 text-center">
           <h3 class="text-lg font-semibold mb-3">Novas imagens da chegada do homem à Lua!</h3>
-          <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
+          <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc" target="_blank"
+             class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+             <i class="bi bi-youtube mr-2"></i> Assistir
           </a>
         </div>
       </article>
-
     </div>
   </section>
 
 
-  <!-- ============================================= -->
+  <!-- ============================= -->
   <!-- ✉️ FORMULÁRIO DE CONTATO -->
-  <!-- ============================================= -->
-  <section id="contato" class="py-16 bg-gray-100">
-    <div class="max-w-[1000px] mx-auto bg-white p-8 rounded-lg shadow-md">
-      <h2 class="text-3xl font-bold text-center mb-8">Entre em Contato</h2>
+  <!-- ============================= -->
+  <section id="contato" class="py-16 bg-gray-50">
+    <div class="max-w-[600px] mx-auto bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+      <h2 class="text-2xl font-semibold text-center mb-6 text-gray-800">Entre em Contato</h2>
       
       <form id="contactForm" class="space-y-4">
-        <div>
-          <label for="nome" class="block font-medium mb-1">Nome</label>
-          <input id="nome" type="text" required class="w-full border rounded p-2">
-        </div>
-        <div>
-          <label for="email" class="block font-medium mb-1">Email</label>
-          <input id="email" type="email" required class="w-full border rounded p-2">
-        </div>
-        <div>
-          <label for="assunto" class="block font-medium mb-1">Assunto</label>
-          <input id="assunto" type="text" required class="w-full border rounded p-2">
-        </div>
-        <div>
-          <label for="mensagem" class="block font-medium mb-1">Mensagem</label>
-          <textarea id="mensagem" required class="w-full border rounded p-2 h-32 resize-none"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700 transition">
-          Enviar
-        </button>
+        <input id="nome" type="text" placeholder="Seu nome" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-1 focus:ring-blue-500">
+        <input id="email" type="email" placeholder="Seu email" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-1 focus:ring-blue-500">
+        <input id="assunto" type="text" placeholder="Assunto" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-1 focus:ring-blue-500">
+        <textarea id="mensagem" placeholder="Mensagem" required class="w-full border border-gray-300 rounded-md px-3 py-2 h-28 resize-none focus:ring-1 focus:ring-blue-500"></textarea>
+        <button type="submit" class="bg-blue-600 text-white font-medium px-4 py-2 rounded-md w-full hover:bg-blue-700 transition">Enviar</button>
       </form>
-
-      <p id="status" class="mt-4 text-sm text-center"></p>
+      <p id="status" class="mt-3 text-sm text-center"></p>
     </div>
 
-    <!-- Firebase Script -->
+    <!-- Firebase -->
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
       import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
@@ -442,8 +470,7 @@
         projectId: "formulario-de-contato-6c213",
         storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
         messagingSenderId: "916368258641",
-        appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70",
-        measurementId: "G-24DRC401DW"
+        appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70"
       };
 
       const app = initializeApp(firebaseConfig);
@@ -453,22 +480,22 @@
 
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const nome = form.nome.value;
-        const email = form.email.value;
-        const assunto = form.assunto.value;
-        const mensagem = form.mensagem.value;
+        const data = {
+          nome: form.nome.value.trim(),
+          email: form.email.value.trim(),
+          assunto: form.assunto.value.trim(),
+          mensagem: form.mensagem.value.trim(),
+          timestamp: new Date()
+        };
 
         try {
-          await addDoc(collection(db, "contact_submissions"), {
-            nome, email, assunto, mensagem, timestamp: new Date()
-          });
+          await addDoc(collection(db, "contact_submissions"), data);
           status.textContent = "✅ Mensagem enviada com sucesso!";
-          status.className = "mt-4 text-green-600 text-sm text-center";
+          status.className = "mt-3 text-green-600 text-sm text-center";
           form.reset();
         } catch (error) {
-          console.error("Erro ao enviar:", error);
-          status.textContent = "❌ Erro ao enviar. Tente novamente.";
-          status.className = "mt-4 text-red-500 text-sm text-center";
+          status.textContent = "❌ Ocorreu um erro. Tente novamente.";
+          status.className = "mt-3 text-red-500 text-sm text-center";
         }
       });
     </script>
@@ -476,42 +503,64 @@
 
 </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white py-8">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-6">
-        <nav class="mb-4 md:mb-0" aria-label="Links do rodapé">
-          <ul class="flex flex-wrap gap-6">
-            <li><a href="https://canalciencianews.github.io/" class="hover:text-orange-400 font-semibold">Início</a></li>
-            <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-orange-400 font-semibold">Arquivos</a></li> 
-            <li><a href="#contato" class="hover:text-orange-400 font-semibold">Contato</a></li>
-          </ul>
-        </nav>
-        <div class="mb-4 md:mb-0">
-          <p>Contato: <a href="mailto:canalciencianews@gmail.com" class="hover:text-orange-400">canalciencianews@gmail.com</a></p>
-        </div>
-        <div class="flex gap-4 text-xl">
-          <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-orange-400" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/ciencianews1/" class="hover:text-orange-400" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-orange-400" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-          <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-orange-400" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-orange-400" aria-label="Kwai"><i class="bi bi-camera-video"></i></a>
-          <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-orange-400" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-        </div>
-      </div>
-      <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-4 gap-4">
-        <p class="text-sm">&copy; <span id="year"></span> Ciência News — Uma pílula com notícias sobre ciências. Todos os direitos reservados.</p>
-        <div class="bg-blue-800 px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
-          <span class="text-sm font-semibold">Visualizações:</span>
-          <a title="Contador de Visitas do MegaContador" href="https://megacontador.com.br/">
-            <img src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif" alt="Contador de visitas" class="h-6 rounded">
+
+  <!-- ===========================
+     RODAPÉ (FOOTER)
+     =========================== -->
+<footer class="bg-[#001F3F] text-white py-10">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
+      
+      <!-- Links principais -->
+      <nav aria-label="Links do rodapé">
+        <ul class="flex flex-wrap gap-6 text-sm md:text-base font-medium">
+          <li><a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition-colors">Início</a></li>
+          <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition-colors">Arquivos</a></li>
+          <li><a href="#contato" class="hover:text-yellow-400 transition-colors">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contato -->
+      <div>
+        <p class="text-sm md:text-base">
+          📧 <span class="font-semibold">Contato:</span>
+          <a href="mailto:canalciencianews@gmail.com" class="hover:text-yellow-400 underline underline-offset-2 transition-colors">
+            canalciencianews@gmail.com
           </a>
-        </div>
+        </p>
+      </div>
+
+      <!-- Ícones sociais -->
+      <div class="flex gap-4 text-2xl">
+        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-yellow-400" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/ciencianews1/" class="hover:text-yellow-400" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-yellow-400" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-yellow-400" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-yellow-400" aria-label="Kwai"><i class="bi bi-camera-video"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-yellow-400" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
       </div>
     </div>
-  </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+    <!-- Linha inferior -->
+    <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-6 gap-4">
+      <p class="text-xs md:text-sm text-center md:text-left">
+        &copy; <span id="year"></span> <strong>Ciência News</strong> — Uma pílula com notícias sobre ciências.<br class="md:hidden" />
+        Todos os direitos reservados.
+      </p>
+
+      <div class="bg-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center space-x-2">
+        <span class="text-xs md:text-sm font-semibold">Visualizações:</span>
+        <a title="Contador de Visitas do MegaContador" href="https://megacontador.com.br/">
+          <img src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif" alt="Contador de visitas" class="h-6 rounded">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Atualiza automaticamente o ano no rodapé
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
-        </html>
+</html>
