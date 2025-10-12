@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -160,16 +161,16 @@
     <div class="swiper w-full" style="aspect-ratio: 1920/350;">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="hero/1.png" alt="Banner 1" class="w-full h-full object-cover" />
+          <img src="https://portalciencianews.com.br/hero/1.png" alt="Banner 1" class="w-full h-full object-cover" />
         </div>
         <div class="swiper-slide">
-          <img src="hero/2.png" alt="Banner 2" class="w-full h-full object-cover" />
+          <img src="https://portalciencianews.com.br/hero/2.png" alt="Banner 2" class="w-full h-full object-cover" />
         </div>
         <div class="swiper-slide">
-          <img src="hero/3.png" alt="Banner 3" class="w-full h-full object-cover" />
+          <img src="https://portalciencianews.com.br/hero/3.png" alt="Banner 3" class="w-full h-full object-cover" />
         </div>
         <div class="swiper-slide">
-          <img src="hero/4.png" alt="Banner 4" class="w-full h-full object-cover" />
+          <img src="https://portalciencianews.com.br/hero/4.png" alt="Banner 4" class="w-full h-full object-cover" />
         </div>
       </div>
     </div>
@@ -184,45 +185,49 @@
     </script>
   </section>
 
-  <!-- MAIN AREA -->
-  <main id="mainContent" class="site-main min-h-[400px] bg-white">
+<!-- ============================================= -->
+<!-- 🌌 ÁREA PRINCIPAL -->
+<!-- ============================================= -->
+<main id="mainContent" class="site-main min-h-[400px] bg-white">
 
-
-<!-- ===== CARD ESPECIAL =====-->
-
-<div <div class="max-w-[1000px] mx-auto my-10 bg-blue-900 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-center gap-6 overflow-hidden">
-  
-  <!-- Vídeo incorporado (não clicável) -->
-  <div class="w-full md:w-1/2 aspect-video">
-    <iframe 
-      src="https://www.youtube.com/embed/lxPEhtTA3Mk?controls=0&disablekb=1&modestbranding=1&rel=0"
-      class="w-full h-full pointer-events-none rounded-lg"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <!-- Conteúdo do card -->
-  <div class="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left text-white p-6">
-    <h2 class="text-2xl md:text-3xl font-bold mb-4">
-      PODE SER O MENOR OBJETO DE MATÉRIA ESCURA DO UNIVERSO CONHECIDO
-    </h2>
-    <a href="https://www.youtube.com/watch?v=lxPEhtTA3Mk" 
-       target="_blank" 
-       class="self-center md:self-start bg-yellow-400 text-black font-semibold py-2 px-5 rounded-lg hover:bg-yellow-300 transition w-auto">
-      Veja o vídeo
-    </a>
-  </div>
-
-</div>
-
-    <!-- Cards Horizontais dos Artigos -->
+  <!-- ============================================= -->
+  <!-- 🔵 CARD ESPECIAL DE DESTAQUE -->
+  <!-- ============================================= -->
+  <section class="max-w-[1000px] mx-auto my-10 bg-blue-900 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-6 overflow-hidden">
     
-            <section class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-10 space-y-10">
+    <!-- Vídeo de destaque (não clicável) -->
+    <div class="w-full md:w-1/2 aspect-video">
+      <iframe 
+        src="https://www.youtube.com/embed/lxPEhtTA3Mk?controls=0&disablekb=1&modestbranding=1&rel=0"
+        class="w-full h-full pointer-events-none rounded-lg"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
 
-  <!-- Novo Card: Energia Escura -->
-  <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-    <div class="md:w-1/2 flex-shrink-0">
-      <div class="w-full aspect-w-16 aspect-h-9">
+    <!-- Conteúdo textual -->
+    <div class="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left text-white p-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 leading-tight">
+        Pode ser o menor objeto de matéria escura do universo conhecido
+      </h2>
+      <a href="https://www.youtube.com/watch?v=lxPEhtTA3Mk" 
+         target="_blank" 
+         class="self-center md:self-start bg-yellow-400 text-black font-semibold py-2 px-5 rounded-lg hover:bg-yellow-300 transition duration-300">
+         Veja o vídeo
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================= -->
+  <!-- 📰 SEÇÃO DE ARTIGOS -->
+  <!-- ============================================= -->
+  <section id="artigos" class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-10 space-y-10">
+
+    <!-- Card 1: Energia Escura -->
+    <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+      <div class="md:w-1/2">
         <img
           src="https://scx1.b-cdn.net/csz/news/800a/2025/could-dark-energy-chan.jpg"
           alt="Energia Escura: Simulações desafiam modelo cosmológico padrão"
@@ -230,26 +235,21 @@
           loading="lazy"
         />
       </div>
-    </div>
-    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
-      <div>
-        <h2 class="text-2xl font-bold text-[#071834] mb-4">
-          Energia Escura: Simulações Desafiam Modelo Cosmológico Padrão
-        </h2>
-      </div>
-      <div>
+      <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+        <h3 class="text-2xl font-bold text-[#071834] mb-4">
+          Energia Escura: simulações desafiam modelo cosmológico padrão
+        </h3>
         <a href="https://portalciencianews.com.br/post/outubro/energia-escura-simulacoes.html" 
-          class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
+           target="_blank"
+           class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition duration-300">
           Leia mais
         </a>
       </div>
-    </div>
-  </div>
+    </article>
 
-  <!-- Card mais recente: Lua -->
-  <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-    <div class="md:w-1/2 flex-shrink-0">
-      <div class="w-full aspect-w-16 aspect-h-9">
+    <!-- Card 2: Lua -->
+    <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+      <div class="md:w-1/2">
         <img
           src="https://scx1.b-cdn.net/csz/news/800a/2025/far-side-of-the-moon-m.jpg"
           alt="Comparação: lado visível e lado oculto da Lua (imagem Clementine / NASA)"
@@ -257,26 +257,21 @@
           loading="lazy"
         />
       </div>
-    </div>
-    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
-      <div>
-        <h2 class="text-2xl font-bold text-[#071834] mb-4">
+      <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+        <h3 class="text-2xl font-bold text-[#071834] mb-4">
           Lua de duas faces: novas amostras sugerem que o lado oculto foi mais frio
-        </h2>
-      </div>
-      <div>
+        </h3>
         <a href="https://portalciencianews.com.br/lua-lado-oculto-mais-frio.html" 
-          class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
+           target="_blank"
+           class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition duration-300">
           Leia mais
         </a>
       </div>
-    </div>
-  </div>
+    </article>
 
-  <!-- Card anterior: fóton -->
-  <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-    <div class="md:w-1/2 flex-shrink-0">
-      <div class="w-full aspect-w-16 aspect-h-9">
+    <!-- Card 3: Fóton -->
+    <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+      <div class="md:w-1/2">
         <img
           src="https://i.postimg.cc/521Qj1s9/images.jpg"
           alt="Representação artística de fóton interagindo com nuvem atômica"
@@ -284,190 +279,194 @@
           loading="lazy"
         />
       </div>
-    </div>
-    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
-      <div>
-        <h2 class="text-2xl font-bold text-[#071834] mb-4">
+      <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+        <h3 class="text-2xl font-bold text-[#071834] mb-4">
           Quanto tempo um fóton permanece como excitação atômica? O enigma do tempo quântico
-        </h2>
-      </div>
-      <div>
+        </h3>
         <a href="https://portalciencianews.com.br/quanto-tempo-foton-excitacao-atomica.html" 
-          class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition-colors duration-300">
+           target="_blank"
+           class="inline-block bg-[#071834] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#050f27] transition duration-300">
           Leia mais
         </a>
       </div>
+    </article>
+
+  </section>
+
+
+  <!-- ============================================= -->
+  <!-- 🎬 SEÇÃO: VÍDEOS RECENTES -->
+  <!-- ============================================= -->
+  <section id="videos-recentes" class="py-16 bg-gray-50">
+    <div class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
+      <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Vídeos Recentes</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card de vídeo (modelo reutilizável) -->
+        <article class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="w-full h-48 md:h-56 pointer-events-none">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/0GZvOz7s9UY" title="Descoberta a estrela mais pura do universo conhecido" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Descoberta a estrela mais pura do universo conhecido</h3>
+            <a href="https://youtu.be/0GZvOz7s9UY" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+              <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="w-full h-48 md:h-56 pointer-events-none">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/EOWMCgjsjtE" title="Matéria escura e energia escura podem ser uma ilusão" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Matéria escura e energia escura podem ser uma ilusão</h3>
+            <a href="https://www.youtube.com/watch?v=EOWMCgjsjtE" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+              <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="w-full h-48 md:h-56 pointer-events-none">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/hRzQcjVm2pw?si=0ukIDOMRRhksibcL" title="Detectados sinais que podem vir de outro universo" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Detectados sinais que podem vir de outro universo</h3>
+            <a href="https://youtu.be/hRzQcjVm2pw?si=0ukIDOMRRhksibcL" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+              <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+            </a>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
+  </section>
 
-    </section>
-   
 
- <!-- Seção de Vídeos Recentes -->
-   
-<section id="videos-e-destaque" class="py-16 bg-gray-50">
-  <div class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
-    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Vídeos Recentes</h2>
+  <!-- ============================================= -->
+  <!-- 🔥 VÍDEOS MAIS VISTOS -->
+  <!-- ============================================= -->
+  <section id="mais-vistos" class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-16">
+    <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Mais vistos do Ciência News no YouTube</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <!-- CARD 1 -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <div class="w-full h-48 md:h-56 pointer-events-none">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/0GZvOz7s9UY" title="DESCOBERTA A ESTRELA MAIS PURA DO UNIVERSO CONHECIDO" frameborder="0" allowfullscreen></iframe>
+      
+      <!-- Card modelo -->
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+        <div class="aspect-w-16 aspect-h-9 pointer-events-none">
+          <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4" class="w-full h-full" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">DESCOBERTA A ESTRELA MAIS PURA DO UNIVERSO CONHECIDO</h3>
-          <a href="https://youtu.be/0GZvOz7s9UY" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
-            <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold mb-3">Orca devora tubarão branco: primeiro registro aéreo da caçada!</h3>
+          <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+            <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
           </a>
         </div>
-      </div>
-      <!-- CARD 2 -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <div class="w-full h-48 md:h-56 pointer-events-none">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/EOWMCgjsjtE" title="Estudo propõe que a matéria escura e a energia escura são uma ilusão" frameborder="0" allowfullscreen></iframe>
+      </article>
+
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+        <div class="aspect-w-16 aspect-h-9 pointer-events-none">
+          <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0" class="w-full h-full" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">ESTUDO PROPÕE QUE A MATÉRIA ESCURA E A ENERGIA ESCURA SÃO UMA ILUSÃO</h3>
-          <a href="https://www.youtube.com/watch?v=EOWMCgjsjtE" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
-            <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold mb-3">O pássaro que imita perfeitamente o choro de um bebê humano!</h3>
+          <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+            <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
           </a>
         </div>
-      </div>
-      <!-- CARD 3 -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <div class="w-full h-48 md:h-56 pointer-events-none">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/hRzQcjVm2pw?si=0ukIDOMRRhksibcL" title="Detectados sinais que podem vir de outro universo" frameborder="0" allowfullscreen></iframe>
+      </article>
+
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+        <div class="aspect-w-16 aspect-h-9 pointer-events-none">
+          <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc" class="w-full h-full" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">DETECTADOS SINAIS QUE PODEM VIR DE OUTRO UNIVERSO!</h3>
-          <a href="https://youtu.be/hRzQcjVm2pw?si=0ukIDOMRRhksibcL" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
-            <i class="bi bi-youtube mr-2"></i> Assista no YouTube
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold mb-3">Novas imagens da chegada do homem à Lua!</h3>
+          <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+            <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
           </a>
         </div>
-      </div>
+      </article>
+
     </div>
-  </div>
-</section>
+  </section>
 
 
-    <!-- Vídeos mais vistos -->
-   
- <section class="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0 my-10">
-      <div class="text-center mb-8 text-2xl font-semibold text-gray-800">
-        Mais vistos do Ciência News no YouTube
-      </div>
-      <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-6">
-        <!-- Card Vídeo 1 -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-          <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
-            <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold mb-2">ORCA DEVORA TUBARÃO BRANCO: É O PRIMEIRO REGISTRO AÉREO DA CAÇADA!!!</h3>
-            <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
-              <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
-            </a>
-          </div>
+  <!-- ============================================= -->
+  <!-- ✉️ FORMULÁRIO DE CONTATO -->
+  <!-- ============================================= -->
+  <section id="contato" class="py-16 bg-gray-100">
+    <div class="max-w-[1000px] mx-auto bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-center mb-8">Entre em Contato</h2>
+      
+      <form id="contactForm" class="space-y-4">
+        <div>
+          <label for="nome" class="block font-medium mb-1">Nome</label>
+          <input id="nome" type="text" required class="w-full border rounded p-2">
         </div>
-        <!-- Card Vídeo 2 -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-          <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
-            <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold mb-2">O PÁSSARO QUE APRENDEU A IMITAR PERFEITAMENTE O CHORO DE UM BEBÊ HUMANO: OUÇA !!!</h3>
-            <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
-              <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
-            </a>
-          </div>
+        <div>
+          <label for="email" class="block font-medium mb-1">Email</label>
+          <input id="email" type="email" required class="w-full border rounded p-2">
         </div>
-        <!-- Card Vídeo 3 -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-          <div class="w-full aspect-w-16 aspect-h-9 pointer-events-none">
-            <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold mb-2">INCRÍVEIS "NOVAS" IMAGENS DA CHEGADA DO HOMEM À LUA !!</h3>
-            <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc" target="_blank" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
-              <i class="bi bi-youtube mr-2"></i> Assistir no YouTube
-            </a>
-          </div>
+        <div>
+          <label for="assunto" class="block font-medium mb-1">Assunto</label>
+          <input id="assunto" type="text" required class="w-full border rounded p-2">
         </div>
-      </div>
-    </section>
+        <div>
+          <label for="mensagem" class="block font-medium mb-1">Mensagem</label>
+          <textarea id="mensagem" required class="w-full border rounded p-2 h-32 resize-none"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700 transition">
+          Enviar
+        </button>
+      </form>
 
-    <!-- Formulário de Contato -->
-    <section id="contato" class="py-12 bg-gray-100">
-      <div class="max-w-[1000px] mx-auto bg-white p-8 rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold mb-6 text-center">Entre em Contato</h2>
-        <form id="contactForm" class="space-y-4">
-          <div>
-            <label for="nome" class="block font-medium mb-1">Nome</label>
-            <input type="text" id="nome" required class="w-full border rounded p-2">
-          </div>
-          <div>
-            <label for="email" class="block font-medium mb-1">Email</label>
-            <input type="email" id="email" required class="w-full border rounded p-2">
-          </div>
-          <div>
-            <label for="assunto" class="block font-medium mb-1">Assunto</label>
-            <input type="text" id="assunto" required class="w-full border rounded p-2">
-          </div>
-          <div>
-            <label for="mensagem" class="block font-medium mb-1">Mensagem</label>
-            <textarea id="mensagem" required class="w-full border rounded p-2"></textarea>
-          </div>
-          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full">
-            Enviar
-          </button>
-        </form>
-        <p id="status" class="mt-4 text-sm text-center"></p>
-      </div>
-      <!-- Script Firebase -->
-      <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
-        const firebaseConfig = {
-          apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8",
-          authDomain: "formulario-de-contato-6c213.firebaseapp.com",
-          projectId: "formulario-de-contato-6c213",
-          storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
-          messagingSenderId: "916368258641",
-          appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70",
-          measurementId: "G-24DRC401DW"
-        };
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-        const form = document.getElementById('contactForm');
-        const status = document.getElementById('status');
-        form.addEventListener('submit', async (e) => {
-          e.preventDefault();
-          const nome = document.getElementById('nome').value;
-          const email = document.getElementById('email').value;
-          const assunto = document.getElementById('assunto').value;
-          const mensagem = document.getElementById('mensagem').value;
-          try {
-            await addDoc(collection(db, "contact_submissions"), {
-              name: nome,
-              email: email,
-              subject: assunto,
-              message: mensagem,
-              timestamp: new Date()
-            });
-            status.textContent = "✅ Mensagem enviada com sucesso!";
-            status.classList.remove("text-red-500");
-            status.classList.add("text-green-600");
-            form.reset();
-          } catch (error) {
-            console.error("Erro ao enviar mensagem: ", error);
-            status.textContent = "❌ Erro ao enviar. Tente novamente.";
-            status.classList.remove("text-green-600");
-            status.classList.add("text-red-500");
-          }
-        });
-      </script>
-    </section>
-  </main>
+      <p id="status" class="mt-4 text-sm text-center"></p>
+    </div>
+
+    <!-- Firebase Script -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+      import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8",
+        authDomain: "formulario-de-contato-6c213.firebaseapp.com",
+        projectId: "formulario-de-contato-6c213",
+        storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
+        messagingSenderId: "916368258641",
+        appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70",
+        measurementId: "G-24DRC401DW"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('status');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const nome = form.nome.value;
+        const email = form.email.value;
+        const assunto = form.assunto.value;
+        const mensagem = form.mensagem.value;
+
+        try {
+          await addDoc(collection(db, "contact_submissions"), {
+            nome, email, assunto, mensagem, timestamp: new Date()
+          });
+          status.textContent = "✅ Mensagem enviada com sucesso!";
+          status.className = "mt-4 text-green-600 text-sm text-center";
+          form.reset();
+        } catch (error) {
+          console.error("Erro ao enviar:", error);
+          status.textContent = "❌ Erro ao enviar. Tente novamente.";
+          status.className = "mt-4 text-red-500 text-sm text-center";
+        }
+      });
+    </script>
+  </section>
+
+</main>
 
   <!-- FOOTER -->
   <footer class="bg-gray-900 text-white py-8">
