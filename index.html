@@ -1,592 +1,583 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+
+  <!-- meta -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="#0b2545" />
 
+  <!-- title / description / canonical -->
   <title>Ciência News — Uma pílula com notícias sobre ciências</title>
-  <meta name="description" content="Ciência News — Uma pílula com notícias sobre ciências. Atualizações rápidas, confiáveis e curtas sobre ciência." />
+  <meta name="description" content="Ciência News — Uma pílula com notícias sobre ciências." />
   <link rel="canonical" href="https://portalciencianews.com.br/" />
 
-  <!-- Open Graph / Social Sharing -->
+  <!-- Open Graph -->
   <meta property="og:site_name" content="Ciência News" />
   <meta property="og:title" content="Ciência News — Uma pílula com notícias sobre ciências" />
-  <meta property="og:description" content="Atualizações rápidas, confiáveis e curtas sobre ciência." />
+  <meta property="og:description" content="Atualizações rápidas sobre ciência." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://portalciencianews.com.br/" />
-  <meta property="og:image" content="thumbnail.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Ciência News — Uma pílula com notícias sobre ciências" />
+  <meta property="og:image" content="https://portalciencianews.com.br/thumbnail.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@CienciaNewsOficial" />
   <meta name="twitter:title" content="Ciência News — Uma pílula com notícias sobre ciências" />
-  <meta name="twitter:description" content="Atualizações rápidas, confiáveis e curtas sobre ciência." />
-  <meta name="twitter:image" content="thumbnail.png" />
-  <meta name="twitter:image:alt" content="Ciência News — Uma pílula com notícias sobre ciências" />
+  <meta name="twitter:description" content="Atualizações rápidas e confiáveis sobre ciência." />
+  <meta name="twitter:image" content="https://portalciencianews.com.br/thumbnail.png" />
 
-  <!-- Schema.org (JSON-LD) -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     "name": "Ciência News",
     "url": "https://portalciencianews.com.br/",
-    "logo": "https://canalciencianews.github.io/logo.png",
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=100079774894307",
-      "https://www.instagram.com/ciencianews1/",
-      "https://www.youtube.com/@CienciaNewsOficial",
-      "https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1",
-      "https://www.kwai.com/@CanalCienciaNews",
-      "https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "canalciencianews@gmail.com",
-      "contactType": "customer support"
-    }
+    "logo": "https://canalciencianews.github.io/logo.png"
   }
   </script>
 
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="alternate" type="application/rss+xml" title="Ciência News - RSS" href="/feed.xml" />
-</head>
-<body class="antialiased text-gray-900 bg-white">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="https://portalciencianews.com.br/favicon.png" />
 
-  <!-- ===========================
-       CABEÇALHO (HEADER)
-       =========================== -->
-  <header class="bg-[#001F3F] text-white relative">
-    <div class="max-w-[1440px] mx-auto flex items-center justify-between p-4 md:p-6">
-      <!-- Logo -->
-      <a href="index.html" aria-label="Ciência News — Início" class="flex-shrink-0">
-        <img src="https://portalciencianews.com.br/logo.png" alt="Logotipo Ciência News" class="h-10 md:h-12" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- style.css -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- espaço GA -->
+  <!-- Google Analytics -->
+
+  <!-- ajuste mobile do bordão -->
+  <style>
+    @media (max-width: 991px) {
+      .navbar-slogan-mobile {
+        font-size: 0.85rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        line-height: 1.2 !important;
+        display: block;
+        white-space: normal;
+        max-width: 95%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="py-3" style="background:#2b2b2b;">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- LOGO + TÍTULO -->
+      <a href="#" class="d-flex align-items-center text-decoration-none">
+        <img src="https://portalciencianews.com.br/logo.png" alt="Ciência News" style="height:48px;" class="me-2">
+        <span class="h5 mb-0 text-white">Ciência News</span>
       </a>
 
-      <!-- Menu Desktop -->
-      <nav class="hidden md:flex space-x-6" aria-label="Menu principal">
-        <a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition-colors">Início</a>
-        <a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition-colors">Arquivos</a>
-        <a href="#contato" class="hover:text-yellow-400 transition-colors">Contato</a>
-      </nav>
-
-      <!-- Ícones sociais Desktop -->
-      <div class="hidden md:flex space-x-4">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-youtube"></i>
-        </a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-tiktok"></i>
-        </a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-camera-video"></i>
-        </a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-whatsapp"></i>
-        </a>
+      <!-- SOCIALS (desktop) -->
+      <div class="d-none d-md-flex gap-3">
+        <i class="bi bi-facebook text-white fs-4"></i>
+        <i class="bi bi-instagram text-white fs-4"></i>
+        <i class="bi bi-youtube text-white fs-4"></i>
+        <i class="bi bi-tiktok text-white fs-4"></i>
+        <i class="bi bi-camera-video text-white fs-4"></i>
+        <i class="bi bi-whatsapp text-white fs-4"></i>
       </div>
 
-      <!-- Botão menu mobile -->
-      <button id="menuMobileBtn" class="md:hidden text-2xl focus:outline-none" aria-label="Abrir menu" aria-expanded="false">
-        ☰
-      </button>
     </div>
-
-    <!-- Menu Mobile -->
-    <nav id="menuMobileNav" class="md:hidden bg-[#001F3F] text-white absolute w-full left-0 top-full z-50 hidden" aria-label="Menu móvel">
-      <ul class="flex flex-col space-y-2 p-4">
-        <li><a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition-colors">Início</a></li>
-        <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition-colors">Arquivos</a></li>
-        <li><a href="#" class="hover:text-yellow-400 transition-colors">Notícias</a></li>
-        <li><a href="#contato" class="hover:text-yellow-400 transition-colors">Contato</a></li>
-      </ul>
-      <div class="flex justify-start space-x-4 mt-2 px-4">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" aria-label="Facebook" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/ciencianews1/" aria-label="Instagram" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" aria-label="YouTube" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-youtube"></i>
-        </a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" aria-label="TikTok" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-tiktok"></i>
-        </a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" aria-label="Kwai (ícone genérico)" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-camera-video"></i>
-        </a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" aria-label="WhatsApp" class="hover:text-yellow-400 transition-colors">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-      </div>
-    </nav>
   </header>
 
-  <script>
-    // Menu mobile funcional, sem conflito
-    const btn = document.getElementById('menuMobileBtn');
-    const nav = document.getElementById('menuMobileNav');
-    btn.addEventListener('click', () => {
-      const isHidden = nav.classList.toggle('hidden');
-      btn.setAttribute('aria-expanded', !isHidden);
-    });
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 768) {
-        nav.classList.add('hidden');
-        btn.setAttribute('aria-expanded', 'false');
-      }
-    });
-  </script>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" style="background:#ff7a00 !important;">
+    <div class="container">
 
-  <!-- HERO CARROSSEL -->
-  <section class="relative w-full z-10">
-    <div class="swiper w-full" style="aspect-ratio: 1920/350;">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://portalciencianews.com.br/hero/1.png" alt="Banner 1" class="w-full h-full object-cover" />
+      <!-- BORDÃO MOBILE AJUSTADO -->
+      <span class="navbar-brand d-lg-none text-white fw-semibold navbar-slogan-mobile">
+        Uma pílula com notícias sobre ciências
+      </span>
+
+      <!-- toggler -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainCollapse">
+        <i class="bi bi-list text-white fs-2"></i>
+      </button>
+
+      <!-- collapse -->
+      <div class="collapse navbar-collapse" id="mainCollapse">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Arquivos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+        </ul>
+
+        <!-- socials mobile -->
+        <div class="d-lg-none mt-3 d-flex gap-3">
+          <i class="bi bi-facebook text-white fs-4"></i>
+          <i class="bi bi-instagram text-white fs-4"></i>
+          <i class="bi bi-youtube text-white fs-4"></i>
+          <i class="bi bi-tiktok text-white fs-4"></i>
+          <i class="bi bi-camera-video text-white fs-4"></i>
+          <i class="bi bi-whatsapp text-white fs-4"></i>
         </div>
-        <div class="swiper-slide">
-          <img src="https://portalciencianews.com.br/hero/2.png" alt="Banner 2" class="w-full h-full object-cover" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://portalciencianews.com.br/hero/3.png" alt="Banner 3" class="w-full h-full object-cover" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://portalciencianews.com.br/hero/4.png" alt="Banner 4" class="w-full h-full object-cover" />
-        </div>
+
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        new Swiper('.swiper', {
-          loop: true,
-          autoplay: { delay: 5000, disableOnInteraction: false },
-        });
-      });
-    </script>
-  </section>
+  </nav>
 
-<!-- ============================================= -->
-<!-- 🌌 ÁREA PRINCIPAL -->
-<!-- ============================================= -->
-<main id="mainContent" class="site-main min-h-[400px] bg-white">
+  <main id="mainContent" class="site-main bg-white" style="min-height:400px;">
 
-<!-- CARDS LADO A LADO / RESPONSIVO -->
-<section class="my-10 px-4 sm:px-6 md:px-0">
-  <div class="max-w-[1000px] mx-auto flex flex-col md:flex-row md:space-x-6 items-start">
-
-    <!-- CARD ATUALIZADO (horizontal, imagem à esquerda, título e botão à direita) -->
-    <div class="flex-1 bg-blue-900 rounded-2xl shadow-lg overflow-hidden md:flex w-full mb-6 md:mb-0">
-      <!-- Imagem de destaque -->
-      <div class="w-full md:w-1/2 h-64 md:h-auto relative">
-        <img
-          src="https://i.postimg.cc/fyVKgWLt/23a464501fce4141a8f31ecd3860b29d.jpg"
-          alt="Imagem ilustrativa do cometa 3I/ATLAS cruzando o espaço interestelar"
-          loading="lazy"
-          class="absolute top-0 left-0 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Conteúdo -->
-      <div class="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left text-white p-4 md:p-8">
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 leading-tight">
-          Cometa 3I/ATLAS: o visitante interestelar que surpreendeu a ciência
-        </h2>
-        <a href="https://portalciencianews.com.br/post/outubro/cometa-3i-atlas-visitante-interestelar.html"
-           class="bg-yellow-400 text-black font-semibold py-2 px-5 rounded-lg hover:bg-yellow-300 transition duration-300">
-          Leia o artigo completo
-        </a>
-      </div>
-    </div>
-
-    <!-- SIDEBAR / NOVO CARD (vertical) -->
-    <aside class="w-full md:w-1/3 bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-      <img
-        src="https://scx1.b-cdn.net/csz/news/800a/2025/event-horizon-telescop.jpg"
-        alt="Simulação do buraco negro M87* capturada pelo Telescópio do Horizonte de Eventos"
-        class="w-full h-48 object-cover">
-      <div class="p-5 flex flex-col flex-grow">
-        <h3 class="text-lg font-bold text-gray-900 mb-3 leading-snug">
-          Telescópio do Horizonte de Eventos revela novo método para detectar matéria escura
-        </h3>
-        <p class="text-gray-700 text-sm mb-4">
-          Pesquisadores utilizam imagens do EHT para identificar sinais sutis de matéria escura ao redor de buracos negros supermassivos.
-        </p>
-        <a href="https://portalciencianews.com.br/post/outubro/evento-horizon-materia-escura.html"
-           class="mt-auto inline-block text-center bg-blue-900 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-800 transition duration-300">
-          Leia mais
-        </a>
-      </div>
-    </aside>
-
-  </div>
-  </section>
-
-<!-- VÍDEOS ATUAIS -->
-
-<section class="bg-white py-12 px-6 flex flex-wrap justify-center gap-6">
-  <!-- Card 1 -->
-  <div class="bg-red-600 rounded-2xl shadow-lg w-full sm:w-[48%] md:w-[30%] flex flex-col items-center text-center overflow-hidden">
-    <!-- Vídeo -->
-    <div class="relative w-full pb-[56.25%]">
-      <iframe
-        class="absolute top-0 left-0 w-full h-full rounded-t-2xl pointer-events-none"
-        src="https://www.youtube.com/embed/K_RI7v5qCNQ?controls=0"
-        title="Vídeo 1"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <!-- Título -->
-    <h2 class="text-white text-lg sm:text-xl font-bold mt-4 px-4">
-      A MECÂNICA QUÂNTICA ACABA DE SUPERAR A SEGUNDA LEI DA TERMODINÂMICA
-    </h2>
-    <!-- Botão -->
-    <a href="https://youtu.be/K_RI7v5qCNQ"
-       target="_blank"
-       class="mt-4 mb-4 bg-white text-red-600 font-semibold py-2 px-6 rounded-full hover:bg-red-100 transition">
-       Assistir no YouTube
-    </a>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="bg-red-600 rounded-2xl shadow-lg w-full sm:w-[48%] md:w-[30%] flex flex-col items-center text-center overflow-hidden">
-    <div class="relative w-full pb-[56.25%]">
-      <iframe
-        class="absolute top-0 left-0 w-full h-full rounded-t-2xl pointer-events-none"
-        src="https://www.youtube.com/embed/XfCOgFORy_I?controls=0"
-        title="Vídeo 2"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <h2 class="text-white text-lg sm:text-xl font-bold mt-4 px-4">
-      PELA PRIMEIRA VEZ, ENCONTRADOS RESTOS DO PLANETA QUE DEU ORIGEM À TERRA
-    </h2>
-    <a href="https://youtu.be/XfCOgFORy_I"
-       target="_blank"
-       class="mt-4 mb-4 bg-white text-red-600 font-semibold py-2 px-6 rounded-full hover:bg-red-100 transition">
-       Assistir no YouTube
-    </a>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="bg-red-600 rounded-2xl shadow-lg w-full sm:w-[48%] md:w-[30%] flex flex-col items-center text-center overflow-hidden">
-    <div class="relative w-full pb-[56.25%]">
-      <iframe
-        class="absolute top-0 left-0 w-full h-full rounded-t-2xl pointer-events-none"
-        src="https://www.youtube.com/embed/1A0Y3SPTTg8?controls=0"
-        title="Vídeo 3"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <h2 class="text-white text-lg sm:text-xl font-bold mt-4 px-4">
-      A ÁREA ENFRAQUECIDA DO CAMPO MAGNÉTICO ESTÁ AVANÇANDO
-    </h2>
-    <a href="https://youtu.be/1A0Y3SPTTg8"
-       target="_blank"
-       class="mt-4 mb-4 bg-white text-red-600 font-semibold py-2 px-6 rounded-full hover:bg-red-100 transition">
-       Assistir no YouTube
-    </a>
-  </div>
-</section>
-
-
-<!-- NOVOS ARTIGOS -->
-
-<section class="bg-white">
-  <div class="max-w-[1100px] mx-auto px-4 my-16">
-    <h2 class="text-3xl font-bold text-center mb-10 text-[#071834]">Novidades da Ciência e Tecnologia</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      
-      <!-- Card 1 - Novo artigo Capotauro -->
-      <div class="bg-indigo-900 text-white rounded-lg overflow-hidden shadow-lg flex flex-col">
-        <img src="https://i.postimg.cc/VLfSWHfG/images.jpg" alt="Capotauro - Mistério Cósmico observado pelo James Webb" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-xl font-bold mb-2">Capotauro: o mistério cósmico revelado pelo telescópio James Webb</h3>
-          <p class="text-sm mb-4 flex-grow">Astrônomos se deparam com um enigmático objeto no espaço profundo, apelidado de “Capotauro”, que intriga a comunidade científica por seu comportamento incomum.</p>
-          <a href="https://portalciencianews.com.br/post/outubro/capotauro-misterio-cosmico-james-webb.html" target="_blank" class="mt-auto bg-white text-indigo-900 font-semibold py-2 px-4 rounded hover:bg-gray-200 text-center">Leia mais</a>
-        </div>
-      </div>
-
-      <!-- Card 2 - Antigo card 1 -->
-      <div class="bg-indigo-900 text-white rounded-lg overflow-hidden shadow-lg flex flex-col">
-        <img src="https://scx1.b-cdn.net/csz/news/800a/2025/african-print.jpg" alt="Línguas Africanas AI" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-xl font-bold mb-2">Inteligência Artificial e Línguas Africanas</h3>
-          <p class="text-sm mb-4 flex-grow">Um grande dataset de línguas africanas está sendo usado para treinar IA, ajudando na preservação e compreensão linguística.</p>
-          <a href="https://techxplore.com/news/2025-10-african-languages-ai-huge-dataset.html" target="_blank" class="mt-auto bg-white text-indigo-900 font-semibold py-2 px-4 rounded hover:bg-gray-200 text-center">Leia mais</a>
-        </div>
-      </div>
-
-      <!-- Card 3 - Antigo card 2 -->
-      <div class="bg-indigo-900 text-white rounded-lg overflow-hidden shadow-lg flex flex-col">
-        <img src="https://scx1.b-cdn.net/csz/news/800a/2025/three-new-species-disc.jpg" alt="Novas espécies na Austrália" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-xl font-bold mb-2">Descoberta de Novas Espécies na Austrália</h3>
-          <p class="text-sm mb-4 flex-grow">Pesquisadores encontram três novas espécies em uma das ilhas mais ao norte da Austrália, ampliando o conhecimento da biodiversidade.</p>
-          <a href="https://phys.org/news/2025-10-species-australia-northernmost-island.html" target="_blank" class="mt-auto bg-white text-indigo-900 font-semibold py-2 px-4 rounded hover:bg-gray-200 text-center">Leia mais</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  </section>
-  
 <!-- ============================= -->
-  <!-- 📰 ARTIGOS EM DESTAQUE -->
-  <!-- ============================= -->
-  <section id="artigos" class="max-w-[1100px] mx-auto px-4 my-16">
-  <h2 class="text-3xl font-bold text-center mb-10 text-[#071834]">Últimos Artigos</h2>
+<!-- CARDS LADO A LADO -->
+<!-- ============================= -->
+<section class="my-5">
+    <div class="container">
+        <div class="row g-4 align-items-start">
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- CARD PRINCIPAL (horizontal) -->
+            <div class="col-12 col-md-8">
+                <div class="card shadow-lg border-0 h-100">
+                    <div class="row g-0 h-100">
+                        <!-- Imagem -->
+                        <div class="col-md-6">
+                            <img src="https://i.postimg.cc/fyVKgWLt/23a464501fce4141a8f31ecd3860b29d.jpg"
+                                 class="img-fluid h-100 w-100 object-fit-cover"
+                                 alt="Imagem ilustrativa do cometa 3I/ATLAS">
+                        </div>
 
-    <!-- Card 1 - Buraco Negro -->
-    <div class="bg-indigo-900 text-white rounded-lg overflow-hidden shadow-lg flex flex-col">
-      <img 
-        src="https://scx1.b-cdn.net/csz/news/800a/2025/saturday-citations-bla.jpg" 
-        alt="Representação artística de um buraco negro engolindo uma estrela gigante" 
-        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
-        loading="lazy">
-      
-      <div class="p-6 flex flex-col flex-grow">
-        <h3 class="text-xl font-bold mb-2">
-          Buraco negro engole estrela gigante e libera o flare mais poderoso já registrado
-        </h3>
-        <p class="text-sm mb-4 flex-grow">
-          Um evento cósmico sem precedentes surpreende astrônomos ao redor do mundo: um buraco negro devorou uma estrela gigante e emitiu o mais intenso flare já observado na história da astronomia.
-        </p>
-        <a 
-          href="https://portalciencianews.com.br/post/novembro/buraco-negro-engole-estrela-gigante.html" 
-          target="_blank" 
-          class="mt-auto bg-white text-indigo-900 font-semibold py-2 px-4 rounded hover:bg-gray-200 text-center transition-colors duration-300">
-          Leia mais
-        </a>
-      </div>
+                        <!-- Conteúdo -->
+                        <div class="col-md-6 d-flex flex-column justify-content-center p-4 bg-primary text-white">
+                            <h2 class="fw-bold mb-3">
+                                Cometa 3I/ATLAS: o visitante interestelar que surpreendeu a ciência
+                            </h2>
+                            <a href="https://portalciencianews.com.br/post/outubro/cometa-3i-atlas-visitante-interestelar.html"
+                               class="btn btn-warning fw-semibold px-4">
+                                Leia o artigo completo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR CARD -->
+            <aside class="col-12 col-md-4">
+                <div class="card shadow-lg border-0 h-100">
+                    <img src="https://scx1.b-cdn.net/csz/news/800a/2025/event-horizon-telescop.jpg"
+                         class="card-img-top"
+                         alt="Simulação do buraco negro M87*">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="fw-bold text-dark mb-3">
+                            Telescópio do Horizonte de Eventos revela novo método para detectar matéria escura
+                        </h3>
+                        <p class="text-muted small mb-3">
+                            Pesquisadores utilizam imagens do EHT para identificar sinais sutis de matéria escura ao redor de buracos negros supermassivos.
+                        </p>
+                        <a href="https://portalciencianews.com.br/post/outubro/evento-horizon-materia-escura.html"
+                           class="btn btn-primary mt-auto">
+                            Leia mais
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
     </div>
+</section>
 
-    <!-- Card 2 - Energia Escura -->
-    <div class="bg-indigo-900 text-white rounded-lg overflow-hidden shadow-lg flex flex-col">
-      <img 
-        src="https://scx1.b-cdn.net/csz/news/800a/2025/could-dark-energy-chan.jpg" 
-        alt="Energia Escura: simulações desafiam modelo cosmológico padrão" 
-        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
-        loading="lazy">
-      
-      <div class="p-6 flex flex-col flex-grow">
-        <h3 class="text-xl font-bold mb-2">
-          Energia Escura: simulações desafiam modelo cosmológico padrão
-        </h3>
-        <p class="text-sm mb-4 flex-grow">
-          Novas simulações do universo indicam que a energia escura pode não se comportar como o modelo cosmológico atual prevê — abrindo espaço para uma revisão das leis que regem o cosmos.
-        </p>
-        <a 
-          href="https://portalciencianews.com.br/post/outubro/energia-escura-simulacoes.html" 
-          target="_blank" 
-          class="mt-auto bg-white text-indigo-900 font-semibold py-2 px-4 rounded hover:bg-gray-200 text-center transition-colors duration-300">
-          Leia mais
-        </a>
-      </div>
+<!-- ============================= -->
+<!-- VÍDEOS ATUAIS -->
+<!-- ============================= -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card shadow-lg border-0 text-center bg-danger text-white h-100">
+                    <!-- Vídeo -->
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/K_RI7v5qCNQ?controls=0"
+                                class="rounded-top"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="fs-5 fw-bold">
+                            A MECÂNICA QUÂNTICA ACABA DE SUPERAR A SEGUNDA LEI DA TERMODINÂMICA
+                        </h2>
+                        <a href="https://youtu.be/K_RI7v5qCNQ"
+                           target="_blank"
+                           class="btn btn-light text-danger fw-semibold mt-3 rounded-pill px-4">
+                            Assistir no YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card shadow-lg border-0 text-center bg-danger text-white h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/XfCOgFORy_I?controls=0"
+                                class="rounded-top"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="fs-5 fw-bold">
+                            PELA PRIMEIRA VEZ, ENCONTRADOS RESTOS DO PLANETA QUE DEU ORIGEM À TERRA
+                        </h2>
+                        <a href="https://youtu.be/XfCOgFORy_I"
+                           target="_blank"
+                           class="btn btn-light text-danger fw-semibold mt-3 rounded-pill px-4">
+                            Assistir no YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card shadow-lg border-0 text-center bg-danger text-white h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/1A0Y3SPTTg8?controls=0"
+                                class="rounded-top"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="fs-5 fw-bold">
+                            A ÁREA ENFRAQUECIDA DO CAMPO MAGNÉTICO ESTÁ AVANÇANDO
+                        </h2>
+                        <a href="https://youtu.be/1A0Y3SPTTg8"
+                           target="_blank"
+                           class="btn btn-light text-danger fw-semibold mt-3 rounded-pill px-4">
+                            Assistir no YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+</section>
 
-    <!-- Card 3 - Lua de Duas Faces -->
-    <div class="bg-indigo-900 text-white rounded-lg overflow-hidden shadow-lg flex flex-col">
-      <img 
-        src="https://scx1.b-cdn.net/csz/news/800a/2025/far-side-of-the-moon-m.jpg" 
-        alt="Lua de duas faces: novas amostras sugerem que o lado oculto foi mais frio" 
-        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
-        loading="lazy">
-      
-      <div class="p-6 flex flex-col flex-grow">
-        <h3 class="text-xl font-bold mb-2">
-          Lua de duas faces: novas amostras sugerem que o lado oculto foi mais frio
-        </h3>
-        <p class="text-sm mb-4 flex-grow">
-          Amostras lunares recentes indicam diferenças térmicas marcantes entre as duas faces da Lua — uma pista que pode revelar segredos da sua formação e evolução inicial.
-        </p>
-        <a 
-          href="https://portalciencianews.com.br/lua-lado-oculto-mais-frio.html" 
-          target="_blank" 
-          class="mt-auto bg-white text-indigo-900 font-semibold py-2 px-4 rounded hover:bg-gray-200 text-center transition-colors duration-300">
-          Leia mais
-        </a>
-      </div>
+<!-- ============================= -->
+<!-- NOVOS ARTIGOS -->
+<!-- ============================= -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-primary fs-1">
+            Novidades da Ciência e Tecnologia
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4">
+                <div class="card bg-indigo text-white border-0 shadow-lg h-100" style="background:#1a237e;">
+                    <img src="https://i.postimg.cc/VLfSWHfG/images.jpg" class="card-img-top object-fit-cover" style="height:200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="fw-bold">Capotauro: o mistério cósmico revelado pelo telescópio James Webb</h3>
+                        <p class="small mt-2 flex-grow">
+                            Astrônomos se deparam com um enigmático objeto no espaço profundo...
+                        </p>
+                        <a href="https://portalciencianews.com.br/post/outubro/capotauro-misterio-cosmico-james-webb.html"
+                           class="btn btn-light fw-semibold mt-auto text-primary">
+                           Leia mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4">
+                <div class="card bg-indigo text-white border-0 shadow-lg h-100" style="background:#1a237e;">
+                    <img src="https://scx1.b-cdn.net/csz/news/800a/2025/african-print.jpg" class="card-img-top object-fit-cover" style="height:200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="fw-bold">Inteligência Artificial e Línguas Africanas</h3>
+                        <p class="small mt-2 flex-grow">
+                            Um grande dataset de línguas africanas está sendo usado para treinar IA...
+                        </p>
+                        <a href="https://techxplore.com/news/2025-10-african-languages-ai-huge-dataset.html"
+                           class="btn btn-light fw-semibold mt-auto text-primary">
+                           Leia mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4">
+                <div class="card bg-indigo text-white border-0 shadow-lg h-100" style="background:#1a237e;">
+                    <img src="https://scx1.b-cdn.net/csz/news/800a/2025/three-new-species-disc.jpg" class="card-img-top object-fit-cover" style="height:200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="fw-bold">Descoberta de Novas Espécies na Austrália</h3>
+                        <p class="small mt-2 flex-grow">
+                            Pesquisadores encontram três novas espécies em ilhas ao norte da Austrália...
+                        </p>
+                        <a href="https://phys.org/news/2025-10-species-australia-northernmost-island.html"
+                           class="btn btn-light fw-semibold mt-auto text-primary">
+                           Leia mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-  </div>
-  </section>
-
-
-  <!-- ============================================= -->
-<!-- 🎬 SEÇÃO: VÍDEOS RECENTES (Versão otimizada e leve) -->
-<!-- ============================================= -->
-<section id="videos-recentes" class="py-16 bg-gray-50">
-  <div class="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8">
-    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
-      Vídeos Recentes do Canal
-    </h2>
-
-    <div class="grid gap-8 md:grid-cols-3">
-      
-      <!-- CARD DE VÍDEO -->
-      <article class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="relative w-full h-56 overflow-hidden">
-          <img 
-            src="https://img.youtube.com/vi/0GZvOz7s9UY/hqdefault.jpg" 
-            alt="Descoberta a estrela mais pura do universo conhecido" 
-            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-            loading="lazy">
-          <button 
-            onclick="window.open('https://youtu.be/0GZvOz7s9UY','_blank')" 
-            class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition">
-            <i class="bi bi-play-circle-fill text-white text-6xl"></i>
-          </button>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 mb-2 leading-snug">
-            Descoberta a estrela mais pura do universo conhecido
-          </h3>
-          <a href="https://youtu.be/0GZvOz7s9UY" target="_blank"
-             class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
-            <i class="bi bi-youtube"></i> Assistir
-          </a>
-        </div>
-      </article>
-
-      <!-- CARD DE VÍDEO -->
-      <article class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="relative w-full h-56 overflow-hidden">
-          <img 
-            src="https://img.youtube.com/vi/EOWMCgjsjtE/hqdefault.jpg" 
-            alt="Matéria escura e energia escura podem ser uma ilusão" 
-            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-            loading="lazy">
-          <button 
-            onclick="window.open('https://youtu.be/EOWMCgjsjtE','_blank')" 
-            class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition">
-            <i class="bi bi-play-circle-fill text-white text-6xl"></i>
-          </button>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 mb-2 leading-snug">
-            Matéria escura e energia escura podem ser uma ilusão
-          </h3>
-          <a href="https://youtu.be/EOWMCgjsjtE" target="_blank"
-             class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
-            <i class="bi bi-youtube"></i> Assistir
-          </a>
-        </div>
-      </article>
-
-      <!-- CARD DE VÍDEO -->
-      <article class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <div class="relative w-full h-56 overflow-hidden">
-          <img 
-            src="https://img.youtube.com/vi/hRzQcjVm2pw/hqdefault.jpg" 
-            alt="Detectados sinais que podem vir de outro universo" 
-            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-            loading="lazy">
-          <button 
-            onclick="window.open('https://youtu.be/hRzQcjVm2pw','_blank')" 
-            class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition">
-            <i class="bi bi-play-circle-fill text-white text-6xl"></i>
-          </button>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 mb-2 leading-snug">
-            Detectados sinais que podem vir de outro universo
-          </h3>
-          <a href="https://youtu.be/hRzQcjVm2pw" target="_blank"
-             class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
-            <i class="bi bi-youtube"></i> Assistir
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </div>
 </section>
 
 
+<!-- ============================= -->
+<!-- ÚLTIMOS ARTIGOS -->
+<!-- ============================= -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-primary fs-1">Últimos Artigos</h2>
 
-  <!-- ============================= -->
-  <!-- 🔥 MAIS VISTOS -->
-  <!-- ============================= -->
-  <section id="mais-vistos" class="max-w-[1000px] mx-auto px-4 my-16">
-    <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Mais vistos do Ciência News</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-        <div class="aspect-video">
-          <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4" title="Orca devora tubarão branco" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold mb-3">Orca devora tubarão branco: primeiro registro aéreo da caçada!</h3>
-          <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" target="_blank"
-             class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-             <i class="bi bi-youtube mr-2"></i> Assistir
-          </a>
-        </div>
-      </article>
+        <div class="row g-4">
 
-      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-        <div class="aspect-video">
-          <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0" title="O pássaro que imita o choro de bebê" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold mb-3">O pássaro que imita perfeitamente o choro de um bebê humano!</h3>
-          <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" target="_blank"
-             class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-             <i class="bi bi-youtube mr-2"></i> Assistir
-          </a>
-        </div>
-      </article>
+            <!-- CARD 1 -->
+            <div class="col-md-4">
+                <div class="card bg-indigo text-white shadow-lg h-100 border-0" style="background:#1a237e;">
+                    <img src="https://scx1.b-cdn.net/csz/news/800a/2025/saturday-citations-bla.jpg"
+                         class="card-img-top object-fit-cover" style="height:200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="fw-bold">Buraco negro engole estrela gigante</h3>
+                        <p class="small flex-grow">Um evento cósmico sem precedentes surpreende astrônomos...</p>
+                        <a href="https://portalciencianews.com.br/post/novembro/buraco-negro-engole-estrela-gigante.html"
+                           class="btn btn-light text-primary fw-semibold mt-auto">Leia mais</a>
+                    </div>
+                </div>
+            </div>
 
-      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-        <div class="aspect-video">
-          <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc" title="Novas imagens da chegada do homem à Lua" allowfullscreen loading="lazy"></iframe>
+            <!-- CARD 2 -->
+            <div class="col-md-4">
+                <div class="card bg-indigo text-white shadow-lg h-100 border-0" style="background:#1a237e;">
+                    <img src="https://scx1.b-cdn.net/csz/news/800a/2025/could-dark-energy-chan.jpg"
+                         class="card-img-top object-fit-cover" style="height:200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="fw-bold">Energia Escura: simulações desafiam o modelo padrão</h3>
+                        <p class="small flex-grow">Novas simulações do universo apontam para comportamentos inesperados...</p>
+                        <a href="https://portalciencianews.com.br/post/outubro/energia-escura-simulacoes.html"
+                           class="btn btn-light text-primary fw-semibold mt-auto">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4">
+                <div class="card bg-indigo text-white shadow-lg h-100 border-0" style="background:#1a237e;">
+                    <img src="https://scx1.b-cdn.net/csz/news/800a/2025/far-side-of-the-moon-m.jpg"
+                         class="card-img-top object-fit-cover" style="height:200px;">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="fw-bold">Lua de duas faces</h3>
+                        <p class="small flex-grow">
+                            Amostras lunares recentes revelam diferenças térmicas marcantes entre suas duas faces.
+                        </p>
+                        <a href="https://portalciencianews.com.br/lua-lado-oculto-mais-frio.html"
+                           class="btn btn-light text-primary fw-semibold mt-auto">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold mb-3">Novas imagens da chegada do homem à Lua!</h3>
-          <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc" target="_blank"
-             class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-             <i class="bi bi-youtube mr-2"></i> Assistir
-          </a>
-        </div>
-      </article>
     </div>
-  </section>
+</section>
 
+<!-- ============================= -->
+<!-- VÍDEOS RECENTES -->
+<!-- ============================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold text-dark mb-5 fs-1">Vídeos Recentes do Canal</h2>
+        <div class="row g-4">
 
-  <!-- ============================= -->
-  <!-- ✉️ FORMULÁRIO DE CONTATO -->
-  <!-- ============================= -->
-  <section id="contato" class="py-16 bg-gray-50">
-  <div class="max-w-[600px] mx-auto bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-    <h2 class="text-2xl font-semibold text-center mb-6 text-gray-800">Entre em Contato</h2>
-    
-    <form id="contactForm" class="space-y-4">
-      <input id="name" type="text" placeholder="Seu nome" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-1 focus:ring-blue-500">
-      <input id="email" type="email" placeholder="Seu email" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-1 focus:ring-blue-500">
-      <input id="subject" type="text" placeholder="Assunto" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-1 focus:ring-blue-500">
-      <textarea id="message" placeholder="Mensagem" required class="w-full border border-gray-300 rounded-md px-3 py-2 h-28 resize-none focus:ring-1 focus:ring-blue-500"></textarea>
-      <button type="submit" class="bg-blue-600 text-white font-medium px-4 py-2 rounded-md w-full hover:bg-blue-700 transition">Enviar</button>
-    </form>
-    <p id="status" class="mt-3 text-sm text-center"></p>
+            <!-- VIDEO CARD -->
+            <div class="col-md-4">
+                <div class="card shadow-md border-0 h-100">
+                    <div class="position-relative overflow-hidden" style="height:220px;">
+                        <img src="https://img.youtube.com/vi/0GZvOz7s9UY/hqdefault.jpg"
+                             class="w-100 h-100 object-fit-cover">
+                        <button onclick="window.open('https://youtu.be/0GZvOz7s9UY','_blank')"
+                                class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
+                            <i class="bi bi-play-circle-fill text-white display-1"></i>
+                        </button>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="fs-5 fw-bold">
+                            Descoberta a estrela mais pura do universo conhecido
+                        </h3>
+                        <a href="https://youtu.be/0GZvOz7s9UY"
+                           class="btn btn-danger mt-2">
+                            <i class="bi bi-youtube"></i> Assistir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO CARD -->
+            <div class="col-md-4">
+                <div class="card shadow-md border-0 h-100">
+                    <div class="position-relative overflow-hidden" style="height:220px;">
+                        <img src="https://img.youtube.com/vi/EOWMCgjsjtE/hqdefault.jpg"
+                             class="w-100 h-100 object-fit-cover">
+                        <button onclick="window.open('https://youtu.be/EOWMCgjsjtE','_blank')"
+                                class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
+                            <i class="bi bi-play-circle-fill text-white display-1"></i>
+                        </button>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="fs-5 fw-bold">
+                            Matéria escura e energia escura podem ser uma ilusão
+                        </h3>
+                        <a href="https://youtu.be/EOWMCgjsjtE"
+                           class="btn btn-danger mt-2">
+                            <i class="bi bi-youtube"></i> Assistir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO CARD -->
+            <div class="col-md-4">
+                <div class="card shadow-md border-0 h-100">
+                    <div class="position-relative overflow-hidden" style="height:220px;">
+                        <img src="https://img.youtube.com/vi/hRzQcjVm2pw/hqdefault.jpg"
+                             class="w-100 h-100 object-fit-cover">
+                        <button onclick="window.open('https://youtu.be/hRzQcjVm2pw','_blank')"
+                                class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
+                            <i class="bi bi-play-circle-fill text-white display-1"></i>
+                        </button>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="fs-5 fw-bold">
+                            Detectados sinais que podem vir de outro universo
+                        </h3>
+                        <a href="https://youtu.be/hRzQcjVm2pw"
+                           class="btn btn-danger mt-2">
+                            <i class="bi bi-youtube"></i> Assistir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================= -->
+<!-- MAIS VISTOS -->
+<!-- ============================= -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5 fs-2">Mais vistos do Ciência News</h2>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <article class="card shadow-lg border-0 h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/SQ6i4ea5gW4"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="fw-bold fs-5 mb-3">Orca devora tubarão branco</h3>
+                        <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4"
+                           class="btn btn-danger">
+                            <i class="bi bi-youtube"></i> Assistir
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <article class="card shadow-lg border-0 h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/wVkEAwrEIS0"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="fw-bold fs-5 mb-3">
+                            O pássaro que imita o choro de um bebê
+                        </h3>
+                        <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0"
+                           class="btn btn-danger">
+                            <i class="bi bi-youtube"></i> Assistir
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <article class="card shadow-lg border-0 h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/yJkLrHIYKBc"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="fw-bold fs-5 mb-3">
+                            Novas imagens da chegada do homem à Lua
+                        </h3>
+                        <a href="https://www.youtube.com/watch?v=yJkLrHIYKBc"
+                           class="btn btn-danger">
+                            <i class="bi bi-youtube"></i> Assistir
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================= -->
+<!-- ✉️ FORMULÁRIO DE CONTATO (BOOTSTRAP) -->
+<!-- ============================= -->
+<section id="contato" class="py-5 bg-light">
+  <div class="container">
+    <div class="mx-auto p-4 p-md-5 bg-white rounded-4 shadow" style="max-width:600px;">
+
+      <h2 class="text-center mb-4">Entre em Contato</h2>
+
+      <form id="contactForm" class="">
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Seu nome</label>
+          <input id="name" type="text" class="form-control" placeholder="Seu nome" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Seu email</label>
+          <input id="email" type="email" class="form-control" placeholder="Seu email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label">Assunto</label>
+          <input id="subject" type="text" class="form-control" placeholder="Assunto" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensagem</label>
+          <textarea id="message" class="form-control" rows="4" placeholder="Mensagem" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
+          Enviar
+        </button>
+
+      </form>
+
+      <p id="status" class="mt-3 text-sm text-center"></p>
+    </div>
   </div>
 
   <!-- Firebase -->
@@ -621,100 +612,27 @@
       try {
         await addDoc(collection(db, "contact_submissions"), data);
         status.textContent = "✅ Mensagem enviada com sucesso!";
-        status.className = "mt-3 text-green-600 text-sm text-center";
+        status.className = "mt-3 text-success fw-semibold text-center";
         form.reset();
       } catch (error) {
         status.textContent = "❌ Ocorreu um erro. Tente novamente.";
-        status.className = "mt-3 text-red-500 text-sm text-center";
+        status.className = "mt-3 text-danger fw-semibold text-center";
       }
     });
   </script>
-        </section>
+</section>
+
 
 </main>
 
 
-<!-- ===========================
-     RODAPÉ (FOOTER)
-     =========================== -->
-<footer class="bg-[#001F3F] text-white py-10">
-  <div class="max-w-7xl mx-auto px-4">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
-      
-      <!-- Links principais -->
-      <nav aria-label="Links do rodapé">
-        <ul class="flex flex-wrap gap-6 text-sm md:text-base font-medium">
-          <li><a href="https://portalciencianews.com.br" class="hover:text-yellow-400 transition-colors">Início</a></li>
-          <li><a href="https://portalciencianews.com.br/post/arquivos.html" class="hover:text-yellow-400 transition-colors">Arquivos</a></li>
-          <li><a href="#contato" class="hover:text-yellow-400 transition-colors">Contato</a></li>
-        </ul>
-      </nav>
+  <!-- FOOTER -->
+  <footer class="py-4 mt-5 text-center text-white" style="background:#2b2b2b;">
+    <p class="mb-0">© 2025 Portal Ciência News</p>
+  </footer>
 
-      <!-- Contato -->
-      <div>
-        <p class="text-sm md:text-base">
-          📧 <span class="font-semibold">Contato:</span>
-          <a href="mailto:canalciencianews@gmail.com" class="hover:text-yellow-400 underline underline-offset-2 transition-colors">
-            canalciencianews@gmail.com
-          </a>
-        </p>
-      </div>
-
-      <!-- Ícones sociais -->
-      <div class="flex gap-4 text-2xl">
-        <a href="https://www.facebook.com/profile.php?id=100079774894307" class="hover:text-yellow-400" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/ciencianews1/" class="hover:text-yellow-400" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/@CienciaNewsOficial" class="hover:text-yellow-400" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.tiktok.com/@canalciencianews?_t=ZM-8yudMEh6wI2&_r=1" class="hover:text-yellow-400" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="https://www.kwai.com/@CanalCienciaNews" class="hover:text-yellow-400" aria-label="Kwai"><i class="bi bi-camera-video"></i></a>
-        <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="hover:text-yellow-400" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      </div>
-    </div>
-
-    <!-- Linha inferior -->
-    <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-6 gap-4">
-      <p class="text-xs md:text-sm text-center md:text-left">
-        &copy; <span id="year"></span> <strong>Ciência News</strong> — Uma pílula com notícias sobre ciências.<br class="md:hidden" />
-        Todos os direitos reservados.
-      </p>
-
-      <div class="bg-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center space-x-2">
-        <span class="text-xs md:text-sm font-semibold">Visualizações:</span>
-        <a title="Contador de Visitas do MegaContador" href="https://megacontador.com.br/">
-          <img src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif" alt="Contador de visitas" class="h-6 rounded">
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- ===========================
-     SCRIPTS
-     =========================== -->
-<script>
-  // Atualiza automaticamente o ano no rodapé
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Corrige o menu mobile e evita erro de carregamento
-  document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.getElementById('menuMobileBtn');
-    const nav = document.getElementById('menuMobileNav');
-
-    if (btn && nav) {
-      btn.addEventListener('click', () => {
-        const isHidden = nav.classList.toggle('hidden');
-        btn.setAttribute('aria-expanded', !isHidden);
-      });
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 768) {
-          nav.classList.add('hidden');
-          btn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    }
-  });
-</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-    </html>
+</html>
