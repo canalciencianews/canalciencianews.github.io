@@ -255,14 +255,14 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
     import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8",
-      authDomain: "formulario-de-contato-6c213.firebaseapp.com",
-      projectId: "formulario-de-contato-6c213",
-      storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
-      messagingSenderId: "916368258641",
-      appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70"
-    };
+const firebaseConfig = {
+  apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8", // chave atual protegida
+  authDomain: "formulario-de-contato-6c213.firebaseapp.com",
+  projectId: "formulario-de-contato-6c213",
+  storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
+  messagingSenderId: "916368258641",
+  appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70"
+};
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
