@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -16,6 +17,35 @@
   <meta property="og:url" content="https://canalciencianews.github.io/" />
   <meta property="og:image" content="https://canalciencianews.github.io/thumbnail.png" />
   <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ciencianews"> <meta name="twitter:title" content="Ciência News — Uma pílula com notícias sobre ciências">
+  <meta name="twitter:description" content="As principais notícias do universo agora no seu portal favorito.">
+  <meta name="twitter:image" content="https://canalciencianews.github.io/thumbnail.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ciência News",
+    "alternateName": "Portal Ciência News",
+    "url": "https://canalciencianews.github.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://canalciencianews.github.io/arquivos.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Ciência News",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://canalciencianews.github.io/logo.png"
+      }
+    }
+  }
+  </script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -100,18 +130,37 @@
     /* Footer */
     footer { background: var(--dark-gray); color: #ccc; padding: 3rem 0; margin-top: 3rem; }
 
-    /* Utilitários */
+    /* Botão Continuar Lendo Elegante */
     .btn-science {
       background: var(--space-blue);
       color: white;
-      border-radius: 6px;
-      padding: 8px 16px;
+      border-radius: 50px; /* Estilo pílula */
+      padding: 10px 25px;
       text-decoration: none;
-      font-size: 0.9rem;
-      display: inline-block;
-      transition: 0.3s;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      border: 2px solid var(--space-blue);
     }
-    .btn-science:hover { background: var(--orbital-orange); color: white; }
+
+    .btn-science i {
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-science:hover {
+      background: transparent;
+      color: var(--space-blue);
+      box-shadow: 0 5px 15px rgba(11, 37, 69, 0.2);
+    }
+
+    .btn-science:hover i {
+      transform: translateX(5px); /* O ícone "foge" suavemente para a direita */
+    }
   </style>
 </head>
 <body>
@@ -135,7 +184,9 @@
     </div>
   </nav>
 
-  <main class="container mt-4">
+<!-- CONTEÚDO -->
+
+ <main class="container mt-4">
     <div class="row">
       
       <div class="col-lg-8">
@@ -151,6 +202,24 @@
 
         <h2 class="section-title">Últimos Artigos</h2>
 
+        <div class="news-card border-start border-4 border-primary">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80" alt="Galáxia Água-Viva">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body-content">
+                <span class="badge bg-primary mb-2">ASTRONOMIA</span>
+                <h3 class="h5 fw-bold text-primary">James Webb detecta a Galáxia "Água-Viva" mais distante</h3>
+                <p class="small text-muted">Astrônomos confirmam descoberta de galáxia com 'tentáculos' de gás a 8,5 bilhões de anos-luz.</p>
+                <a href="https://canalciencianews.github.io/post/james-webb-galaxia-agua-viva.html" class="btn-science">
+                  Continuar lendo <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="news-card">
           <div class="row g-0">
             <div class="col-md-5">
@@ -160,7 +229,9 @@
               <div class="card-body-content">
                 <h3 class="h5 fw-bold text-primary">Buraco negro engole estrela gigante</h3>
                 <p class="small text-muted">Evento cósmico raro é captado por telescópios de alta precisão, revelando detalhes sobre a gravidade extrema.</p>
-                <a href="https://canalciencianews.github.io/post/novembro/buraco-negro-engole-estrela-gigante.html" class="btn-science">Continuar lendo</a>
+                <a href="https://canalciencianews.github.io/post/novembro/buraco-negro-engole-estrela-gigante.html" class="btn-science">
+                  Continuar lendo <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -175,7 +246,9 @@
               <div class="card-body-content">
                 <h3 class="h5 fw-bold text-primary">O mistério do objeto Capotauro</h3>
                 <p class="small text-muted">Astrônomos identificam um enigmático objeto no espaço profundo que desafia as teorias atuais.</p>
-                <a href="https://canalciencianews.github.io/post/outubro/capotauro-misterio-cosmico-james-webb.html" class="btn-science">Continuar lendo</a>
+                <a href="https://canalciencianews.github.io/post/outubro/capotauro-misterio-cosmico-james-webb.html" class="btn-science">
+                  Continuar lendo <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -230,12 +303,14 @@
           <div class="mb-3"><input name="email" type="email" class="form-control" placeholder="E-mail" required></div>
           <div class="mb-3"><input name="subject" type="text" class="form-control" placeholder="Assunto" required></div>
           <div class="mb-3"><textarea name="message" class="form-control" rows="4" placeholder="Sua mensagem" required></textarea></div>
-          <button type="submit" class="btn btn-warning w-100 fw-bold py-2">ENVIAR AGORA</button>
+          <button type="submit" class="btn btn-warning w-100 fw-bold py-2 shadow-sm">ENVIAR AGORA</button>
         </form>
         <p id="status" class="mt-3 text-center"></p>
       </div>
     </section>
-  </main>
+</main>
+
+<!-- FIM DOS CONTEUDOS -->
 
   <footer class="text-center">
     <div class="container">
