@@ -1,36 +1,46 @@
+<!DOCTYPE html>
 
-<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  <meta name="theme-color" content="#0b2545" />
-  <title>Ciência News — Uma pílula com notícias sobre ciências</title>
-  <meta name="description" content="Ciência News — Uma pílula com notícias sobre ciências." />
-  <link rel="canonical" href="https://canalciencianews.github.io/" />
-  <link rel="icon" type="image/png" href="https://canalciencianews.github.io/favicon.png" />
-
-  <meta property="og:site_name" content="Ciência News" />
-  <meta property="og:title" content="Ciência News — Uma pílula com notícias sobre ciências" />
-  <meta property="og:url" content="https://canalciencianews.github.io/" />
-  <meta property="og:image" content="https://canalciencianews.github.io/thumbnail.png" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@ciencianews"> <meta name="twitter:title" content="Ciência News — Uma pílula com notícias sobre ciências">
-  <meta name="twitter:description" content="As principais notícias do universo agora no seu portal favorito.">
-  <meta name="twitter:image" content="https://canalciencianews.github.io/thumbnail.png">
-
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="#081b35" name="theme-color"/>
+<meta content="light" name="color-scheme"/>
+<title>Ciência News — Uma pílula com notícias sobre ciências</title>
+<meta content="Uma pílula com notícias sobre ciências. Descubra as principais novidades da astronomia, tecnologia, biologia, física e exploração espacial." name="description"/>
+<meta content="Ciência News" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="Portuguese" name="language"/>
+<meta content="Ciência News, ciência, notícias científicas, astronomia, tecnologia, descobertas científicas, universo" name="keywords"/>
+<link href="https://canalciencianews.github.io/" rel="canonical"/>
+<link href="https://canalciencianews.github.io/favicon.png" rel="icon" type="image/png"/>
+<link href="https://canalciencianews.github.io/logo.png" rel="apple-touch-icon"/>
+<!-- Open Graph -->
+<meta content="Ciência News" property="og:site_name"/>
+<meta content="Ciência News — Uma pílula com notícias sobre ciências" property="og:title"/>
+<meta content="As principais notícias do universo agora no seu portal favorito." property="og:description"/>
+<meta content="https://canalciencianews.github.io/" property="og:url"/>
+<meta content="https://canalciencianews.github.io/thumbnail.png" property="og:image"/>
+<meta content="Ciência News — Uma pílula com notícias sobre ciências" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<!-- Twitter Cards -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@ciencianews" name="twitter:site"/>
+<meta content="Ciência News — Uma pílula com notícias sobre ciências" name="twitter:title"/>
+<meta content="As principais notícias do universo agora no seu portal favorito." name="twitter:description"/>
+<meta content="https://canalciencianews.github.io/thumbnail.png" name="twitter:image"/>
+<!-- Schema.org -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Ciência News",
     "alternateName": "Portal Ciência News",
     "url": "https://canalciencianews.github.io/",
+    "inLanguage": "pt-BR",
+    "description": "Portal de divulgação científica, notícias, astronomia e tecnologia.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://canalciencianews.github.io/arquivos.html?q={search_term_string}",
@@ -39,335 +49,3047 @@
     "publisher": {
       "@type": "Organization",
       "name": "Ciência News",
+      "url": "https://canalciencianews.github.io/",
       "logo": {
         "@type": "ImageObject",
         "url": "https://canalciencianews.github.io/logo.png"
-      }
+      },
+      "sameAs": [
+        "https://www.youtube.com/@CienciaNewsOficial",
+        "https://www.instagram.com/ciencianews1/",
+        "https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c"
+      ]
     }
   }
   </script>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  
-  <style>
+<!-- Bootstrap 5.3.8 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<style>
     :root {
-      --space-blue: #0b2545;
-      --orbital-orange: #ff7a00;
-      --dark-gray: #1a1a1a;
-      --bg-light: #f4f7f9;
+      --navy: #081b35;
+      --navy-light: #102e52;
+      --navy-medium: #153b63;
+      --orange: #ff7900;
+      --orange-light: #ff9b35;
+      --white: #ffffff;
+      --light: #f4f7fb;
+      --gray: #66758a;
+      --border: #e5eaf0;
+      --gradient-main: linear-gradient(120deg, #081b35 0%, #102e52 55%, #17436b 100%);
+      --gradient-orange: linear-gradient(120deg, #ff7900, #ffab42);
+      --shadow: 0 14px 38px rgba(8, 27, 53, .09);
+      --shadow-hover: 0 22px 48px rgba(8, 27, 53, .15);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 95px;
     }
 
     body {
-      background-color: var(--bg-light);
-      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--light);
+      color: var(--navy);
+      overflow-x: hidden;
     }
 
-    /* Evita que o conteúdo grude no topo */
-    .navbar { background-color: var(--orbital-orange) !important; border-bottom: 4px solid rgba(0,0,0,0.1); }
-    
-    /* Hero Section - Ajustada para não quebrar */
-    .hero-container {
-      position: relative;
-      background: var(--space-blue);
-      border-radius: 12px;
-      overflow: hidden;
-      min-height: 350px;
-      margin-bottom: 2rem;
-    }
-    .hero-img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-      opacity: 0.6;
-    }
-    .hero-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 2rem;
-      background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    a { text-decoration: none; }
+
+    ::selection {
+      background: var(--orange);
       color: white;
     }
 
-    /* Cards de Notícias - Sem sobreposição */
-    .news-card {
-      background: white;
-      border-radius: 10px;
-      border: none;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      margin-bottom: 1.5rem;
-      overflow: hidden;
-    }
-    .news-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-body-content { padding: 1.25rem; }
+    /* BARRA SUPERIOR */
 
-    /* Seções */
-    .section-title {
+    .top-strip {
+      background: #061529;
+      color: rgba(255,255,255,.76);
+      font-size: .76rem;
+      padding: 8px 0;
+      letter-spacing: .35px;
+    }
+
+    .top-strip i { color: var(--orange-light); }
+
+    .top-strip a {
+      color: white;
+      transition: .25s;
+    }
+
+    .top-strip a:hover { color: var(--orange-light); }
+
+    /* CABEÇALHO */
+
+    .main-header {
+      background: var(--gradient-main);
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      box-shadow: 0 5px 25px rgba(0,0,0,.12);
+      border-bottom: 3px solid var(--orange);
+    }
+
+    .main-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .12;
+      background-image:
+        radial-gradient(circle at 85% 20%, white 1px, transparent 1.5px),
+        radial-gradient(circle at 72% 70%, white 1px, transparent 1.5px),
+        radial-gradient(circle at 95% 85%, white 1px, transparent 1.5px);
+      background-size: 75px 75px, 110px 110px, 90px 90px;
+    }
+
+    .main-header .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .navbar { padding: 13px 0; }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white !important;
       font-weight: 800;
-      color: var(--space-blue);
-      border-left: 5px solid var(--orbital-orange);
-      padding-left: 12px;
-      margin: 2rem 0 1.5rem 0;
+      font-size: 1.3rem;
+      letter-spacing: -.5px;
+    }
+
+    .brand-logo {
+      width: 47px;
+      height: 47px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: white;
+      padding: 3px;
+    }
+
+    .brand-text small {
+      display: block;
+      font-size: .58rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.65);
+      letter-spacing: 1.8px;
       text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    .navbar-nav { gap: 7px; }
+
+    .navbar-nav .nav-link {
+      color: rgba(255,255,255,.85) !important;
+      font-size: .88rem;
+      font-weight: 600;
+      padding: 10px 14px !important;
+      border-radius: 8px;
+      transition: .25s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: white !important;
+      background: rgba(255,255,255,.11);
+    }
+
+    .navbar-toggler {
+      border: 1px solid rgba(255,255,255,.3);
+      color: white;
+      padding: 7px 11px;
+      box-shadow: none !important;
+    }
+
+    .navbar-toggler i { font-size: 1.6rem; }
+
+    .nav-contact {
+      background: var(--gradient-orange);
+      color: white !important;
+      border-radius: 50px !important;
+      padding: 10px 20px !important;
+      margin-left: 8px;
+      box-shadow: 0 5px 15px rgba(255,121,0,.2);
+    }
+
+    .nav-contact:hover {
+      background: white !important;
+      color: var(--navy) !important;
+      transform: translateY(-2px);
+    }
+
+    /* HERO */
+
+    .hero-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      color: white;
+      background: var(--gradient-main);
+      padding: 78px 0 82px;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      opacity: .13;
+      background-image:
+        radial-gradient(circle at 15% 25%, white 1px, transparent 1.5px),
+        radial-gradient(circle at 70% 60%, white 1px, transparent 1.5px),
+        radial-gradient(circle at 40% 85%, white 1px, transparent 1.5px);
+      background-size: 90px 90px, 130px 130px, 110px 110px;
+    }
+
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 560px;
+      height: 560px;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 50%;
+      right: -210px;
+      top: -270px;
+      box-shadow:
+        0 0 0 45px rgba(255,255,255,.025),
+        0 0 0 90px rgba(255,255,255,.02);
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 13px;
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.08);
+      border-radius: 50px;
+      color: #ffd4ad;
+      font-size: .73rem;
+      font-weight: 800;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+      margin-bottom: 23px;
+    }
+
+    .hero-kicker i { color: var(--orange-light); }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5.5vw, 4.7rem);
+      line-height: 1.04;
+      font-weight: 900;
+      letter-spacing: -2.7px;
+      max-width: 690px;
+      margin-bottom: 22px;
+    }
+
+    .hero-title span {
+      color: var(--orange-light);
+      display: block;
+    }
+
+    .hero-description {
+      color: rgba(255,255,255,.75);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 550px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 21px;
+      border-radius: 10px;
+      font-size: .9rem;
+      font-weight: 800;
+      transition: .3s;
+    }
+
+    .btn-hero-primary {
+      color: white;
+      background: var(--gradient-orange);
+      box-shadow: 0 8px 23px rgba(255,121,0,.25);
+    }
+
+    .btn-hero-primary:hover {
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(255,121,0,.35);
+    }
+
+    .btn-hero-secondary {
+      color: white;
+      border: 1px solid rgba(255,255,255,.28);
+      background: rgba(255,255,255,.07);
+    }
+
+    .btn-hero-secondary:hover {
+      color: white;
+      border-color: var(--orange-light);
+      background: rgba(255,255,255,.13);
+      transform: translateY(-3px);
+    }
+
+    .hero-art {
+      position: relative;
+      max-width: 490px;
+      margin-left: auto;
+    }
+
+    .hero-art-frame {
+      position: relative;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.23);
+      border-radius: 25px;
+      background: rgba(255,255,255,.09);
+      box-shadow: 0 25px 65px rgba(0,0,0,.28);
+      transform: rotate(1.5deg);
+      transition: transform .5s ease;
+    }
+
+    .hero-art-frame:hover { transform: rotate(0) translateY(-5px); }
+
+    .hero-art img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1200 / 630;
+      object-fit: cover;
+      border-radius: 17px;
+    }
+
+    .hero-art-caption {
+      position: absolute;
+      left: 25px;
+      bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: white;
+      font-size: .75rem;
+      font-weight: 750;
+      text-shadow: 0 2px 8px rgba(0,0,0,.8);
+    }
+
+    .hero-art-caption i { color: var(--orange-light); }
+
+    .hero-orbit {
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      display: grid;
+      place-items: center;
+      right: -25px;
+      top: -28px;
+      border-radius: 50%;
+      background: var(--gradient-orange);
+      color: white;
+      font-size: 1.8rem;
+      box-shadow: 0 10px 30px rgba(255,121,0,.3);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* FAIXA DE IDENTIDADE */
+
+    .brand-promise {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 19px 0;
+    }
+
+    .promise-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+      color: var(--navy);
+      font-size: .9rem;
+      font-weight: 800;
+      letter-spacing: .15px;
+    }
+
+    .promise-inner i {
+      color: var(--orange);
       font-size: 1.25rem;
     }
 
-    /* Sidebar Widgets */
-    .widget {
-      background: white;
-      border-radius: 10px;
-      padding: 1.25rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    .promise-inner span { color: var(--orange); }
+
+    /* SEÇÕES */
+
+    .content-section { padding: 82px 0; }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 30px;
     }
 
-    /* Footer */
-    footer { background: var(--dark-gray); color: #ccc; padding: 3rem 0; margin-top: 3rem; }
-
-    /* Botão Continuar Lendo Elegante */
-    .btn-science {
-      background: var(--space-blue);
-      color: white;
-      border-radius: 50px; /* Estilo pílula */
-      padding: 10px 25px;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    .section-eyebrow {
       display: inline-flex;
       align-items: center;
-      transition: all 0.3s ease;
-      border: 2px solid var(--space-blue);
+      gap: 8px;
+      color: var(--orange);
+      font-size: .72rem;
+      font-weight: 850;
+      letter-spacing: 1.9px;
+      text-transform: uppercase;
+      margin-bottom: 11px;
     }
 
-    .btn-science i {
-      margin-left: 8px;
-      transition: transform 0.3s ease;
+    .section-eyebrow::before {
+      content: "";
+      width: 23px;
+      height: 3px;
+      border-radius: 5px;
+      background: var(--orange);
     }
 
-    .btn-science:hover {
-      background: transparent;
-      color: var(--space-blue);
-      box-shadow: 0 5px 15px rgba(11, 37, 69, 0.2);
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(1.8rem, 3.3vw, 2.65rem);
+      line-height: 1.13;
+      font-weight: 900;
+      letter-spacing: -1.3px;
+      margin: 0;
     }
 
-    .btn-science:hover i {
-      transform: translateX(5px); /* O ícone "foge" suavemente para a direita */
+    .section-subtitle {
+      color: var(--gray);
+      font-size: .93rem;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 12px 0 0;
     }
-  </style>
+
+    .section-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--navy);
+      font-size: .84rem;
+      font-weight: 800;
+      white-space: nowrap;
+      transition: .25s;
+    }
+
+    .section-link:hover { color: var(--orange); }
+
+    /* VÍDEO EM DESTAQUE */
+
+    .video-section {
+      background: white;
+      padding: 72px 0 78px;
+    }
+
+    .featured-video {
+      display: grid;
+      grid-template-columns: minmax(0, 1.18fr) minmax(300px, .82fr);
+      overflow: hidden;
+      background: var(--navy);
+      border-radius: 23px;
+      box-shadow: var(--shadow);
+      color: white;
+    }
+
+    .featured-video-image {
+      position: relative;
+      min-height: 340px;
+      overflow: hidden;
+      background: #061529;
+    }
+
+    .featured-video-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 340px;
+      display: block;
+      object-fit: cover;
+      transition: transform .7s ease;
+    }
+
+    .featured-video:hover .featured-video-image img { transform: scale(1.045); }
+
+    .video-play-overlay {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(0deg, rgba(3,12,25,.42), rgba(3,12,25,.04));
+    }
+
+    .video-play-button {
+      width: 76px;
+      height: 76px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.6);
+      border-radius: 50%;
+      color: white;
+      background: rgba(255,121,0,.94);
+      font-size: 2rem;
+      box-shadow: 0 10px 35px rgba(0,0,0,.3);
+      transition: .3s;
+    }
+
+    .video-play-button:hover {
+      color: white;
+      transform: scale(1.1);
+      background: var(--orange);
+    }
+
+    .video-label {
+      position: absolute;
+      top: 19px;
+      left: 19px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 12px;
+      color: white;
+      background: var(--orange);
+      border-radius: 7px;
+      font-size: .69rem;
+      font-weight: 850;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .featured-video-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(28px, 4vw, 48px);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(255,121,0,.14), transparent 38%),
+        var(--gradient-main);
+    }
+
+    .featured-video-content .video-meta {
+      color: var(--orange-light);
+      font-size: .73rem;
+      font-weight: 850;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .featured-video-content h3 {
+      color: white;
+      font-size: clamp(1.55rem, 2.7vw, 2.25rem);
+      font-weight: 900;
+      line-height: 1.16;
+      letter-spacing: -.8px;
+      margin-bottom: 17px;
+    }
+
+    .featured-video-content p {
+      color: rgba(255,255,255,.7);
+      font-size: .91rem;
+      line-height: 1.75;
+      margin-bottom: 25px;
+    }
+
+    .video-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn-video-site,
+    .btn-video-youtube {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 9px;
+      padding: 12px 16px;
+      font-size: .82rem;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn-video-site {
+      background: var(--gradient-orange);
+      color: white;
+    }
+
+    .btn-video-site:hover {
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    .btn-video-youtube {
+      color: white;
+      border: 1px solid rgba(255,255,255,.25);
+      background: rgba(255,255,255,.07);
+    }
+
+    .btn-video-youtube:hover {
+      color: white;
+      border-color: var(--orange-light);
+      background: rgba(255,255,255,.13);
+    }
+
+    /* NOTÍCIAS */
+
+    .news-section {
+      background:
+        radial-gradient(circle at 0% 10%, rgba(255,121,0,.035), transparent 25%),
+        var(--light);
+    }
+
+    .news-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 27px;
+    }
+
+    .news-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--gray);
+      border-radius: 50px;
+      padding: 8px 15px;
+      font-size: .76rem;
+      font-weight: 750;
+      transition: .25s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      color: white;
+      border-color: var(--navy);
+      background: var(--navy);
+    }
+
+    .news-count {
+      color: var(--gray);
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    .news-card {
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border: 1px solid rgba(8,27,53,.055);
+      border-radius: 17px;
+      box-shadow: 0 8px 25px rgba(8,27,53,.045);
+      transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(255,121,0,.25);
+    }
+
+    .news-visual {
+      min-height: 155px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: white;
+      background: var(--gradient-main);
+    }
+
+    .news-visual::before,
+    .news-visual::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 50%;
+    }
+
+    .news-visual::before {
+      width: 210px;
+      height: 210px;
+      right: -55px;
+      top: -100px;
+    }
+
+    .news-visual::after {
+      width: 145px;
+      height: 145px;
+      left: -55px;
+      bottom: -80px;
+    }
+
+    .news-visual-icon {
+      position: relative;
+      z-index: 1;
+      width: 78px;
+      height: 78px;
+      display: grid;
+      place-items: center;
+      border-radius: 23px;
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.10);
+      color: var(--orange-light);
+      font-size: 2.5rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,.12);
+      transform: rotate(-5deg);
+      transition: .4s;
+    }
+
+    .news-card:hover .news-visual-icon {
+      transform: rotate(0) scale(1.08);
+    }
+
+    .news-visual.voyager { background: linear-gradient(135deg, #07152c, #174b75); }
+    .news-visual.euclid { background: linear-gradient(135deg, #101d48, #344b87); }
+    .news-visual.stars { background: linear-gradient(135deg, #23143d, #65416e); }
+    .news-visual.hominin { background: linear-gradient(135deg, #263d35, #72835b); }
+    .news-visual.graphene { background: linear-gradient(135deg, #092d43, #147b83); }
+    .news-visual.vision { background: linear-gradient(135deg, #17264d, #5863a5); }
+
+    .news-category {
+      position: absolute;
+      z-index: 2;
+      left: 15px;
+      top: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      color: white;
+      background: rgba(5,17,35,.48);
+      border: 1px solid rgba(255,255,255,.16);
+      backdrop-filter: blur(8px);
+      font-size: .65rem;
+      font-weight: 800;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+    }
+
+    .news-card-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 21px;
+    }
+
+    .news-date {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #8a96a6;
+      font-size: .7rem;
+      font-weight: 700;
+      margin-bottom: 11px;
+    }
+
+    .news-date i { color: var(--orange); }
+
+    .news-card h3 {
+      color: var(--navy);
+      font-size: 1.08rem;
+      line-height: 1.38;
+      font-weight: 850;
+      letter-spacing: -.25px;
+      margin-bottom: 11px;
+    }
+
+    .news-excerpt {
+      color: var(--gray);
+      font-size: .83rem;
+      line-height: 1.7;
+      margin-bottom: 17px;
+    }
+
+    .news-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid #edf0f4;
+    }
+
+    .news-source {
+      color: #7b8796;
+      font-size: .7rem;
+      font-weight: 750;
+    }
+
+    .news-source i {
+      color: var(--orange);
+      margin-right: 4px;
+    }
+
+    .btn-news-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 7px;
+      padding: 8px 11px;
+      color: white;
+      background: var(--navy);
+      font-size: .72rem;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn-news-more:hover {
+      color: white;
+      background: var(--orange);
+      transform: translateY(-2px);
+    }
+
+    .news-source-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--orange);
+      font-size: .72rem;
+      font-weight: 800;
+      transition: .2s;
+    }
+
+    .news-source-link:hover { color: var(--navy); }
+
+    /* CHAMADA FINAL */
+
+    .community-section {
+      padding: 65px 0;
+      background: white;
+    }
+
+    .community-banner {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      padding: 35px 40px;
+      border-radius: 20px;
+      color: white;
+      background:
+        radial-gradient(circle at 90% 0%, rgba(255,121,0,.25), transparent 35%),
+        var(--gradient-main);
+    }
+
+    .community-banner::after {
+      content: "✦";
+      position: absolute;
+      right: 28%;
+      top: -40px;
+      color: rgba(255,255,255,.07);
+      font-size: 180px;
+      pointer-events: none;
+    }
+
+    .community-banner-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .community-banner h2 {
+      color: white;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 900;
+      letter-spacing: -.7px;
+      margin-bottom: 9px;
+    }
+
+    .community-banner p {
+      color: rgba(255,255,255,.7);
+      font-size: .88rem;
+      margin: 0;
+    }
+
+    .community-button {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      flex-shrink: 0;
+      padding: 13px 19px;
+      border-radius: 9px;
+      color: white;
+      background: var(--gradient-orange);
+      font-size: .83rem;
+      font-weight: 850;
+      transition: .25s;
+    }
+
+    .community-button:hover {
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* CONTATO */
+
+    .contact-section {
+      position: relative;
+      padding: 85px 0;
+      overflow: hidden;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-section::before {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: rgba(255,121,0,.055);
+      top: -180px;
+      right: -120px;
+      pointer-events: none;
+    }
+
+    .contact-section::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid rgba(8,27,53,.06);
+      bottom: -170px;
+      left: -100px;
+      pointer-events: none;
+    }
+
+    .contact-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .contact-intro { padding: 25px 30px 25px 0; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--orange);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 25px;
+      height: 3px;
+      background: var(--orange);
+      border-radius: 5px;
+    }
+
+    .contact-title {
+      color: var(--navy);
+      font-weight: 850;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.13;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
+
+    .contact-title span { color: var(--orange); }
+
+    .contact-description {
+      color: var(--gray);
+      line-height: 1.8;
+      font-size: .96rem;
+      max-width: 430px;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: 35px;
+      color: var(--navy);
+      font-size: .88rem;
+      font-weight: 600;
+    }
+
+    .contact-info-icon {
+      width: 43px;
+      height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff1e5;
+      color: var(--orange);
+      border-radius: 12px;
+      font-size: 1.2rem;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(8,27,53,.06);
+    }
+
+    .contact-card h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 7px;
+    }
+
+    .contact-card .subtitle {
+      color: var(--gray);
+      font-size: .84rem;
+      margin-bottom: 25px;
+    }
+
+    .form-label {
+      color: var(--navy);
+      font-size: .82rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: .9rem;
+      color: var(--navy);
+      background-color: #fafbfd;
+      transition: .25s;
+    }
+
+    .form-control:focus {
+      background: white;
+      border-color: var(--orange);
+      box-shadow: 0 0 0 4px rgba(255,121,0,.10);
+    }
+
+    .form-control::placeholder { color: #a3adba; }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 125px;
+    }
+
+    .btn-send {
+      background: var(--gradient-orange);
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-weight: 800;
+      font-size: .88rem;
+      letter-spacing: .5px;
+      transition: .3s;
+      box-shadow: 0 6px 18px rgba(255,121,0,.20);
+    }
+
+    .btn-send:hover {
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(255,121,0,.30);
+    }
+
+    .btn-send:disabled {
+      opacity: .7;
+      transform: none;
+      cursor: wait;
+    }
+
+    #status {
+      font-size: .86rem;
+      font-weight: 650;
+      min-height: 22px;
+      margin-bottom: 0;
+    }
+
+    /* MODAIS */
+
+    .modal-content {
+      overflow: hidden;
+      border: 0;
+      border-radius: 18px;
+      box-shadow: 0 25px 80px rgba(0,0,0,.25);
+    }
+
+    .modal-header {
+      color: white;
+      background: var(--gradient-main);
+      border-bottom: 3px solid var(--orange);
+      padding: 20px 24px;
+    }
+
+    .modal-header .modal-title {
+      font-size: 1.05rem;
+      font-weight: 850;
+      line-height: 1.35;
+      padding-right: 12px;
+    }
+
+    .modal-header .btn-close {
+      filter: invert(1);
+      opacity: .85;
+    }
+
+    .modal-body {
+      padding: 27px;
+      color: var(--navy);
+    }
+
+    .modal-news-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 18px;
+    }
+
+    .modal-news-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 50px;
+      padding: 7px 11px;
+      background: #f1f4f8;
+      color: var(--gray);
+      font-size: .72rem;
+      font-weight: 750;
+    }
+
+    .modal-news-meta i { color: var(--orange); }
+
+    .modal-description {
+      color: #536276;
+      font-size: .94rem;
+      line-height: 1.85;
+      white-space: pre-line;
+    }
+
+    .modal-source-area {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .modal-source-area h4 {
+      color: var(--navy);
+      font-size: .82rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-bottom: 12px;
+    }
+
+    .modal-source-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .modal-source-list a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 13px;
+      border-radius: 8px;
+      color: var(--navy);
+      background: #f3f6fa;
+      font-size: .76rem;
+      font-weight: 800;
+      transition: .2s;
+    }
+
+    .modal-source-list a:hover {
+      color: white;
+      background: var(--orange);
+    }
+
+    .video-modal .modal-body {
+      padding: 0;
+      background: #030a13;
+    }
+
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      display: block;
+    }
+
+    /* RODAPÉ */
+
+    .site-footer {
+      position: relative;
+      background: var(--gradient-main);
+      color: white;
+      overflow: hidden;
+      padding-top: 65px;
+    }
+
+    .site-footer::before {
+      content: "";
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border: 1px solid rgba(255,255,255,.055);
+      border-radius: 50%;
+      top: -300px;
+      right: -80px;
+      box-shadow:
+        0 0 0 40px rgba(255,255,255,.018),
+        0 0 0 80px rgba(255,255,255,.018);
+      pointer-events: none;
+    }
+
+    .footer-content { position: relative; z-index: 1; }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      color: white;
+      font-size: 1.35rem;
+      font-weight: 850;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand img {
+      width: 53px;
+      height: 53px;
+      object-fit: contain;
+      background: white;
+      border-radius: 13px;
+      padding: 3px;
+    }
+
+    .footer-description {
+      color: rgba(255,255,255,.65);
+      font-size: .88rem;
+      line-height: 1.8;
+      max-width: 360px;
+    }
+
+    .footer-heading {
+      font-size: .85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      color: white;
+      margin-bottom: 22px;
+    }
+
+    .footer-heading::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 3px;
+      background: var(--orange);
+      border-radius: 5px;
+      margin-top: 11px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li { margin-bottom: 13px; }
+
+    .footer-links a {
+      color: rgba(255,255,255,.68);
+      font-size: .88rem;
+      transition: .25s;
+    }
+
+    .footer-links a:hover {
+      color: var(--orange-light);
+      padding-left: 5px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 11px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      width: 43px;
+      height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      color: white;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.10);
+      font-size: 1.2rem;
+      transition: .3s;
+    }
+
+    .social-link:hover {
+      background: var(--orange);
+      color: white;
+      border-color: var(--orange);
+      transform: translateY(-4px);
+    }
+
+    .footer-social-text {
+      color: rgba(255,255,255,.65);
+      font-size: .84rem;
+      line-height: 1.7;
+      margin-top: 17px;
+    }
+
+    .footer-bottom {
+      position: relative;
+      z-index: 1;
+      margin-top: 55px;
+      padding: 22px 0;
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,.55);
+      font-size: .78rem;
+      margin: 0;
+    }
+
+    .footer-bottom strong { color: var(--orange-light); }
+
+    .visit-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 14px;
+      background: rgba(255,255,255,.09);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50px;
+      margin-top: 20px;
+    }
+
+    .visit-counter span {
+      color: rgba(255,255,255,.8);
+      font-size: .76rem;
+      font-weight: 650;
+    }
+
+    .visit-counter img {
+      height: 20px;
+      display: block;
+    }
+
+    /* BOTÃO FLUTUANTE DE CONTATO */
+
+    .contact-float {
+      position: fixed;
+      z-index: 1020;
+      right: 22px;
+      bottom: 22px;
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      background: var(--gradient-orange);
+      box-shadow: 0 8px 25px rgba(255,121,0,.35);
+      font-size: 1.35rem;
+      transition: .25s;
+    }
+
+    .contact-float:hover {
+      color: white;
+      transform: translateY(-4px) scale(1.04);
+    }
+
+    /* ANIMAÇÕES */
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVIDADE */
+
+    @media (max-width: 991.98px) {
+      .navbar-collapse { padding: 15px 0 8px; }
+      .navbar-nav { gap: 3px; }
+
+      .navbar-nav .nav-link { padding: 11px 13px !important; }
+
+      .nav-contact {
+        margin: 8px 0 0;
+        display: inline-block;
+        text-align: center;
+        width: fit-content;
+      }
+
+      .hero-section { padding: 65px 0; }
+      .hero-art { max-width: 570px; margin: 42px auto 0; }
+
+      .featured-video {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-video-image,
+      .featured-video-image img {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+      }
+
+      .featured-video-content { padding: 32px; }
+
+      .contact-intro { padding: 10px 0 25px; }
+      .contact-description { max-width: 600px; }
+    }
+
+    @media (max-width: 767.98px) {
+      .content-section { padding: 65px 0; }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .news-toolbar { align-items: flex-start; }
+
+      .community-banner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px 25px;
+      }
+
+      .community-button { width: 100%; }
+    }
+
+    @media (max-width: 575.98px) {
+      .top-strip { font-size: .67rem; }
+
+      .top-strip .container {
+        gap: 8px;
+      }
+
+      .top-strip span { max-width: 58%; }
+
+      .top-strip a {
+        text-align: right;
+        max-width: 42%;
+      }
+
+      .navbar { padding: 10px 0; }
+
+      .navbar-brand {
+        font-size: 1.08rem;
+        gap: 9px;
+      }
+
+      .brand-logo {
+        width: 41px;
+        height: 41px;
+      }
+
+      .brand-text small { font-size: .49rem; }
+
+      .hero-section { padding: 53px 0 58px; }
+
+      .hero-title {
+        font-size: clamp(2.35rem, 11vw, 3.3rem);
+        letter-spacing: -1.8px;
+      }
+
+      .hero-description { font-size: .93rem; }
+
+      .hero-actions { align-items: stretch; }
+
+      .hero-actions a {
+        width: 100%;
+      }
+
+      .hero-art { margin-top: 35px; }
+
+      .hero-orbit {
+        width: 58px;
+        height: 58px;
+        right: -8px;
+        top: -18px;
+        font-size: 1.4rem;
+      }
+
+      .promise-inner {
+        font-size: .78rem;
+        line-height: 1.5;
+      }
+
+      .video-section { padding: 55px 0; }
+
+      .featured-video { border-radius: 16px; }
+
+      .featured-video-content { padding: 25px 21px; }
+
+      .featured-video-content h3 { font-size: 1.55rem; }
+
+      .video-actions {
+        flex-direction: column;
+      }
+
+      .video-actions a,
+      .video-actions button {
+        width: 100%;
+      }
+
+      .news-filters {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 7px;
+        scrollbar-width: thin;
+      }
+
+      .filter-btn { flex-shrink: 0; }
+
+      .news-card-body { padding: 19px; }
+
+      .news-visual { min-height: 145px; }
+
+      .news-card h3 { font-size: 1.04rem; }
+
+      .contact-section { padding: 60px 0; }
+
+      .contact-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+      }
+
+      .contact-title { font-size: 2.2rem; }
+
+      .site-footer { padding-top: 48px; }
+
+      .footer-bottom {
+        margin-top: 35px;
+        text-align: center;
+      }
+
+      .footer-bottom p + p { margin-top: 8px; }
+
+      .contact-float {
+        width: 47px;
+        height: 47px;
+        right: 14px;
+        bottom: 14px;
+      }
+
+      .modal-body { padding: 21px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+
+      .fade-up {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  
+/* CORREÇÃO DE CONTRASTE DOS LOGOTIPOS */
+.brand-logo,
+.footer-brand img {
+    background: #081b35 !important;
+    padding: 5px !important;
+    object-fit: contain !important;
+    border: 1px solid rgba(255,255,255,.22) !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+
+/* IMAGENS DOS CARDS */
+.cn-card-image {
+    display: block !important;
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 14px 14px 0 0;
+    background: #102e52;
+}
+
+.cn-video-image {
+    display: block !important;
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    height: auto !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 16px;
+    background: #081b35;
+}
+
+@media (max-width: 575.98px) {
+    .cn-card-image {
+        height: 195px !important;
+    }
+
+    .cn-video-image {
+        aspect-ratio: 16 / 9 !important;
+    }
+}
+
+
+/* CIÊNCIA NEWS - CORREÇÕES SOLICITADAS */
+
+.brand-logo,
+.footer-brand img {
+    background-color: #081b35 !important;
+    padding: 5px !important;
+    border: 1px solid rgba(255,255,255,.25) !important;
+    border-radius: 12px !important;
+    object-fit: contain !important;
+}
+
+.hero-section {
+    position: relative !important;
+    isolation: isolate;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    background-color: #081b35 !important;
+    background-image:
+      linear-gradient(90deg, rgba(8,27,53,.94), rgba(8,27,53,.48)),
+      url("imagens-ciencia-news/video-destaque.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    max-width: 950px;
+}
+
+.news-visual {
+    position: relative !important;
+    display: block !important;
+    height: 195px !important;
+    min-height: 195px !important;
+    overflow: hidden !important;
+    background: #081b35 !important;
+}
+
+.cn-news-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-visual-icon {
+    display: none !important;
+}
+
+.cn-image-credit {
+    position: absolute;
+    z-index: 5;
+    right: 8px;
+    bottom: 8px;
+    padding: 5px 8px;
+    color: white;
+    background: rgba(3,12,25,.78);
+    border-radius: 5px;
+    font-size: .62rem;
+    text-decoration: none;
+}
+
+@media(max-width:767.98px) {
+    .hero-section {
+        min-height: 470px;
+        padding: 60px 0 !important;
+        background-position: 60% center !important;
+    }
+}
+
+/* FIM CIÊNCIA NEWS */
+
+</style>
+<style id="cn-ajustes-visuais">
+/* Logo: contraste para a marca branca */
+.brand-logo,
+.footer-brand img {
+    background: #081b35 !important;
+    padding: 5px !important;
+    border: 1px solid rgba(255,255,255,.18) !important;
+    border-radius: 12px !important;
+    object-fit: contain !important;
+}
+
+/* Hero com imagem em estilo marca-d'água */
+.cn-hero-watermark {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: min(72%, 850px);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: .25;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.25) 20%, #000 75%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.25) 20%, #000 75%);
+}
+
+.cn-hero-container {
+    position: relative !important;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.cn-hero-container > *:not(.cn-hero-watermark) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Imagens incorporadas aos cards */
+.cn-card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    background: #102b4a;
+}
+
+@media (max-width: 576px) {
+    .cn-hero-watermark {
+        width: 100%;
+        opacity: .17;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.7), transparent 95%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,.7), transparent 95%);
+    }
+}
+</style>
+<style>
+
+/* Correções visuais Ciência News */
+.brand-logo,
+.footer-brand img {
+    background-color: #081b35 !important;
+    padding: 4px;
+    object-fit: contain;
+}
+
+.news-visual {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.news-visual-icon {
+    display: none !important;
+}
+
+.news-card:nth-child(1) .news-visual,
+.news-card:nth-of-type(1) .news-visual {
+    background-image: url("https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia21/pia21839/PIA21839.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg") !important;
+}
+
+.news-card:nth-child(2) .news-visual,
+.news-card:nth-of-type(2) .news-visual {
+    background-image: url("https://media.esa.int/global/public/common/image/2026/11/402228/image-thumb__402228__social_share/5-euclid-ews-dr1-northpr-m81disk-r4-equ-10k6k-4k.5da46e10.jpg") !important;
+}
+
+.news-card:nth-child(3) .news-visual,
+.news-card:nth-of-type(3) .news-visual {
+    background-image: url("https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2026/11/STScI-01M6GTRN4J7R6FEJ4AJXM567QT.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg") !important;
+}
+
+.news-card:nth-child(4) .news-visual,
+.news-card:nth-of-type(4) .news-visual {
+    background-image: url("https://www.sciencealert.com/images/2026/10/HomoErectus-1200x675.jpg") !important;
+}
+
+.news-card:nth-child(5) .news-visual,
+.news-card:nth-of-type(5) .news-visual {
+    background-image: url("https://www.sciencedaily.com/images/1920/electric-field-of-light-accelerates-electrons.webp") !important;
+}
+
+.news-card:nth-child(6) .news-visual,
+.news-card:nth-of-type(6) .news-visual {
+    background-image: url("https://www.sciencedaily.com/images/1920/beyeler-bionic-eye.webp") !important;
+}
+
+</style>
+<style id="layout-cards-imagens">
+.news-card {
+    overflow: hidden !important;
+}
+
+.news-card .news-visual {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 16 / 9 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    background: transparent !important;
+    background-image: none !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.news-card .news-visual::before,
+.news-card .news-visual::after {
+    content: none !important;
+    display: none !important;
+}
+
+.news-card .news-visual img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.news-card .news-visual img + img {
+    display: none !important;
+}
+</style>
+<style id="cn-layout-final">
+.news-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.news-card .news-visual {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    min-height: 190px !important;
+    flex: 0 0 auto !important;
+    overflow: hidden !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.news-card .news-visual img.cn-card-image {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    z-index: 1 !important;
+}
+
+.news-card .news-category {
+    position: absolute !important;
+    z-index: 2 !important;
+}
+
+.news-card .news-content,
+.news-card .card-body,
+.news-card .news-info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.news-card .btn {
+    margin-top: auto;
+}
+
+.row:has(.news-card) {
+    align-items: stretch !important;
+}
+
+.row:has(.news-card) > [class*="col-"] {
+    display: flex !important;
+}
+
+.row:has(.news-card) > [class*="col-"] > .news-card {
+    flex: 1 1 100% !important;
+}
+
+/* Logo branco visível */
+header img,
+.navbar img,
+.site-logo,
+.logo {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hero com a thumbnail ocupando toda a área */
+.hero,
+.hero-section,
+#hero,
+.hero-banner {
+    background-image: url("thumbnail.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+</style>
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="https://canalciencianews.github.io/">
-        <img src="https://canalciencianews.github.io/logo.png" alt="Logo" height="40" class="me-2">
-        Ciência News
+<!-- BARRA SUPERIOR -->
+<div class="top-strip">
+<div class="container d-flex justify-content-between align-items-center">
+<span>
+<i class="bi bi-stars me-1"></i>
+        Conhecimento, descobertas e curiosidades
+      </span>
+<a href="https://www.youtube.com/@CienciaNewsOficial" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-play-circle-fill me-1"></i>
+        Nosso canal no YouTube
       </a>
-      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-        <i class="bi bi-list fs-1"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="https://canalciencianews.github.io/">Início</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="https://canalciencianews.github.io/arquivos.html">Arquivos</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<!-- CONTEÚDO -->
-
- <main class="container mt-4">
-    <div class="row">
-      
-      <div class="col-lg-8">
-        
-        <div class="hero-container shadow">
-          <img src="https://canalciencianews.github.io/thumbnail.png" class="hero-img" alt="Capa">
-          <div class="hero-overlay">
-            <span class="badge bg-warning text-dark mb-2">DESTAQUE</span>
-            <h1 class="h2 fw-bold">Pílulas diárias de Ciência e Tecnologia</h1>
-            <p class="d-none d-md-block opacity-75">As principais notícias do universo agora no seu portal favorito.</p>
-          </div>
-        </div>
-
-        <h2 class="section-title">Últimos Artigos</h2>
-
-        <div class="news-card border-start border-4 border-primary">
-          <div class="row g-0">
-            <div class="col-md-5">
-              <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80" alt="Galáxia Água-Viva">
+</div>
+</div>
+<!-- CABEÇALHO -->
+<header class="main-header">
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a aria-label="Ciência News - Página inicial" class="navbar-brand" href="https://canalciencianews.github.io/">
+<img alt="Logotipo Ciência News" class="brand-logo" src="https://canalciencianews.github.io/logo.png"/>
+<span class="brand-text">
+            Ciência News
+            <small>Uma pílula de conhecimento</small>
+</span>
+</a>
+<button aria-controls="navMain" aria-expanded="false" aria-label="Abrir menu" class="navbar-toggler" data-bs-target="#navMain" data-bs-toggle="collapse" type="button">
+<i class="bi bi-list"></i>
+</button>
+<div class="collapse navbar-collapse" id="navMain">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item">
+<a class="nav-link active" href="https://canalciencianews.github.io/">
+<i class="bi bi-house-door me-1"></i>Início
+              </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://canalciencianews.github.io/arquivos.html">
+<i class="bi bi-collection me-1"></i>Arquivos
+              </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.youtube.com/@CienciaNewsOficial" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-youtube me-1"></i>YouTube
+              </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.instagram.com/ciencianews1/" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-instagram me-1"></i>Instagram
+              </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-contact" href="#contato">
+<i class="bi bi-envelope me-1"></i>Contato
+              </a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main class="site-main" id="conteudo">
+<!-- HERO -->
+<section class="hero-section">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-7 hero-content fade-up">
+<span class="hero-kicker">
+<i class="bi bi-activity"></i>
+              Ciência em movimento
+            </span>
+<h1 class="hero-title">
+              O universo não para.
+              <span>A gente acompanha.</span>
+</h1>
+<p class="hero-description">
+              Descobertas, pesquisas e acontecimentos que ajudam a entender
+              o mundo — e tudo aquilo que existe além dele.
+            </p>
+<div class="hero-actions">
+<a class="btn-hero-primary" href="#noticias">
+<i class="bi bi-newspaper"></i>
+                Explorar notícias
+              </a>
+<a class="btn-hero-secondary" href="#video-destaque">
+<i class="bi bi-play-circle"></i>
+                Vídeo em destaque
+              </a>
+</div>
+</div>
+<div class="col-lg-5 fade-up">
+<div class="hero-art">
+<div class="hero-art-frame">
+<img alt="Ciência News — notícias e descobertas científicas" fetchpriority="high" src="https://canalciencianews.github.io/thumbnail.png"/>
+<div class="hero-art-caption">
+<i class="bi bi-stars"></i>
+                  Uma nova descoberta a cada dia
+                </div>
+</div>
+<div aria-hidden="true" class="hero-orbit">
+<i class="bi bi-rocket-takeoff"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BORDÃO -->
+<div class="brand-promise">
+<div class="container">
+<div class="promise-inner">
+<i class="bi bi-capsule-pill"></i>
+<div>Uma pílula com notícias <span>sobre Ciências</span>.</div>
+</div>
+</div>
+</div>
+<!-- VÍDEO EM DESTAQUE -->
+<section class="video-section" id="video-destaque">
+<div class="container">
+<div class="section-heading fade-up">
+<div>
+<span class="section-eyebrow">No canal</span>
+<h2 class="section-title">Vídeo em destaque</h2>
+<p class="section-subtitle">
+              Uma dose extra de ciência para alimentar a curiosidade.
+              Confira o conteúdo selecionado do nosso canal.
+            </p>
+</div>
+<a class="section-link" href="https://www.youtube.com/@CienciaNewsOficial" rel="noopener noreferrer" target="_blank">
+            Ver canal completo <i class="bi bi-arrow-up-right"></i>
+</a>
+</div>
+<article class="featured-video fade-up">
+<div class="featured-video-image">
+<img alt="Thumbnail do vídeo IA resolve 2 mistérios sobre buracos negros. E agora?" loading="lazy" src="https://i.ytimg.com/vi/2bHYHL_pplI/maxresdefault.jpg"/>
+<span class="video-label">
+<i class="bi bi-star-fill"></i>
+              Escolha da semana
+            </span>
+<div class="video-play-overlay">
+<button aria-label="Assistir ao vídeo no site" class="video-play-button" data-bs-target="#videoModal" data-bs-toggle="modal" type="button">
+<i class="bi bi-play-fill"></i>
+</button>
+</div>
+</div>
+<div class="featured-video-content">
+<div class="video-meta">
+<i class="bi bi-youtube me-1"></i>
+              Ciência News no YouTube
             </div>
-            <div class="col-md-7">
-              <div class="card-body-content">
-                <span class="badge bg-primary mb-2">ASTRONOMIA</span>
-                <h3 class="h5 fw-bold text-primary">James Webb detecta a Galáxia "Água-Viva" mais distante</h3>
-                <p class="small text-muted">Astrônomos confirmam descoberta de galáxia com 'tentáculos' de gás a 8,5 bilhões de anos-luz.</p>
-                <a href="https://canalciencianews.github.io/post/james-webb-galaxia-agua-viva.html" class="btn-science">
-                  Continuar lendo <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="row g-0">
-            <div class="col-md-5">
-              <img src="https://scx1.b-cdn.net/csz/news/800a/2025/saturday-citations-bla.jpg" alt="Post">
-            </div>
-            <div class="col-md-7">
-              <div class="card-body-content">
-                <h3 class="h5 fw-bold text-primary">Buraco negro engole estrela gigante</h3>
-                <p class="small text-muted">Evento cósmico raro é captado por telescópios de alta precisão, revelando detalhes sobre a gravidade extrema.</p>
-                <a href="https://canalciencianews.github.io/post/novembro/buraco-negro-engole-estrela-gigante.html" class="btn-science">
-                  Continuar lendo <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="row g-0">
-            <div class="col-md-5">
-              <img src="https://i.postimg.cc/VLfSWHfG/images.jpg" alt="Post">
-            </div>
-            <div class="col-md-7">
-              <div class="card-body-content">
-                <h3 class="h5 fw-bold text-primary">O mistério do objeto Capotauro</h3>
-                <p class="small text-muted">Astrônomos identificam um enigmático objeto no espaço profundo que desafia as teorias atuais.</p>
-                <a href="https://canalciencianews.github.io/post/outubro/capotauro-misterio-cosmico-james-webb.html" class="btn-science">
-                  Continuar lendo <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h2 class="section-title">Ciência em Vídeo</h2>
-        <div class="row g-3">
-          <div class="col-md-6 mb-3">
-            <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
-              <iframe src="https://www.youtube.com/embed/YKosdhTmqFw" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
-              <iframe src="https://www.youtube.com/embed/-ICzRhzlZk0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        
-        <div class="widget">
-          <h5 class="fw-bold mb-3">Siga o Canal</h5>
-          <div class="d-grid gap-2">
-            <a href="https://www.youtube.com/@CienciaNewsOficial" class="btn btn-danger btn-sm text-start"><i class="bi bi-youtube me-2"></i> YouTube</a>
-            <a href="https://www.instagram.com/ciencianews1/" class="btn btn-dark btn-sm text-start"><i class="bi bi-instagram me-2"></i> Instagram</a>
-            <a href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" class="btn btn-success btn-sm text-start"><i class="bi bi-whatsapp me-2"></i> Canal WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="widget">
-          <h5 class="fw-bold mb-3"><i class="bi bi-graph-up text-primary me-2"></i>Mais Vistos</h5>
-          <ul class="list-unstyled small">
-            <li class="mb-3 border-bottom pb-2">
-              <a href="https://www.youtube.com/watch?v=SQ6i4ea5gW4" class="text-decoration-none text-dark">Orca devora tubarão branco: veja imagens</a>
-            </li>
-            <li class="mb-3 border-bottom pb-2">
-              <a href="https://www.youtube.com/watch?v=wVkEAwrEIS0" class="text-decoration-none text-dark">O pássaro que imita o choro de um bebê</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <section id="contato" class="mt-5">
-      <div class="widget mx-auto" style="max-width: 650px;">
-        <h2 class="text-center fw-bold text-primary mb-4">Contato</h2>
-        <form id="contactForm">
-          <div class="mb-3"><input name="name" type="text" class="form-control" placeholder="Nome" required></div>
-          <div class="mb-3"><input name="email" type="email" class="form-control" placeholder="E-mail" required></div>
-          <div class="mb-3"><input name="subject" type="text" class="form-control" placeholder="Assunto" required></div>
-          <div class="mb-3"><textarea name="message" class="form-control" rows="4" placeholder="Sua mensagem" required></textarea></div>
-          <button type="submit" class="btn btn-warning w-100 fw-bold py-2 shadow-sm">ENVIAR AGORA</button>
-        </form>
-        <p id="status" class="mt-3 text-center"></p>
-      </div>
-    </section>
+<h3>IA resolve 2 mistérios sobre buracos negros. E agora?</h3>
+<p>
+              A inteligência artificial entrou em cena para ajudar a investigar
+              alguns dos objetos mais intrigantes do universo. Descubra o que
+              essa novidade pode revelar sobre os buracos negros.
+            </p>
+<div class="video-actions">
+<button class="btn-video-site" data-bs-target="#videoModal" data-bs-toggle="modal" type="button">
+<i class="bi bi-play-circle-fill"></i>
+                Assistir pelo site
+              </button>
+<a class="btn-video-youtube" href="https://youtu.be/2bHYHL_pplI?is=D42pUU8I0Kbh4CXz" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-youtube"></i>
+                Ver no YouTube
+                <i class="bi bi-box-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- NOTÍCIAS -->
+<section class="content-section news-section" id="noticias">
+<div class="container">
+<div class="section-heading fade-up">
+<div>
+<span class="section-eyebrow">Fique por dentro</span>
+<h2 class="section-title">O que está acontecendo na ciência?</h2>
+<p class="section-subtitle">
+              Pesquisas, descobertas e notícias selecionadas em diferentes
+              áreas do conhecimento. Abra os cards para ler os detalhes
+              e consultar as fontes.
+            </p>
+</div>
+<a class="section-link" href="https://canalciencianews.github.io/arquivos.html">
+            Acessar arquivos <i class="bi bi-arrow-up-right"></i>
+</a>
+</div>
+<div class="news-toolbar fade-up">
+<div aria-label="Filtrar notícias" class="news-filters" role="group">
+<button class="filter-btn active" data-filter="all" type="button">Todas</button>
+<button class="filter-btn" data-filter="astronomia" type="button">Astronomia</button>
+<button class="filter-btn" data-filter="biologia" type="button">Biologia</button>
+<button class="filter-btn" data-filter="fisica" type="button">Física</button>
+<button class="filter-btn" data-filter="tecnologia" type="button">Tecnologia</button>
+</div>
+<span class="news-count" id="newsCount">6 notícias selecionadas</span>
+</div>
+<div class="row g-4" id="newsGrid">
+<!-- NOTÍCIA 1 -->
+<div class="col-md-6 col-lg-4 news-item fade-up" data-category="astronomia">
+<article class="news-card">
+<div class="news-visual voyager"><img alt="Voyager 1 alcança a distância de um dia-luz da Terra" class="cn-card-image" decoding="async" loading="lazy" src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia21/pia21839/PIA21839.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"/>
+<span class="news-category"><i class="bi bi-stars"></i>Astronomia</span>
+<div class="news-visual-icon"><i class="bi bi-satellite"></i></div>
+</div>
+<div class="news-card-body">
+<div class="news-date">
+<i class="bi bi-calendar3"></i>
+                  18 de novembro de 2026
+                </div>
+<h3>Voyager 1 alcança a distância de um dia-luz da Terra</h3>
+<p class="news-excerpt">
+                  A histórica sonda da NASA chegou a uma distância tão grande
+                  que um sinal de rádio leva aproximadamente 24 horas para
+                  percorrer o caminho até nosso planeta.
+                </p>
+<div class="news-card-footer">
+<span class="news-source"><i class="bi bi-journal-text"></i>NASA</span>
+<button class="btn-news-more" data-news="voyager" type="button">
+                    Ler notícia <i class="bi bi-arrow-right"></i>
+</button>
+</div>
+<div class="mt-3">
+<a class="news-source-link" href="https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/" rel="noopener noreferrer" target="_blank">
+                    Fonte: NASA <i class="bi bi-box-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- NOTÍCIA 2 -->
+<div class="col-md-6 col-lg-4 news-item fade-up" data-category="astronomia">
+<article class="news-card">
+<div class="news-visual euclid"><img alt="Telescópio Euclid inicia um dos maiores mapas 3D do Universo" class="cn-card-image" decoding="async" loading="lazy" src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia21/pia21839/PIA21839.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"/>
+<span class="news-category"><i class="bi bi-stars"></i>Astronomia</span>
+<div class="news-visual-icon"><i class="bi bi-globe2"></i></div>
+</div>
+<div class="news-card-body">
+<div class="news-date">
+<i class="bi bi-calendar3"></i>
+                  12 de novembro de 2026
+                </div>
+<h3>Telescópio Euclid inicia um dos maiores mapas 3D do Universo</h3>
+<p class="news-excerpt">
+                  A missão da Agência Espacial Europeia divulgou um enorme
+                  conjunto de observações que ajudará a investigar a matéria
+                  escura e a energia escura.
+                </p>
+<div class="news-card-footer">
+<span class="news-source"><i class="bi bi-journal-text"></i>ESA</span>
+<button class="btn-news-more" data-news="euclid" type="button">
+                    Ler notícia <i class="bi bi-arrow-right"></i>
+</button>
+</div>
+<div class="mt-3">
+<a class="news-source-link" href="https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-lays-the-foundation-for-its-best-ever-3d-map-of-the-universe" rel="noopener noreferrer" target="_blank">
+                    Fonte: ESA <i class="bi bi-box-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- NOTÍCIA 3 -->
+<div class="col-md-6 col-lg-4 news-item fade-up" data-category="astronomia">
+<article class="news-card">
+<div class="news-visual stars"><img alt="Webb ajuda a reconstruir a fusão de duas estrelas em Andrômeda" class="cn-card-image" decoding="async" loading="lazy" src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia21/pia21839/PIA21839.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"/>
+<span class="news-category"><i class="bi bi-stars"></i>Astronomia</span>
+<div class="news-visual-icon"><i class="bi bi-moon-stars"></i></div>
+</div>
+<div class="news-card-body">
+<div class="news-date">
+<i class="bi bi-calendar3"></i>
+                  18 de novembro de 2026
+                </div>
+<h3>Webb ajuda a reconstruir a fusão de duas estrelas em Andrômeda</h3>
+<p class="news-excerpt">
+                  Observações do telescópio espacial James Webb ajudaram
+                  pesquisadores a reconstruir um episódio dramático de
+                  interação e fusão estelar.
+                </p>
+<div class="news-card-footer">
+<span class="news-source"><i class="bi bi-journal-text"></i>NASA</span>
+<button class="btn-news-more" data-news="stars" type="button">
+                    Ler notícia <i class="bi bi-arrow-right"></i>
+</button>
+</div>
+<div class="mt-3">
+<a class="news-source-link" href="https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/" rel="noopener noreferrer" target="_blank">
+                    Fonte: NASA <i class="bi bi-box-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- NOTÍCIA 4 -->
+<div class="col-md-6 col-lg-4 news-item fade-up" data-category="biologia">
+<article class="news-card">
+<div class="news-visual hominin"><img alt="Fósseis indicam que Homo erectus viveu em florestas tropicais da China" class="cn-card-image" decoding="async" loading="lazy" src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia21/pia21839/PIA21839.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"/>
+<span class="news-category"><i class="bi bi-tree"></i>Biologia e evolução</span>
+<div class="news-visual-icon"><i class="bi bi-person-walking"></i></div>
+</div>
+<div class="news-card-body">
+<div class="news-date">
+<i class="bi bi-calendar3"></i>
+                  19 de novembro de 2026
+                </div>
+<h3>Fósseis indicam que Homo erectus viveu em florestas tropicais da China</h3>
+<p class="news-excerpt">
+                  Novas análises de fósseis e do ambiente antigo ampliam
+                  as evidências sobre a capacidade de adaptação e o período
+                  de sobrevivência dessa espécie humana.
+                </p>
+<div class="news-card-footer">
+<span class="news-source"><i class="bi bi-journal-text"></i>ScienceAlert</span>
+<button class="btn-news-more" data-news="hominin" type="button">
+                    Ler notícia <i class="bi bi-arrow-right"></i>
+</button>
+</div>
+<div class="mt-3">
+<a class="news-source-link" href="https://www.sciencealert.com/major-fossil-discovery-in-china-reveals-two-new-secrets-about-the-home-of-homo-erectus" rel="noopener noreferrer" target="_blank">
+                    Fonte: ScienceAlert <i class="bi bi-box-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- NOTÍCIA 5 -->
+<div class="col-md-6 col-lg-4 news-item fade-up" data-category="fisica">
+<article class="news-card">
+<div class="news-visual graphene"><img alt="Campo elétrico da luz acelerando elétrons no grafeno" class="cn-card-image" decoding="async" loading="lazy" src="https://www.sciencedaily.com/images/1920/electric-field-of-light-accelerates-electrons.webp"/>
+<span class="news-category"><i class="bi bi-atom"></i>Física</span>
+<div class="news-visual-icon"><i class="bi bi-lightning-charge"></i></div>
+</div>
+<div class="news-card-body">
+<div class="news-date">
+<i class="bi bi-calendar3"></i>
+                  13 de novembro de 2026
+                </div>
+<h3>Pesquisadores observam transições quânticas de elétrons no grafeno</h3>
+<p class="news-excerpt">
+                  Experimentos com grafeno permitiram observar transições
+                  eletrônicas associadas a fenômenos quânticos, abrindo
+                  novas possibilidades para pesquisas em materiais.
+                </p>
+<div class="news-card-footer">
+<span class="news-source"><i class="bi bi-journal-text"></i>ScienceDaily</span>
+<button class="btn-news-more" data-news="graphene" type="button">
+                    Ler notícia <i class="bi bi-arrow-right"></i>
+</button>
+</div>
+<div class="mt-3">
+<a class="news-source-link" href="https://www.sciencedaily.com/releases/2026/11/261112025523.htm" rel="noopener noreferrer" target="_blank">
+                    Fonte: ScienceDaily <i class="bi bi-box-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- NOTÍCIA 6 -->
+<div class="col-md-6 col-lg-4 news-item fade-up" data-category="tecnologia">
+<article class="news-card">
+<div class="news-visual vision"><img alt="Conceito de visão biônica inteligente com processamento de imagens por inteligência artificial" class="cn-card-image" decoding="async" loading="lazy" src="https://bionicvisionlab.org/research/smart-bionic-eye/featured.jpg"/>
+<span class="news-category"><i class="bi bi-cpu"></i>Tecnologia e saúde</span>
+<div class="news-visual-icon"><i class="bi bi-eye"></i></div>
+</div>
+<div class="news-card-body">
+<div class="news-date">
+<i class="bi bi-calendar3"></i>
+                  12 de novembro de 2026
+                </div>
+<h3>Inteligência artificial pode ajudar a aprimorar próteses de visão</h3>
+<p class="news-excerpt">
+                  Pesquisadores estão usando IA para prever como o cérebro
+                  responde a estímulos elétricos em estudos experimentais
+                  de próteses visuais.
+                </p>
+<div class="news-card-footer">
+<span class="news-source"><i class="bi bi-journal-text"></i>ScienceDaily</span>
+<button class="btn-news-more" data-news="vision" type="button">
+                    Ler notícia <i class="bi bi-arrow-right"></i>
+</button>
+</div>
+<div class="mt-3">
+<a class="news-source-link" href="https://www.sciencedaily.com/releases/2026/11/261110042553.htm" rel="noopener noreferrer" target="_blank">
+                    Fonte: ScienceDaily <i class="bi bi-box-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- COMUNIDADE -->
+<section class="community-section">
+<div class="container">
+<div class="community-banner fade-up">
+<div class="community-banner-content">
+<h2>Curiosidade não tem ponto final.</h2>
+<p>Acompanhe o Ciência News e continue explorando o universo do conhecimento.</p>
+</div>
+<a class="community-button" href="https://www.youtube.com/@CienciaNewsOficial" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-youtube"></i>
+            Inscreva-se no canal
+            <i class="bi bi-arrow-up-right"></i>
+</a>
+</div>
+</div>
+</section>
 </main>
+<!-- MODAL DE NOTÍCIAS -->
+<div aria-hidden="true" aria-labelledby="newsModalTitle" class="modal fade" id="newsModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header">
+<h2 class="modal-title" id="newsModalTitle">Notícia</h2>
+<button aria-label="Fechar" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div class="modal-news-meta">
+<span id="modalCategory"><i class="bi bi-tag"></i>Categoria</span>
+<span id="modalDate"><i class="bi bi-calendar3"></i>Data</span>
+</div>
+<div class="modal-description" id="modalDescription"></div>
+<div class="modal-source-area">
+<h4><i class="bi bi-link-45deg me-1"></i>Fontes e leitura complementar</h4>
+<div class="modal-source-list" id="modalSources"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL DO VÍDEO -->
+<div aria-hidden="true" aria-labelledby="videoModalTitle" class="modal fade video-modal" id="videoModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-xl">
+<div class="modal-content bg-dark">
+<div class="modal-header">
+<h2 class="modal-title" id="videoModalTitle">
+            IA resolve 2 mistérios sobre buracos negros. E agora?
+          </h2>
+<button aria-label="Fechar" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="video-frame" id="videoFrame" referrerpolicy="strict-origin-when-cross-origin" src="" title="IA resolve 2 mistérios sobre buracos negros. E agora?">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+<!-- CONTATO -->
+<section class="contact-section" id="contato">
+<div class="container contact-wrapper">
+<div class="row align-items-center g-4">
+<div class="col-lg-5 fade-up">
+<span class="eyebrow">Fale conosco</span>
+<h2 class="contact-title">
+            A ciência também começa com uma
+            <span>pergunta.</span>
+</h2>
+<p class="contact-description">
+            Tem alguma dúvida, sugestão, informação ou deseja entrar
+            em contato com a equipe do Ciência News?
+            Envie sua mensagem. Será um prazer receber seu contato!
+          </p>
+<div class="contact-info">
+<div class="contact-info-icon">
+<i class="bi bi-chat-dots"></i>
+</div>
+<div>
+<strong>Estamos por aqui!</strong>
+<div class="text-secondary small">
+                Utilize nosso formulário para falar conosco.
+              </div>
+</div>
+</div>
+</div>
+<div class="col-lg-7 fade-up">
+<div class="contact-card">
+<h3>
+<i class="bi bi-send-fill me-2" style="color: var(--orange);"></i>
+              Envie sua mensagem
+            </h3>
+<p class="subtitle">
+              Preencha os campos abaixo para entrar em contato.
+            </p>
+<form id="contactForm">
+<div class="row g-3">
+<div class="col-md-6">
+<label class="form-label" for="contactName">Seu nome</label>
+<input autocomplete="name" class="form-control" id="contactName" maxlength="120" name="name" placeholder="Digite seu nome" required="" type="text"/>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="contactEmail">Seu e-mail</label>
+<input autocomplete="email" class="form-control" id="contactEmail" maxlength="254" name="email" placeholder="seu@email.com" required="" type="email"/>
+</div>
+<div class="col-12">
+<label class="form-label" for="contactSubject">Assunto</label>
+<input class="form-control" id="contactSubject" maxlength="180" name="subject" placeholder="Qual é o assunto da mensagem?" required="" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label" for="contactMessage">Sua mensagem</label>
+<textarea class="form-control" id="contactMessage" maxlength="5000" name="message" placeholder="Escreva sua mensagem..." required="" rows="5"></textarea>
+</div>
+<div class="col-12">
+<button class="btn btn-send w-100" id="submitButton" type="submit">
+<i class="bi bi-send-fill me-2"></i>
+                    ENVIAR MENSAGEM
+                  </button>
+</div>
+<div class="col-12">
+<p aria-live="polite" class="text-center" id="status" role="status"></p>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RODAPÉ -->
+<footer class="site-footer">
+<div class="container footer-content">
+<div class="row g-5">
+<div class="col-lg-5 col-md-6">
+<a class="footer-brand" href="https://canalciencianews.github.io/">
+<img alt="Ciência News" src="https://canalciencianews.github.io/logo.png"/>
+<span>Ciência News</span>
+</a>
+<p class="footer-description">
+            Uma pílula com notícias sobre ciências.
+            Descubra curiosidades, acompanhe descobertas,
+            explore o universo e fique por dentro das novidades
+            da ciência e tecnologia.
+          </p>
+<div class="visit-counter">
+<i class="bi bi-eye-fill" style="color: var(--orange-light);"></i>
+<span>Visitas:</span>
+<a href="https://megacontador.com.br/" rel="noopener noreferrer" target="_blank">
+<img alt="Contador de visitas" src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif"/>
+</a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<h3 class="footer-heading">Navegação</h3>
+<ul class="footer-links">
+<li>
+<a href="https://canalciencianews.github.io/">
+<i class="bi bi-chevron-right me-2"></i>Página inicial
+              </a>
+</li>
+<li>
+<a href="https://canalciencianews.github.io/arquivos.html">
+<i class="bi bi-chevron-right me-2"></i>Arquivos
+              </a>
+</li>
+<li>
+<a href="#noticias">
+<i class="bi bi-chevron-right me-2"></i>Notícias
+              </a>
+</li>
+<li>
+<a href="#video-destaque">
+<i class="bi bi-chevron-right me-2"></i>Vídeo em destaque
+              </a>
+</li>
+<li>
+<a href="#contato">
+<i class="bi bi-chevron-right me-2"></i>Entre em contato
+              </a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-6">
+<h3 class="footer-heading">Acompanhe o Ciência News</h3>
+<div class="social-links">
+<a aria-label="YouTube" class="social-link" href="https://www.youtube.com/@CienciaNewsOficial" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-youtube"></i>
+</a>
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/ciencianews1/" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-instagram"></i>
+</a>
+<a aria-label="Canal WhatsApp" class="social-link" href="https://whatsapp.com/channel/0029VaAxpuNDOQIOYg1sP70c" rel="noopener noreferrer" target="_blank">
+<i class="bi bi-whatsapp"></i>
+</a>
+</div>
+<p class="footer-social-text">
+            Ciência, informação e conhecimento.
+            Acompanhe nossas publicações e não perca
+            as novidades do universo científico.
+          </p>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-7">
+<p>
+              © 2026 <strong>Ciência News</strong>.
+              Todos os direitos reservados.
+            </p>
+</div>
+<div class="col-md-5 text-md-end">
+<p>
+              Feito para quem tem curiosidade pelo universo.
+              <i class="bi bi-stars ms-1" style="color: var(--orange-light);"></i>
+</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- ATALHO FLUTUANTE PARA CONTATO -->
+<a aria-label="Ir para o formulário de contato" class="contact-float" href="#contato">
+<i class="bi bi-chat-dots-fill"></i>
+</a>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<!-- INTERAÇÕES, NOTÍCIAS E ANIMAÇÕES -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-<!-- FIM DOS CONTEUDOS -->
+      /* ANIMAÇÕES DE ENTRADA */
 
-  <!-- FOOTER -->
- <footer class="text-center mt-5">
-    <div class="container">
-      <img src="https://canalciencianews.github.io/logo.png" height="50" class="mb-3">
-      
-      <p class="small mb-4">© 2025 Ciência News | Todos os direitos reservados.</p>
-      
-      <div class="d-inline-flex align-items-center bg-white p-2 px-3 rounded-pill shadow-sm mb-4">
-        <span class="text-dark small me-2 fw-bold">Visitas:</span>
-        <a href="https://megacontador.com.br/" target="_blank" class="d-flex">
-          <img src="https://megacontador.com.br/img-6nmRDWUNa5Lh3tG6-1.gif" alt="Contador" height="20">
-        </a>
-      </div>
-    </div>
-  </footer>
-<!-- FIM DO FOOTER -->
-  
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+      const animatedElements = document.querySelectorAll(".fade-up");
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8", // chave atual protegida
-  authDomain: "formulario-de-contato-6c213.firebaseapp.com",
-  projectId: "formulario-de-contato-6c213",
-  storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
-  messagingSenderId: "916368258641",
-  appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70"
-};
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.10 });
+
+        animatedElements.forEach(element => observer.observe(element));
+      } else {
+        animatedElements.forEach(element => element.classList.add("visible"));
+      }
+
+      /* MENU MOBILE */
+
+      const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
+      const navCollapse = document.getElementById("navMain");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          if (
+            window.innerWidth < 992 &&
+            navCollapse.classList.contains("show")
+          ) {
+            bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+          }
+        });
+      });
+
+      /* FILTROS DAS NOTÍCIAS */
+
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const newsItems = document.querySelectorAll(".news-item");
+      const newsCount = document.getElementById("newsCount");
+
+      filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+          let visibleCount = 0;
+
+          filterButtons.forEach(item => item.classList.remove("active"));
+          button.classList.add("active");
+
+          newsItems.forEach(item => {
+            const matches = filter === "all" || item.dataset.category === filter;
+            item.classList.toggle("d-none", !matches);
+
+            if (matches) visibleCount++;
+          });
+
+          newsCount.textContent =
+            visibleCount + (visibleCount === 1 ? " notícia" : " notícias") +
+            " encontradas";
+        });
+      });
+
+      /* CONTEÚDO COMPLETO DOS MODAIS */
+
+      const newsData = {
+        voyager: {
+          title: "Voyager 1 alcança a distância de um dia-luz da Terra",
+          category: "Astronomia e exploração espacial",
+          date: "18 de novembro de 2026",
+          description: `A sonda Voyager 1, lançada pela NASA em 1977, alcançou uma distância extraordinária: aproximadamente um dia-luz da Terra. Isso significa que um sinal de rádio viajando à velocidade da luz leva cerca de 24 horas para percorrer o caminho entre a espaçonave e nosso planeta.
+
+O marco representa mais um capítulo da trajetória de uma das missões mais longevas e distantes da história da exploração espacial. A Voyager 1 já atravessou a região de influência do vento solar e segue em espaço interestelar, muito além da órbita dos planetas.
+
+A confirmação da distância foi feita com cálculos de trajetória e análise dos sinais da espaçonave. A NASA também informou que engenheiros investigavam uma questão técnica que afetou o retorno de dados científicos e de engenharia a partir de 14 de novembro. Portanto, o marco de distância não significa que todos os instrumentos estejam operando normalmente neste momento.
+
+A conquista ajuda a dimensionar a escala do espaço interestelar: mesmo viajando há quase cinco décadas, a Voyager 1 ainda está extremamente distante de qualquer outra estrela.`,
+          sources: [
+            {
+              label: "NASA — O que é um dia-luz?",
+              url: "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/"
+            },
+            {
+              label: "NASA — Atualização da missão",
+              url: "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/"
+            },
+            {
+              label: "Science News",
+              url: "https://www.sciencenews.org/article/voyager-1-light-day-earth-distance"
+            }
+          ]
+        },
+
+        euclid: {
+          title: "Telescópio Euclid inicia um dos maiores mapas 3D do Universo",
+          category: "Astronomia e cosmologia",
+          date: "12 de novembro de 2026",
+          description: `A Agência Espacial Europeia (ESA) divulgou um grande conjunto de dados da missão Euclid, que tem como objetivo construir um mapa tridimensional do Universo em larga escala.
+
+O primeiro lançamento de dados reúne observações de centenas de milhões de galáxias e dezenas de milhões de candidatos a quasares. O material também inclui milhares de possíveis lentes gravitacionais fortes, fenômeno em que a gravidade de objetos massivos curva a trajetória da luz de objetos que estão atrás deles.
+
+Os dados foram reunidos ao longo de 13 meses de observações e correspondem a uma parte inicial do levantamento planejado pela missão. O catálogo oferece aos cientistas uma ferramenta importante para estudar a distribuição da matéria no Universo e investigar dois dos maiores enigmas da cosmologia: a matéria escura e a energia escura.
+
+O Euclid não fotografa apenas objetos isolados. Seu grande objetivo é observar estruturas cósmicas em uma escala gigantesca, ajudando a compreender como o Universo se organizou e como sua expansão evoluiu ao longo do tempo.`,
+          sources: [
+            {
+              label: "ESA — Primeiro grande mapa 3D",
+              url: "https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-lays-the-foundation-for-its-best-ever-3d-map-of-the-universe"
+            },
+            {
+              label: "ESA — Catálogo de lentes cósmicas",
+              url: "https://www.esa.int/pt/media/about-us/directorates/science/euclid/euclid-reveals-the-largest-ever-catalogue-of-strong-cosmic-lenses"
+            }
+          ]
+        },
+
+        stars: {
+          title: "Webb ajuda a reconstruir a fusão de duas estrelas em Andrômeda",
+          category: "Astronomia e evolução estelar",
+          date: "18 de novembro de 2026",
+          description: `Dados do telescópio espacial James Webb ajudaram pesquisadores a reconstruir um evento raro ocorrido em um sistema estelar na galáxia de Andrômeda.
+
+O sistema, apelidado de Bao, envolvia duas estrelas. Uma delas, com massa um pouco menor que a do Sol, teria espiralado em direção a uma estrela supergigante expandida, culminando em uma fusão.
+
+As observações do Webb foram realizadas 47 dias depois do pico da erupção. Ao combinar esses dados com registros anteriores, os pesquisadores conseguiram montar uma sequência mais completa do que provavelmente aconteceu antes, durante e depois do evento.
+
+O caso é importante porque permite estudar com mais detalhes como interações entre estrelas podem terminar em fusões e produzir fenômenos luminosos intensos.
+
+Não se trata de uma observação contínua de todo o processo em tempo real: a reconstrução foi possível graças à combinação de observações feitas em momentos diferentes e de dados arquivados.`,
+          sources: [
+            {
+              label: "NASA — Dados do Webb sobre a fusão",
+              url: "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
+            },
+            {
+              label: "Science News",
+              url: "https://www.sciencenews.org/"
+            }
+          ]
+        },
+
+        hominin: {
+          title: "Fósseis indicam que Homo erectus viveu em florestas tropicais da China",
+          category: "Paleontologia e evolução humana",
+          date: "19 de novembro de 2026",
+          description: `Novas pesquisas sobre fósseis encontrados no sul da China estão ampliando o conhecimento sobre a presença e a capacidade de adaptação do Homo erectus.
+
+Camadas fósseis analisadas pelos pesquisadores foram datadas entre aproximadamente 324 mil e 184 mil anos atrás. Evidências obtidas a partir de dentes e análises isotópicas apontam para ambientes de floresta tropical fechada, sugerindo que esses hominínios conseguiam viver em ecossistemas diferentes daqueles frequentemente associados a essa espécie.
+
+Os resultados também ajudam a discutir por quanto tempo populações de Homo erectus permaneceram em partes da Ásia e como se distribuíram pelo território.
+
+As descobertas não significam que todos os fósseis encontrados pertençam necessariamente a uma única espécie. A identificação de alguns materiais permanece incerta, e hipóteses sobre outros grupos humanos precisam ser tratadas com cautela.
+
+O conjunto das pesquisas oferece novas pistas sobre a diversidade de ambientes ocupados por antigos representantes do gênero Homo.`,
+          sources: [
+            {
+              label: "ScienceAlert — Descoberta fóssil na China",
+              url: "https://www.sciencealert.com/major-fossil-discovery-in-china-reveals-two-new-secrets-about-the-home-of-homo-erectus"
+            },
+            {
+              label: "Around Prague — Pesquisa sobre os fósseis",
+              url: "https://aroundprague.cz/en/news/science/fossil-teeth-show-homo-erectus-survived-in-chinese-rainforests-far-longer-than"
+            }
+          ]
+        },
+
+        graphene: {
+          title: "Pesquisadores observam transições quânticas de elétrons no grafeno",
+          category: "Física quântica e materiais",
+          date: "13 de novembro de 2026",
+          description: `Pesquisadores conseguiram observar experimentalmente transições quânticas de elétrons em grafeno, um material formado por uma única camada de átomos de carbono organizados em uma estrutura semelhante a uma rede.
+
+O estudo investigou transições associadas ao fenômeno conhecido como Landau-Zener-Majorana. Em determinadas condições experimentais, elétrons podem atravessar regiões de separação entre níveis de energia, permitindo observar diretamente comportamentos importantes da mecânica quântica.
+
+Os pesquisadores relataram que a probabilidade de transição pôde alcançar 100% em condições específicas do experimento. Isso não significa que qualquer elétron em qualquer situação apresente esse comportamento, mas que o resultado foi atingido dentro dos parâmetros controlados utilizados na pesquisa.
+
+A observação pode contribuir para o desenvolvimento de novas pesquisas em materiais e, no futuro, inspirar tecnologias eletrônicas ultrarrápidas controladas por luz.`,
+          sources: [
+            {
+              label: "ScienceDaily — Pesquisa sobre grafeno",
+              url: "https://www.sciencedaily.com/releases/2026/11/261112025523.htm"
+            },
+            {
+              label: "Nature — Artigo científico",
+              url: "https://doi.org/10.1038/s41586-026-11214-y"
+            }
+          ]
+        },
+
+        vision: {
+          title: "Inteligência artificial pode ajudar a aprimorar próteses de visão",
+          category: "Tecnologia, inteligência artificial e neurociência",
+          date: "12 de novembro de 2026",
+          description: `Pesquisadores da Universidade da Califórnia em Santa Bárbara estão investigando como a inteligência artificial pode ajudar a aprimorar próteses visuais experimentais.
+
+A pesquisa utiliza modelos de IA para prever como o cérebro responde a diferentes padrões de estimulação elétrica. Essa capacidade de previsão pode ajudar os cientistas a entender melhor quais estímulos produzem determinadas percepções visuais.
+
+Em experimentos, uma pessoa recebeu estímulos que produziram percepções de pontos luminosos e formas simples. O objetivo é compreender como organizar esses estímulos para que futuras tecnologias possam transmitir informações visuais de maneira mais útil.
+
+O resultado ainda está no campo experimental. Não significa que a visão natural tenha sido restaurada ou que exista uma solução pronta para uso clínico amplo. A pesquisa representa um passo na investigação de interfaces entre dispositivos eletrônicos e o sistema nervoso.
+
+A combinação entre inteligência artificial, neurociência e engenharia pode ajudar a orientar o desenvolvimento de novas gerações de próteses visuais.`,
+          sources: [
+            {
+              label: "ScienceDaily — Pesquisa sobre visão e IA",
+              url: "https://www.sciencedaily.com/releases/2026/11/261110042553.htm"
+            },
+            {
+              label: "Neuron — Artigo científico",
+              url: "https://doi.org/10.1016/j.neuron.2026.07.006"
+            }
+          ]
+        }
+      };
+
+      const newsModalElement = document.getElementById("newsModal");
+      const newsModal = bootstrap.Modal.getOrCreateInstance(newsModalElement);
+
+      const modalTitle = document.getElementById("newsModalTitle");
+      const modalCategory = document.getElementById("modalCategory");
+      const modalDate = document.getElementById("modalDate");
+      const modalDescription = document.getElementById("modalDescription");
+      const modalSources = document.getElementById("modalSources");
+
+      document.querySelectorAll("[data-news]").forEach(button => {
+        button.addEventListener("click", () => {
+          const news = newsData[button.dataset.news];
+          if (!news) return;
+
+          modalTitle.textContent = news.title;
+          modalCategory.innerHTML = '<i class="bi bi-tag"></i>';
+          modalCategory.append(document.createTextNode(" " + news.category));
+
+          modalDate.innerHTML = '<i class="bi bi-calendar3"></i>';
+          modalDate.append(document.createTextNode(" " + news.date));
+
+          modalDescription.textContent = news.description;
+          modalSources.replaceChildren();
+
+          news.sources.forEach(source => {
+            const link = document.createElement("a");
+            link.href = source.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+
+            const icon = document.createElement("i");
+            icon.className = "bi bi-box-arrow-up-right";
+
+            link.append(document.createTextNode(source.label + " "));
+            link.append(icon);
+            modalSources.append(link);
+          });
+
+          newsModal.show();
+        });
+      });
+
+      /* VÍDEO: CARREGA O PLAYER SOMENTE QUANDO O MODAL ABRE */
+
+      const videoModal = document.getElementById("videoModal");
+      const videoFrame = document.getElementById("videoFrame");
+      const videoEmbed = "https://www.youtube-nocookie.com/embed/2bHYHL_pplI?autoplay=1&rel=0";
+
+      videoModal.addEventListener("show.bs.modal", () => {
+        videoFrame.src = videoEmbed;
+      });
+
+      videoModal.addEventListener("hidden.bs.modal", () => {
+        videoFrame.src = "";
+      });
+
+    });
+  </script>
+<!-- FIREBASE / FIRESTORE — CONFIGURAÇÃO ORIGINAL -->
+<script type="module">
+
+    import { initializeApp }
+      from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+
+    import {
+      getFirestore,
+      collection,
+      addDoc
+    } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCXvccq220EDORjeLig90Iwna27HrRMJS8",
+      authDomain: "formulario-de-contato-6c213.firebaseapp.com",
+      projectId: "formulario-de-contato-6c213",
+      storageBucket: "formulario-de-contato-6c213.firebasestorage.app",
+      messagingSenderId: "916368258641",
+      appId: "1:916368258641:web:ab564fab4bc0e0f3a72a70"
+    };
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('status');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("status");
+    const submitButton = document.getElementById("submitButton");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) return;
+
       const data = {
-        name: form.name.value,
-        email: form.email.value,
-        subject: form.subject.value,
-        message: form.message.value,
+        name: form.elements["name"].value.trim(),
+        email: form.elements["email"].value.trim(),
+        subject: form.elements["subject"].value.trim(),
+        message: form.elements["message"].value.trim(),
         timestamp: new Date()
       };
+
+      if (!data.name || !data.email || !data.subject || !data.message) {
+        status.textContent = "Preencha todos os campos.";
+        status.className = "text-center text-danger fw-bold";
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.innerHTML = `
+        <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+        ENVIANDO...
+      `;
+
+      status.textContent = "";
+
       try {
         await addDoc(collection(db, "contact_submissions"), data);
-        status.textContent = "✅ Mensagem enviada!";
-        status.className = "mt-3 text-success fw-bold";
+
+        status.textContent = "✓ Mensagem enviada com sucesso! Obrigado pelo contato.";
+        status.className = "text-center text-success fw-bold";
         form.reset();
-      } catch (err) {
-        status.textContent = "❌ Erro ao enviar.";
-        status.className = "mt-3 text-danger fw-bold";
+
+      } catch (error) {
+        console.error("Erro ao enviar mensagem:", error);
+
+        status.textContent = "Não foi possível enviar sua mensagem. Tente novamente.";
+        status.className = "text-center text-danger fw-bold";
+
+      } finally {
+        submitButton.disabled = false;
+        submitButton.innerHTML = `
+          <i class="bi bi-send-fill me-2"></i>
+          ENVIAR MENSAGEM
+        `;
       }
     });
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </script>
+<script id="cn-imagens-incorporadas">
+(function () {
+    const imagens = {"voyager": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Great_Red_Spot_From_Voyager_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled", "euclid": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Euclid_Deep_Field_Fornax_%E2%80%93_preview_ESA507295.jpg/1920px-Euclid_Deep_Field_Fornax_%E2%80%93_preview_ESA507295.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail", "bao": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Andromeda_Star_Merger_%28Artist%E2%80%99s_Concept%29_%281511807%29.jpg/1920px-Andromeda_Star_Merger_%28Artist%E2%80%99s_Concept%29_%281511807%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail", "erectus": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Daka_homo_erectus_calvaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled", "grafeno": "", "biônica": ""};
+
+    function iniciar() {
+        /* HERO: utiliza a thumbnail do preview do site */
+        const hero = document.querySelector(
+            '.hero, .hero-section, #hero, .hero-banner, [class*="hero"]'
+        ) || document.querySelector('main > section');
+
+        if (hero) {
+            hero.classList.add('cn-hero-container');
+
+            if (!hero.querySelector('.cn-hero-watermark')) {
+                const marca = document.createElement('img');
+                marca.className = 'cn-hero-watermark';
+                marca.src = 'https://canalciencianews.github.io/thumbnail.png';
+                marca.alt = '';
+                marca.setAttribute('aria-hidden', 'true');
+                hero.prepend(marca);
+            }
+        }
+
+        /* Notícias: associa cada imagem ao card pelo conteúdo */
+        const noticias = [
+            { termos: ['voyager 1', 'um dia-luz', 'dia luz'], imagem: imagens.voyager },
+            { termos: ['euclid', 'mapa 3d', 'mapa tridimensional'], imagem: imagens.euclid },
+            { termos: ['andromeda', 'andrômeda', 'fusão estelar', 'estrelas se fundiram'], imagem: imagens.bao },
+            { termos: ['homo erectus', 'floresta tropical'], imagem: imagens.erectus },
+            { termos: ['grafeno', 'transições eletrônicas'], imagem: imagens.grafeno },
+            { termos: ['visão biônica', 'visao bionica', 'prótese visual', 'proteses visuais'], imagem: imagens.biônica }
+        ];
+
+        const seletores = [
+            'article', '.card', '[class*="news-card"]',
+            '[class*="noticia"]', '[class*="news-item"]'
+        ].join(',');
+
+        const cards = [...document.querySelectorAll(seletores)];
+
+        noticias.forEach(noticia => {
+            if (!noticia.imagem) return;
+
+            const candidatos = cards
+                .filter(card => {
+                    const texto = (card.innerText || '').toLowerCase();
+                    return noticia.termos.some(t => texto.includes(t));
+                })
+                .sort((a, b) => a.innerText.length - b.innerText.length);
+
+            const card = candidatos[0];
+            if (!card) return;
+
+            let foto = card.querySelector('.cn-card-image');
+
+            if (!foto) {
+                foto = card.querySelector('img');
+            }
+
+            if (!foto) {
+                foto = document.createElement('img');
+                card.prepend(foto);
+            }
+
+            foto.src = noticia.imagem;
+            foto.classList.add('cn-card-image');
+            foto.loading = 'lazy';
+            foto.decoding = 'async';
+            foto.alt = 'Imagem ilustrativa da notícia';
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', iniciar);
+    } else {
+        iniciar();
+    }
+})();
+</script>
+<script id="organizar-imagens-cards">
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.news-card').forEach(function(card) {
+        const visual = card.querySelector('.news-visual');
+        if (!visual) return;
+
+        const imagens = Array.from(card.querySelectorAll('img'))
+            .filter(img => !img.closest('.news-visual'));
+
+        if (!imagens.length) return;
+
+        const foto = imagens.find(img =>
+            !img.closest('a[href*="youtube"]') &&
+            !img.closest('.brand-logo')
+        ) || imagens[0];
+
+        if (!foto) return;
+
+        visual.querySelectorAll('img').forEach(img => img.remove());
+
+        visual.insertBefore(foto, visual.firstChild);
+
+        foto.removeAttribute('width');
+        foto.removeAttribute('height');
+        foto.style.width = '100%';
+        foto.style.height = '100%';
+        foto.style.objectFit = 'cover';
+    });
+});
+</script>
 </body>
 </html>
